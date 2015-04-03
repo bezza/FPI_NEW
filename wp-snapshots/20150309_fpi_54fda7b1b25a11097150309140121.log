@@ -1,0 +1,75 @@
+********************************************************************************
+PACKAGE-LOG: 2015-03-09 14:01:37
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	0.5.12
+WORDPRESS:	4.1.1
+PHP INFO:	5.3.8 | SAPI: apache2handler
+SERVER:		Apache/2.2.21 (Win32) mod_ssl/2.2.21 OpenSSL/1.0.0e PHP/5.3.8 mod_perl/2.0.4 Perl/v5.10.1 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (128M default) 
+MEMORY STACK: 32.75MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP (query limit - 100)
+MYSQLDUMP:    Not Supported
+MYSQLTIMEOUT: 5000 
+TABLES: total:18 | filtered:0 | create:18 
+FILTERED: [] 
+SQL CREATED: 20150309_fpi_54fda7b1b25a11097150309140121_database.sql 
+SQL FILE SIZE: 1.13MB 
+SQL FILE TIME: 2015-03-09 14:01:37 
+SQL RUNTIME: 0.71 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  E:/xampp/htdocs/fpi 
+ARCHIVE FILE: 20150309_fpi_54fda7b1b25a11097150309140121_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	29.67MB 
+STATS:	Dirs 233 | Files 2,128 | Links 0 
+SQL ADDED: 20150309_fpi_54fda7b1b25a11097150309140121_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2361
+    [filename] => E:\xampp\htdocs\fpi\wp-snapshots\tmp\20150309_fpi_54fda7b1b25a11097150309140121_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 12.31MB 
+ARCHIVE RUNTIME: 8.60 sec. 
+MEMORY STACK: 33.5MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [E:/xampp/htdocs/fpi/wp-snapshots/tmp/20150309_fpi_54fda7b1b25a11097150309140121_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 1.13MB 
+Installer File: 316.83KB 
+Archive File: 12.31MB  
+
+********************************************************************************
+RECORD ID:[2]
+TOTAL PROCESS RUNTIME: 9.93 sec.
+PEAK PHP MEMORY USED: 35.75MB
+DONE PROCESSING => 20150309_fpi 2015-03-09 14:01:47
+ 
