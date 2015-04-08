@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: RealHomes Theme\n"
-"POT-Creation-Date: 2015-02-02 20:53+0500\n"
-"PO-Revision-Date: 2015-02-02 20:54+0500\n"
+"POT-Creation-Date: 2015-04-03 12:44+0500\n"
+"PO-Revision-Date: 2015-04-03 12:44+0500\n"
 "Last-Translator: Saqib <saqib@inspirythemes.com>\n"
 "Language-Team: Saqib <saqib@inspirythemes.com>\n"
 "Language: en_US\n"
@@ -47,12 +47,46 @@ msgstr ""
 msgid "All Posts By"
 msgstr ""
 
-#: banners/blog_page_banner.php:3 framework/admin/theme-settings.php:581
-#: framework/admin/theme-settings.php:587
+#: author.php:8
+msgid "All Properties By"
+msgstr ""
+
+#: author.php:82 single-agent.php:63
+msgid "Contact Details"
+msgstr ""
+
+#: author.php:86 property-details/property-agent-for-sidebar.php:80
+#: property-details/property-agent.php:76 single-agent.php:67
+#: template-agent-listing.php:86 template-users-listing.php:119
+msgid "Office"
+msgstr ""
+
+#: author.php:90 property-details/property-agent-for-sidebar.php:83
+#: property-details/property-agent.php:79 single-agent.php:70
+#: template-agent-listing.php:89 template-contact.php:69
+#: template-users-listing.php:122
+msgid "Mobile"
+msgstr ""
+
+#: author.php:94 property-details/property-agent-for-sidebar.php:86
+#: property-details/property-agent.php:82 single-agent.php:73
+#: template-agent-listing.php:92 template-contact.php:73
+#: template-users-listing.php:125
+msgid "Fax"
+msgstr ""
+
+#: author.php:178 framework/include/shortcodes/elements.php:265
+#: template-my-properties.php:159 template-parts/home-properties.php:77
+#: template-search-sidebar.php:87 template-search.php:78
+msgid "No Properties Found!"
+msgstr ""
+
+#: banners/blog_page_banner.php:3 framework/admin/theme-settings.php:610
+#: framework/admin/theme-settings.php:616
 msgid "News"
 msgstr ""
 
-#: banners/blog_page_banner.php:6 framework/admin/theme-settings.php:593
+#: banners/blog_page_banner.php:6 framework/admin/theme-settings.php:622
 msgid "Check out market updates"
 msgstr ""
 
@@ -127,36 +161,41 @@ msgid "Do you want to show social icons in header ?"
 msgstr ""
 
 #: framework/admin/theme-settings.php:137
-#: framework/admin/theme-settings.php:263
-#: framework/admin/theme-settings.php:373
-#: framework/admin/theme-settings.php:432
-#: framework/admin/theme-settings.php:450
-#: framework/admin/theme-settings.php:456
-#: framework/admin/theme-settings.php:502
-#: framework/admin/theme-settings.php:513
-#: framework/admin/theme-settings.php:524
-#: framework/admin/theme-settings.php:530
-#: framework/admin/theme-settings.php:546
-#: framework/admin/theme-settings.php:552
-#: framework/admin/theme-settings.php:564
+#: framework/admin/theme-settings.php:210
+#: framework/admin/theme-settings.php:269
+#: framework/admin/theme-settings.php:379
+#: framework/admin/theme-settings.php:438
+#: framework/admin/theme-settings.php:444
+#: framework/admin/theme-settings.php:462
+#: framework/admin/theme-settings.php:468
+#: framework/admin/theme-settings.php:509
+#: framework/admin/theme-settings.php:531
+#: framework/admin/theme-settings.php:542
+#: framework/admin/theme-settings.php:553
+#: framework/admin/theme-settings.php:559
 #: framework/admin/theme-settings.php:575
-#: framework/admin/theme-settings.php:710
-#: framework/admin/theme-settings.php:750
-#: framework/admin/theme-settings.php:779
-#: framework/admin/theme-settings.php:802
-#: framework/admin/theme-settings.php:863
-#: framework/admin/theme-settings.php:894
-#: framework/admin/theme-settings.php:948
-#: framework/admin/theme-settings.php:967
-#: framework/admin/theme-settings.php:978
-#: framework/admin/theme-settings.php:984
-#: framework/admin/theme-settings.php:1013
-#: framework/admin/theme-settings.php:1031
-#: framework/admin/theme-settings.php:1377
+#: framework/admin/theme-settings.php:581
+#: framework/admin/theme-settings.php:593
+#: framework/admin/theme-settings.php:604
+#: framework/admin/theme-settings.php:793
+#: framework/admin/theme-settings.php:843
+#: framework/admin/theme-settings.php:872
+#: framework/admin/theme-settings.php:895
+#: framework/admin/theme-settings.php:956
+#: framework/admin/theme-settings.php:987
+#: framework/admin/theme-settings.php:1051
+#: framework/admin/theme-settings.php:1070
+#: framework/admin/theme-settings.php:1081
+#: framework/admin/theme-settings.php:1087
+#: framework/admin/theme-settings.php:1116
+#: framework/admin/theme-settings.php:1134
+#: framework/admin/theme-settings.php:1480
+#: framework/include/shortcodes/vc-map.php:238
 msgid "Yes"
 msgstr ""
 
-#: framework/admin/theme-settings.php:142 property-details/property-map.php:72
+#: framework/admin/theme-settings.php:142
+#: property-details/property-map.php:101
 msgid "Twitter"
 msgstr ""
 
@@ -164,7 +203,8 @@ msgstr ""
 msgid "Provide Twitter URL to display its icon."
 msgstr ""
 
-#: framework/admin/theme-settings.php:148 property-details/property-map.php:71
+#: framework/admin/theme-settings.php:148
+#: property-details/property-map.php:100
 msgid "Facebook"
 msgstr ""
 
@@ -245,165 +285,170 @@ msgid "Provide phone number to display in header."
 msgstr ""
 
 #: framework/admin/theme-settings.php:209
+msgid "Do you want a sticky header ?"
+msgstr ""
+
+#: framework/admin/theme-settings.php:215
 msgid "Tracking Code"
 msgstr ""
 
-#: framework/admin/theme-settings.php:210
+#: framework/admin/theme-settings.php:216
 msgid "Paste Google Analytics (or other) tracking code here."
 msgstr ""
 
-#: framework/admin/theme-settings.php:217
+#: framework/admin/theme-settings.php:223
 msgid "Home Slider"
 msgstr ""
 
-#: framework/admin/theme-settings.php:221
+#: framework/admin/theme-settings.php:227
 msgid "What you want to display in area below header on homepage ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:226
+#: framework/admin/theme-settings.php:232
 msgid "Display Slider Based on Properties Custom Post Type"
 msgstr ""
 
-#: framework/admin/theme-settings.php:227
+#: framework/admin/theme-settings.php:233
 msgid "Display Slider Based on Slides Custom Post Type"
 msgstr ""
 
-#: framework/admin/theme-settings.php:228
-#: framework/admin/theme-settings.php:705
+#: framework/admin/theme-settings.php:234
+#: framework/admin/theme-settings.php:788
 msgid "Display Google Map with Properties Markers"
 msgstr ""
 
-#: framework/admin/theme-settings.php:229
-#: framework/admin/theme-settings.php:274
-#: framework/admin/theme-settings.php:706
+#: framework/admin/theme-settings.php:235
+#: framework/admin/theme-settings.php:280
+#: framework/admin/theme-settings.php:789
 msgid "Display Simple Image Based Banner"
 msgstr ""
 
-#: framework/admin/theme-settings.php:230
+#: framework/admin/theme-settings.php:236
 msgid "Display Slider Based on Slider Revolution Plugin."
 msgstr ""
 
-#: framework/admin/theme-settings.php:233
+#: framework/admin/theme-settings.php:239
 msgid "Number of slides to display in Slider Based on Properties"
 msgstr ""
 
-#: framework/admin/theme-settings.php:239
+#: framework/admin/theme-settings.php:245
 msgid "Number of slides to display in Slider Based on Slides Custom Post Type"
 msgstr ""
 
-#: framework/admin/theme-settings.php:245
+#: framework/admin/theme-settings.php:251
 msgid "Provide Revolution Slider Alias"
 msgstr ""
 
-#: framework/admin/theme-settings.php:246
+#: framework/admin/theme-settings.php:252
 msgid "If you want to use Revolution Slider then provide its alias here."
 msgstr ""
 
-#: framework/admin/theme-settings.php:253
+#: framework/admin/theme-settings.php:259
 msgid "Home Search"
 msgstr ""
 
-#: framework/admin/theme-settings.php:257
-#: framework/admin/theme-settings.php:308
+#: framework/admin/theme-settings.php:263
+#: framework/admin/theme-settings.php:314
+#: framework/admin/theme-settings.php:516
 msgid "Note"
 msgstr ""
 
-#: framework/admin/theme-settings.php:262
+#: framework/admin/theme-settings.php:268
 msgid "Do you want to display property search form on Homepage ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:268
+#: framework/admin/theme-settings.php:274
 msgid "What you want to display in area below header on search results page ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:273
+#: framework/admin/theme-settings.php:279
 msgid "Display Google Map with Resulted Properties Markers"
 msgstr ""
 
-#: framework/admin/theme-settings.php:277
+#: framework/admin/theme-settings.php:283
 msgid "Advance Search Form Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:278
+#: framework/admin/theme-settings.php:284
 msgid "Provide Advance Search Form title."
 msgstr ""
 
-#: framework/admin/theme-settings.php:280
+#: framework/admin/theme-settings.php:286
 msgid "Find your Home"
 msgstr ""
 
-#: framework/admin/theme-settings.php:283
+#: framework/admin/theme-settings.php:289
 msgid "Search Page URL"
 msgstr ""
 
-#: framework/admin/theme-settings.php:284
+#: framework/admin/theme-settings.php:290
 msgid ""
 "To Configure The Search Functionality. Create a Property Search Page Using "
 "Property Search Template and Provide its URL here.(Also, Make sure to "
 "Configure Permalinks)"
 msgstr ""
 
-#: framework/admin/theme-settings.php:289
+#: framework/admin/theme-settings.php:295
 msgid "Select the search fields that you want to display in search form."
 msgstr ""
 
-#: framework/admin/theme-settings.php:296
+#: framework/admin/theme-settings.php:302
 msgid "Keyword Search"
 msgstr ""
 
-#: framework/admin/theme-settings.php:297
+#: framework/admin/theme-settings.php:303
 #: framework/include/property-post-type.php:185
-#: framework/meta-box/config-meta-boxes.php:184 functions.php:1767
+#: framework/meta-box/config-meta-boxes.php:171 functions.php:1840
 #: property-details/property-contents.php:9
-#: template-parts/property-edit.php:102 template-parts/property-edit.php:103
-#: template-parts/property-submit.php:140
-#: template-parts/property-submit.php:141 template-parts/search-form.php:21
+#: template-parts/property-edit.php:112 template-parts/property-edit.php:113
+#: template-parts/property-submit.php:150
+#: template-parts/property-submit.php:151 template-parts/search-form.php:21
 msgid "Property ID"
 msgstr ""
 
-#: framework/admin/theme-settings.php:298
+#: framework/admin/theme-settings.php:304
 msgid "Property Location"
 msgstr ""
 
-#: framework/admin/theme-settings.php:299
+#: framework/admin/theme-settings.php:305
 #: framework/include/property-post-type.php:138
 #: framework/include/property-post-type.php:139
-#: framework/include/property-post-type.php:152 functions.php:1768
+#: framework/include/property-post-type.php:152 functions.php:1841
 #: template-parts/search-form.php:73
 msgid "Property Status"
 msgstr ""
 
-#: framework/admin/theme-settings.php:300
+#: framework/admin/theme-settings.php:306
 #: framework/include/property-post-type.php:77
 #: framework/include/property-post-type.php:78
 #: template-parts/search-form.php:86
 msgid "Property Type"
 msgstr ""
 
-#: framework/admin/theme-settings.php:301 template-parts/search-form.php:99
+#: framework/admin/theme-settings.php:307 template-parts/search-form.php:99
 msgid "Min Beds"
 msgstr ""
 
-#: framework/admin/theme-settings.php:302 template-parts/search-form.php:112
+#: framework/admin/theme-settings.php:308 template-parts/search-form.php:112
 msgid "Min Baths"
 msgstr ""
 
-#: framework/admin/theme-settings.php:303
+#: framework/admin/theme-settings.php:309
 msgid "Min and Max Price"
 msgstr ""
 
-#: framework/admin/theme-settings.php:304
+#: framework/admin/theme-settings.php:310
 msgid "Min and Max Area"
 msgstr ""
 
-#: framework/admin/theme-settings.php:305
+#: framework/admin/theme-settings.php:311
 #: framework/include/property-post-type.php:46
 #: framework/include/property-post-type.php:47
 #: framework/include/property-post-type.php:60
 msgid "Property Features"
 msgstr ""
 
-#: framework/admin/theme-settings.php:310
+#: framework/admin/theme-settings.php:316
 msgid ""
 "In case of 1 location box: all locations will be listed in 1st select box. "
 "In case 2 or more: each select box will list parent of a level that matches "
@@ -411,796 +456,897 @@ msgid ""
 "select box."
 msgstr ""
 
-#: framework/admin/theme-settings.php:313
+#: framework/admin/theme-settings.php:319
 msgid "Number of Location Select Boxes to Display in Search Form"
 msgstr ""
 
-#: framework/admin/theme-settings.php:322
+#: framework/admin/theme-settings.php:328
 msgid "Title for 1st Location Select Box"
 msgstr ""
 
-#: framework/admin/theme-settings.php:323
+#: framework/admin/theme-settings.php:329
 msgid "Example: Country"
 msgstr ""
 
-#: framework/admin/theme-settings.php:330
+#: framework/admin/theme-settings.php:336
 msgid "Title for 2nd Location Select Box"
 msgstr ""
 
-#: framework/admin/theme-settings.php:331
+#: framework/admin/theme-settings.php:337
 msgid "Example: State"
 msgstr ""
 
-#: framework/admin/theme-settings.php:338
+#: framework/admin/theme-settings.php:344
 msgid "Title for 3rd Location Select Box"
 msgstr ""
 
-#: framework/admin/theme-settings.php:339
+#: framework/admin/theme-settings.php:345
 msgid "Example: City"
 msgstr ""
 
-#: framework/admin/theme-settings.php:346
+#: framework/admin/theme-settings.php:352
 msgid "Title for 4th Location Select Box"
 msgstr ""
 
-#: framework/admin/theme-settings.php:347
+#: framework/admin/theme-settings.php:353
 msgid "Example: Area"
 msgstr ""
 
-#: framework/admin/theme-settings.php:353
+#: framework/admin/theme-settings.php:359
 msgid "Measurement unit to display with Min and Max Area fields."
 msgstr ""
 
-#: framework/admin/theme-settings.php:354
+#: framework/admin/theme-settings.php:360
 msgid "Example: Sq Ft"
 msgstr ""
 
-#: framework/admin/theme-settings.php:359
+#: framework/admin/theme-settings.php:365
 msgid "Number of Properties to display on Property Search Template"
 msgstr ""
 
-#: framework/admin/theme-settings.php:368
+#: framework/admin/theme-settings.php:374
 msgid "Home Others"
 msgstr ""
 
-#: framework/admin/theme-settings.php:372
+#: framework/admin/theme-settings.php:378
 msgid "Do you want to display Slogan and Properties section on Homepage ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:378
+#: framework/admin/theme-settings.php:384
 msgid "Slogan Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:379
+#: framework/admin/theme-settings.php:385
 msgid "Slogan title  will appear on Homepage below slider."
 msgstr ""
 
-#: framework/admin/theme-settings.php:384
+#: framework/admin/theme-settings.php:390
 msgid "Slogan Text"
 msgstr ""
 
-#: framework/admin/theme-settings.php:385
+#: framework/admin/theme-settings.php:391
 msgid "Slogan text  will appear on Homepage below slider."
 msgstr ""
 
-#: framework/admin/theme-settings.php:390
+#: framework/admin/theme-settings.php:396
 msgid "What Properties you want to display on Homepage ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:395
+#: framework/admin/theme-settings.php:401
 msgid "Recent Properties"
 msgstr ""
 
-#: framework/admin/theme-settings.php:396
+#: framework/admin/theme-settings.php:402
 msgid "Featured Properties"
 msgstr ""
 
-#: framework/admin/theme-settings.php:397
+#: framework/admin/theme-settings.php:403
 msgid "Properties based on selected Types, Statuses and Cities."
 msgstr ""
 
-#: framework/admin/theme-settings.php:400
+#: framework/admin/theme-settings.php:406
 msgid "Select Property Types"
 msgstr ""
 
-#: framework/admin/theme-settings.php:405
+#: framework/admin/theme-settings.php:411
 msgid "Select Property Statuses"
 msgstr ""
 
-#: framework/admin/theme-settings.php:410
+#: framework/admin/theme-settings.php:416
 msgid "Select Property Cities"
 msgstr ""
 
-#: framework/admin/theme-settings.php:415
+#: framework/admin/theme-settings.php:421
 msgid "Sort Properties By ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:420
+#: framework/admin/theme-settings.php:426
 msgid "Time - Recent First"
 msgstr ""
 
-#: framework/admin/theme-settings.php:421
+#: framework/admin/theme-settings.php:427
+#: framework/admin/theme-settings.php:819
 msgid "Price - Low to High"
 msgstr ""
 
-#: framework/admin/theme-settings.php:422
+#: framework/admin/theme-settings.php:428
+#: framework/admin/theme-settings.php:820
 msgid "Price - High to Low"
 msgstr ""
 
-#: framework/admin/theme-settings.php:425
+#: framework/admin/theme-settings.php:431
 msgid "Number of Properties to display on Homepage"
 msgstr ""
 
-#: framework/admin/theme-settings.php:431
-msgid "Do you want to display Featured Properties on Homepage ?"
-msgstr ""
-
 #: framework/admin/theme-settings.php:437
-msgid "Featured Properties Title"
-msgstr ""
-
-#: framework/admin/theme-settings.php:438
-msgid "Provide Featured Properties Custom Title."
+msgid "Do you want to enable Ajax pagination on Homepage ?"
 msgstr ""
 
 #: framework/admin/theme-settings.php:443
-msgid "Featured Properties Text"
-msgstr ""
-
-#: framework/admin/theme-settings.php:444
-msgid "Provide Featured Properties Custom Text."
+msgid "Do you want to display Featured Properties on Homepage ?"
 msgstr ""
 
 #: framework/admin/theme-settings.php:449
+msgid "Featured Properties Title"
+msgstr ""
+
+#: framework/admin/theme-settings.php:450
+msgid "Provide Featured Properties Custom Title."
+msgstr ""
+
+#: framework/admin/theme-settings.php:455
+msgid "Featured Properties Text"
+msgstr ""
+
+#: framework/admin/theme-settings.php:456
+msgid "Provide Featured Properties Custom Text."
+msgstr ""
+
+#: framework/admin/theme-settings.php:461
 msgid ""
 "Do you want to exclude Featured Properties from Recent Properties on "
 "Homepage ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:455
+#: framework/admin/theme-settings.php:467
 msgid "Do you want to display News Posts on Homepage ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:461
+#: framework/admin/theme-settings.php:473
 msgid "News Posts Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:462
+#: framework/admin/theme-settings.php:474
 msgid "Provide News Posts Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:467
+#: framework/admin/theme-settings.php:479
 msgid "News Posts Description Text"
 msgstr ""
 
-#: framework/admin/theme-settings.php:468
+#: framework/admin/theme-settings.php:480
 msgid "Provide News Posts Description Text."
 msgstr ""
 
-#: framework/admin/theme-settings.php:475
+#: framework/admin/theme-settings.php:487
 #: framework/include/property-post-type.php:8
+#: framework/meta-box/config-meta-boxes.php:70
 msgid "Property"
 msgstr ""
 
-#: framework/admin/theme-settings.php:479
+#: framework/admin/theme-settings.php:491
 msgid "Select property detail page variation ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:481
+#: framework/admin/theme-settings.php:493
 msgid ""
 "When agent information will be displayed in sidebar then widget ready sidbar "
 "will not be available."
 msgstr ""
 
-#: framework/admin/theme-settings.php:485
+#: framework/admin/theme-settings.php:497
 msgid "Display agent information below Google Map"
 msgstr ""
 
-#: framework/admin/theme-settings.php:486
+#: framework/admin/theme-settings.php:498
 msgid "Display agent information in sidebar"
 msgstr ""
 
-#: framework/admin/theme-settings.php:489
+#: framework/admin/theme-settings.php:501
 #, php-format
 msgid "Do you want to display %s on property detail page ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:491
+#: framework/admin/theme-settings.php:503
 msgid "Additional Details Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:493
+#: framework/admin/theme-settings.php:505
 #: framework/include/additional-details-metabox.php:70
-#: template-parts/property-edit.php:199 template-parts/property-submit.php:186
+#: template-parts/property-edit.php:209 template-parts/property-submit.php:196
 msgid "Additional Details"
 msgstr ""
 
-#: framework/admin/theme-settings.php:496
-msgid "Features Title"
+#: framework/admin/theme-settings.php:508
+msgid "a common note"
 msgstr ""
 
-#: framework/admin/theme-settings.php:498 template-parts/property-edit.php:277
-#: template-parts/property-submit.php:232
-msgid "Features"
+#: framework/admin/theme-settings.php:514
+msgid "Common Note Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:501
-msgid "video"
-msgstr ""
-
-#: framework/admin/theme-settings.php:507
-msgid "Property Video Title"
-msgstr ""
-
-#: framework/admin/theme-settings.php:509
-msgid "Property Video"
-msgstr ""
-
-#: framework/admin/theme-settings.php:512
-msgid "google map"
-msgstr ""
-
-#: framework/admin/theme-settings.php:518
-msgid "Google Map Title"
+#: framework/admin/theme-settings.php:519
+msgid "Common Note"
 msgstr ""
 
 #: framework/admin/theme-settings.php:520
+msgid ""
+"Provide common note text. It will be displayed on all properties detail "
+"pages."
+msgstr ""
+
+#: framework/admin/theme-settings.php:525
+msgid "Features Title"
+msgstr ""
+
+#: framework/admin/theme-settings.php:527
+#: framework/include/shortcodes/vc-map.php:244
+#: template-parts/property-edit.php:287 template-parts/property-submit.php:242
+msgid "Features"
+msgstr ""
+
+#: framework/admin/theme-settings.php:530
+msgid "video"
+msgstr ""
+
+#: framework/admin/theme-settings.php:536
+msgid "Property Video Title"
+msgstr ""
+
+#: framework/admin/theme-settings.php:538
+#: framework/meta-box/config-meta-boxes.php:82
+msgid "Property Video"
+msgstr ""
+
+#: framework/admin/theme-settings.php:541
+msgid "google map"
+msgstr ""
+
+#: framework/admin/theme-settings.php:547
+msgid "Google Map Title"
+msgstr ""
+
+#: framework/admin/theme-settings.php:549
 msgid "Property Map"
 msgstr ""
 
-#: framework/admin/theme-settings.php:523
+#: framework/admin/theme-settings.php:552
 msgid "social share icons"
 msgstr ""
 
-#: framework/admin/theme-settings.php:529
+#: framework/admin/theme-settings.php:558
 msgid "property attachments"
 msgstr ""
 
-#: framework/admin/theme-settings.php:535
+#: framework/admin/theme-settings.php:564
 msgid "Property Attachments Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:537
+#: framework/admin/theme-settings.php:566
 msgid "Property Attachments"
 msgstr ""
 
-#: framework/admin/theme-settings.php:540
+#: framework/admin/theme-settings.php:569
 msgid "Child Properties Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:542
+#: framework/admin/theme-settings.php:571
 msgid "Sub Properties"
 msgstr ""
 
-#: framework/admin/theme-settings.php:545
+#: framework/admin/theme-settings.php:574
 msgid "agent information"
 msgstr ""
 
-#: framework/admin/theme-settings.php:551
+#: framework/admin/theme-settings.php:580
 msgid "Do you want to receive the copy of message sent to agent ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:557
+#: framework/admin/theme-settings.php:586
 msgid "Email address to receive message copy"
 msgstr ""
 
-#: framework/admin/theme-settings.php:558
+#: framework/admin/theme-settings.php:587
 msgid ""
 "This email address will receive a copy of message sent to agent from "
 "property detail page."
 msgstr ""
 
-#: framework/admin/theme-settings.php:563
+#: framework/admin/theme-settings.php:592
 msgid "similar properties"
 msgstr ""
 
-#: framework/admin/theme-settings.php:569
+#: framework/admin/theme-settings.php:598
 msgid "Similar Properties Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:571
+#: framework/admin/theme-settings.php:600
 msgid "Similar Properties"
 msgstr ""
 
-#: framework/admin/theme-settings.php:574
-msgid "Open Ghraph Meta Tags"
+#: framework/admin/theme-settings.php:603
+msgid "Open Graph Meta Tags"
 msgstr ""
 
-#: framework/admin/theme-settings.php:584
-#: framework/admin/theme-settings.php:601
-#: framework/meta-box/config-meta-boxes.php:403
+#: framework/admin/theme-settings.php:613
+#: framework/admin/theme-settings.php:630
+#: framework/meta-box/config-meta-boxes.php:432
 msgid "Banner Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:585
+#: framework/admin/theme-settings.php:614
 msgid "Provide the Banner Title for News Page."
 msgstr ""
 
-#: framework/admin/theme-settings.php:590
-#: framework/admin/theme-settings.php:607
-#: framework/meta-box/config-meta-boxes.php:409
+#: framework/admin/theme-settings.php:619
+#: framework/admin/theme-settings.php:636
+#: framework/meta-box/config-meta-boxes.php:438
 msgid "Banner Sub Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:591
+#: framework/admin/theme-settings.php:620
 msgid "Provide the Banner Sub Title for News Page."
 msgstr ""
 
-#: framework/admin/theme-settings.php:598
+#: framework/admin/theme-settings.php:627
 msgid "Gallery"
 msgstr ""
 
-#: framework/admin/theme-settings.php:602
+#: framework/admin/theme-settings.php:631
 msgid "Provide the Banner Title for Gallery Pages."
 msgstr ""
 
-#: framework/admin/theme-settings.php:604
+#: framework/admin/theme-settings.php:633
 msgid "Properties Gallery"
 msgstr ""
 
-#: framework/admin/theme-settings.php:608
+#: framework/admin/theme-settings.php:637
 msgid "Provide the Banner Sub Title for Gallery Pages."
 msgstr ""
 
-#: framework/admin/theme-settings.php:610
+#: framework/admin/theme-settings.php:639
 msgid "Look for your desired property more efficiently"
 msgstr ""
 
-#: framework/admin/theme-settings.php:615
+#: framework/admin/theme-settings.php:644
 msgid "Price Format"
 msgstr ""
 
-#: framework/admin/theme-settings.php:620
+#: framework/admin/theme-settings.php:649
 msgid "Currency Sign"
 msgstr ""
 
-#: framework/admin/theme-settings.php:621
+#: framework/admin/theme-settings.php:650
 msgid "Provide currency sign. For Example: $"
 msgstr ""
 
-#: framework/admin/theme-settings.php:626
+#: framework/admin/theme-settings.php:655
 msgid "Position of Currency Sign in Price"
 msgstr ""
 
-#: framework/admin/theme-settings.php:631
+#: framework/admin/theme-settings.php:660
 msgid "Display currency sign before the numbers"
 msgstr ""
 
-#: framework/admin/theme-settings.php:632
+#: framework/admin/theme-settings.php:661
 msgid "Display currency sign after the numbers"
 msgstr ""
 
-#: framework/admin/theme-settings.php:635
+#: framework/admin/theme-settings.php:664
 msgid "Number of Decimals Points"
 msgstr ""
 
-#: framework/admin/theme-settings.php:636
+#: framework/admin/theme-settings.php:665
 msgid "Provide the number of decimals points"
 msgstr ""
 
-#: framework/admin/theme-settings.php:641
+#: framework/admin/theme-settings.php:670
 msgid "Decimal Point Separator"
 msgstr ""
 
-#: framework/admin/theme-settings.php:642
+#: framework/admin/theme-settings.php:671
 msgid "Provide the decimal point separator. For Example: ."
 msgstr ""
 
-#: framework/admin/theme-settings.php:647
+#: framework/admin/theme-settings.php:676
 msgid "Thousands Separator"
 msgstr ""
 
-#: framework/admin/theme-settings.php:648
+#: framework/admin/theme-settings.php:677
 msgid "Provide the thousands separator. For Example: ,"
 msgstr ""
 
-#: framework/admin/theme-settings.php:653
+#: framework/admin/theme-settings.php:682
 msgid "Text to display when no price is provided."
 msgstr ""
 
-#: framework/admin/theme-settings.php:658
+#: framework/admin/theme-settings.php:687
 msgid "Minimum Prices List for Advance Search Form."
 msgstr ""
 
-#: framework/admin/theme-settings.php:659
-#: framework/admin/theme-settings.php:665
-#: framework/admin/theme-settings.php:683
-#: framework/admin/theme-settings.php:689
+#: framework/admin/theme-settings.php:688
+#: framework/admin/theme-settings.php:694
+#: framework/admin/theme-settings.php:712
+#: framework/admin/theme-settings.php:718
 msgid ""
 "Only provide comma separated numbers. Do not add decimal points, dashes, "
 "spaces and currency signs."
 msgstr ""
 
-#: framework/admin/theme-settings.php:664
+#: framework/admin/theme-settings.php:693
 msgid "Maximum Prices List for Advance Search Form."
 msgstr ""
 
-#: framework/admin/theme-settings.php:670
+#: framework/admin/theme-settings.php:699
 msgid "Rent Prices"
 msgstr ""
 
-#: framework/admin/theme-settings.php:675
+#: framework/admin/theme-settings.php:704
 msgid "Select the Appropriate Rent Status"
 msgstr ""
 
-#: framework/admin/theme-settings.php:677
+#: framework/admin/theme-settings.php:706
 msgid "The rent prices will be displayed based on selected status."
 msgstr ""
 
-#: framework/admin/theme-settings.php:682
+#: framework/admin/theme-settings.php:711
 msgid "Minimum Prices List for Rent Only."
 msgstr ""
 
-#: framework/admin/theme-settings.php:688
+#: framework/admin/theme-settings.php:717
 msgid "Maximum Prices List for Rent Only."
 msgstr ""
 
-#: framework/admin/theme-settings.php:696
+#: framework/admin/theme-settings.php:736
+msgid "Currency Switcher"
+msgstr ""
+
+#: framework/admin/theme-settings.php:740
+msgid "About Currencies"
+msgstr ""
+
+#: framework/admin/theme-settings.php:746
+msgid "Base Currency"
+msgstr ""
+
+#: framework/admin/theme-settings.php:747
+msgid "Selected currency will be used as base currency for all conversions."
+msgstr ""
+
+#: framework/admin/theme-settings.php:755
+msgid "Currencies you want to support."
+msgstr ""
+
+#: framework/admin/theme-settings.php:756
+msgid ""
+"Only provide comma separated list of currency codes in capital letters. Do "
+"not add dashes, spaces or currency signs."
+msgstr ""
+
+#: framework/admin/theme-settings.php:762
+msgid "Expiry time for switched currency"
+msgstr ""
+
+#: framework/admin/theme-settings.php:763
+msgid "Select the expiry period for switched currency."
+msgstr ""
+
+#: framework/admin/theme-settings.php:768
+msgid "One Hour"
+msgstr ""
+
+#: framework/admin/theme-settings.php:769
+msgid "One Day"
+msgstr ""
+
+#: framework/admin/theme-settings.php:770
+msgid "One Week"
+msgstr ""
+
+#: framework/admin/theme-settings.php:771
+msgid "One Month"
+msgstr ""
+
+#: framework/admin/theme-settings.php:779
 msgid "General"
 msgstr ""
 
-#: framework/admin/theme-settings.php:700
+#: framework/admin/theme-settings.php:783
 msgid ""
 "What you want to display in area below header on Listing & Taxonomy pages ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:709
-msgid "Do you want to disable the pages Title and Subtitle from banner ?"
+#: framework/admin/theme-settings.php:792
+msgid "Do you want to disable title and subtitle from image based banner ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:715
-msgid "Number of Properties to display on Property Listing Template"
+#: framework/admin/theme-settings.php:798
+msgid "Select the default listing layout for listing & taxonomy pages."
 msgstr ""
 
-#: framework/admin/theme-settings.php:722
-msgid "Number of Posts to display on Agent Listing Template"
-msgstr ""
-
-#: framework/admin/theme-settings.php:729
-msgid "Lightbox Plugin"
-msgstr ""
-
-#: framework/admin/theme-settings.php:730
-msgid "Select the lightbox plugin that you want to use"
-msgstr ""
-
-#: framework/admin/theme-settings.php:735
-msgid "Swipebox Plugin"
-msgstr ""
-
-#: framework/admin/theme-settings.php:736
-msgid "Pretty Photo Plugin"
-msgstr ""
-
-#: framework/admin/theme-settings.php:739
-msgid "Default Listing Layout"
-msgstr ""
-
-#: framework/admin/theme-settings.php:740
-msgid "Select the default listing layout."
-msgstr ""
-
-#: framework/admin/theme-settings.php:745
+#: framework/admin/theme-settings.php:803
 msgid "List Layout"
 msgstr ""
 
-#: framework/admin/theme-settings.php:746
+#: framework/admin/theme-settings.php:804
 msgid "Grid Layout"
 msgstr ""
 
-#: framework/admin/theme-settings.php:749
+#: framework/admin/theme-settings.php:807
+msgid "Select the number of properties to display on listing & taxonomy pages."
+msgstr ""
+
+#: framework/admin/theme-settings.php:814
+msgid "Select the default sorting for search, listing & taxonomy Pages ?"
+msgstr ""
+
+#: framework/admin/theme-settings.php:821
+msgid "Date - Old to New"
+msgstr ""
+
+#: framework/admin/theme-settings.php:822
+msgid "Date - New to Old"
+msgstr ""
+
+#: framework/admin/theme-settings.php:825
+msgid "Number of Posts to display on Agent Listing Template"
+msgstr ""
+
+#: framework/admin/theme-settings.php:832
+msgid "Lightbox Plugin"
+msgstr ""
+
+#: framework/admin/theme-settings.php:833
+msgid "Select the lightbox plugin that you want to use"
+msgstr ""
+
+#: framework/admin/theme-settings.php:838
+msgid "Swipebox Plugin"
+msgstr ""
+
+#: framework/admin/theme-settings.php:839
+msgid "Pretty Photo Plugin"
+msgstr ""
+
+#: framework/admin/theme-settings.php:842
 msgid "Do you want to display reCAPTCHA in contact forms ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:755
+#: framework/admin/theme-settings.php:848
 msgid "reCAPTCHA Public Key"
 msgstr ""
 
-#: framework/admin/theme-settings.php:756
+#: framework/admin/theme-settings.php:849
 msgid ""
 "Get reCAPTCHA public and private keys for your website by <a href=\"https://"
 "www.google.com/recaptcha/admin#whyrecaptcha\" target=\"_blank\">signing up "
 "here</a> "
 msgstr ""
 
-#: framework/admin/theme-settings.php:761
+#: framework/admin/theme-settings.php:854
 msgid "reCAPTCHA Private Key"
 msgstr ""
 
-#: framework/admin/theme-settings.php:766
+#: framework/admin/theme-settings.php:859
 msgid "Do you want to display WPML language switcher in top header ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:767
+#: framework/admin/theme-settings.php:860
 msgid "Yes - ( WPML Plugin Required )"
 msgstr ""
 
-#: framework/admin/theme-settings.php:774
-#: property-details/property-agent.php:106
+#: framework/admin/theme-settings.php:867
+#: property-details/property-agent.php:114
 msgid "Contact"
 msgstr ""
 
-#: framework/admin/theme-settings.php:778
+#: framework/admin/theme-settings.php:871
 msgid "Do you want to show Google Map on contact page ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:784
+#: framework/admin/theme-settings.php:877
 msgid "Google Map Latitude"
 msgstr ""
 
-#: framework/admin/theme-settings.php:790
+#: framework/admin/theme-settings.php:883
 msgid "Google Map Longitude"
 msgstr ""
 
-#: framework/admin/theme-settings.php:795
+#: framework/admin/theme-settings.php:888
 msgid "Google Map Zoom"
 msgstr ""
 
-#: framework/admin/theme-settings.php:796
+#: framework/admin/theme-settings.php:889
 msgid "Provide Google Map Zoom Level. Example: 17"
 msgstr ""
 
-#: framework/admin/theme-settings.php:801
+#: framework/admin/theme-settings.php:894
 msgid "Do you want to show Contact Details Section on contact page ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:807
+#: framework/admin/theme-settings.php:900
 msgid "Contact Details Section Title"
 msgstr ""
 
-#: framework/admin/theme-settings.php:808
+#: framework/admin/theme-settings.php:901
 msgid "Provide Title for contact details section."
 msgstr ""
 
-#: framework/admin/theme-settings.php:813
+#: framework/admin/theme-settings.php:906
 msgid "Contact Address"
 msgstr ""
 
-#: framework/admin/theme-settings.php:814
+#: framework/admin/theme-settings.php:907
 msgid "Provide address that will be displayed in contact details section."
 msgstr ""
 
-#: framework/admin/theme-settings.php:819
+#: framework/admin/theme-settings.php:912
 msgid "Cell Number"
 msgstr ""
 
-#: framework/admin/theme-settings.php:820
+#: framework/admin/theme-settings.php:913
 msgid "Provide Cell Number that will be displayed in contact details section."
 msgstr ""
 
-#: framework/admin/theme-settings.php:825 template-contact.php:109
+#: framework/admin/theme-settings.php:918 template-contact.php:114
 msgid "Phone Number"
 msgstr ""
 
-#: framework/admin/theme-settings.php:826
+#: framework/admin/theme-settings.php:919
 msgid "Provide Phone Number that will be displayed in contact details section."
 msgstr ""
 
-#: framework/admin/theme-settings.php:831
-#: framework/meta-box/config-meta-boxes.php:350 functions.php:1895
+#: framework/admin/theme-settings.php:924
+#: framework/meta-box/config-meta-boxes.php:390 functions.php:1968
 #: template-edit-profile.php:140
 msgid "Fax Number"
 msgstr ""
 
-#: framework/admin/theme-settings.php:832
+#: framework/admin/theme-settings.php:925
 msgid "Provide Fax Number that will be displayed in contact details section."
 msgstr ""
 
-#: framework/admin/theme-settings.php:837
-#: framework/meta-box/config-meta-boxes.php:332
+#: framework/admin/theme-settings.php:930
+#: framework/meta-box/config-meta-boxes.php:372
 msgid "Email Address"
 msgstr ""
 
-#: framework/admin/theme-settings.php:838
+#: framework/admin/theme-settings.php:931
 msgid ""
 "Provide Email Address that will be displayed in contact details section."
 msgstr ""
 
-#: framework/admin/theme-settings.php:843
+#: framework/admin/theme-settings.php:936
 msgid "Contact Form Heading"
 msgstr ""
 
-#: framework/admin/theme-settings.php:844
+#: framework/admin/theme-settings.php:937
 msgid "Provide heading for contact form."
 msgstr ""
 
-#: framework/admin/theme-settings.php:846
+#: framework/admin/theme-settings.php:939
 msgid "Send us a message"
 msgstr ""
 
-#: framework/admin/theme-settings.php:849
+#: framework/admin/theme-settings.php:942
 msgid "Contact Email"
 msgstr ""
 
-#: framework/admin/theme-settings.php:850
+#: framework/admin/theme-settings.php:943
 msgid ""
 "Provide target email address that will receive messages from contact form."
 msgstr ""
 
-#: framework/admin/theme-settings.php:858
+#: framework/admin/theme-settings.php:951
 msgid "Footer"
 msgstr ""
 
-#: framework/admin/theme-settings.php:862
+#: framework/admin/theme-settings.php:955
 msgid "Do you want to show Partners Carousel above footer ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:868
+#: framework/admin/theme-settings.php:961
 msgid "Partners Carousel Title ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:869
+#: framework/admin/theme-settings.php:962
 msgid "Provide partners carousel title text."
 msgstr ""
 
-#: framework/admin/theme-settings.php:874
+#: framework/admin/theme-settings.php:967
 msgid "Footer Copyright Text"
 msgstr ""
 
-#: framework/admin/theme-settings.php:875
+#: framework/admin/theme-settings.php:968
 msgid "Enter Footer Copyright Text here."
 msgstr ""
 
-#: framework/admin/theme-settings.php:880
+#: framework/admin/theme-settings.php:973
 msgid "Footer Designed by Text"
 msgstr ""
 
-#: framework/admin/theme-settings.php:881
+#: framework/admin/theme-settings.php:974
 msgid "Enter Footer Designed by Text here."
 msgstr ""
 
-#: framework/admin/theme-settings.php:889
+#: framework/admin/theme-settings.php:982
 msgid "Members"
 msgstr ""
 
-#: framework/admin/theme-settings.php:893
+#: framework/admin/theme-settings.php:986
 msgid "Do you want to enable header navigation for user Login and Register ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:899
+#: framework/admin/theme-settings.php:992
 msgid "Login & Register Page URL (Optional)"
 msgstr ""
 
-#: framework/admin/theme-settings.php:900
+#: framework/admin/theme-settings.php:993
 msgid ""
 "Create a Page Using Login & Register Template and Provide its URL here. "
 "Otherwise the login modal box will appear."
 msgstr ""
 
-#: framework/admin/theme-settings.php:905
+#: framework/admin/theme-settings.php:998
 msgid "Profile Page URL"
 msgstr ""
 
-#: framework/admin/theme-settings.php:906
+#: framework/admin/theme-settings.php:999
 msgid "Create a Page Using Edit Profile Template and Provide its URL here."
 msgstr ""
 
-#: framework/admin/theme-settings.php:911
+#: framework/admin/theme-settings.php:1004
 msgid "Submit Property Page URL"
 msgstr ""
 
-#: framework/admin/theme-settings.php:912
+#: framework/admin/theme-settings.php:1005
 msgid "Create a Page Using Submit Property Template and Provide its URL here."
 msgstr ""
 
-#: framework/admin/theme-settings.php:917
+#: framework/admin/theme-settings.php:1010
+msgid "Submitted Property Status"
+msgstr ""
+
+#: framework/admin/theme-settings.php:1011
+msgid "Select the default status for submitted property."
+msgstr ""
+
+#: framework/admin/theme-settings.php:1016
+msgid "Pending ( Recommended )"
+msgstr ""
+
+#: framework/admin/theme-settings.php:1017
+msgid "Publish"
+msgstr ""
+
+#: framework/admin/theme-settings.php:1020
 msgid "Default Address in Submit Form"
 msgstr ""
 
-#: framework/admin/theme-settings.php:923
+#: framework/admin/theme-settings.php:1026
 msgid "Default Map Location (Latitude,Longitude) in Submit Form"
 msgstr ""
 
-#: framework/admin/theme-settings.php:929
+#: framework/admin/theme-settings.php:1032
 msgid "Message After Successful Submit ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:932
+#: framework/admin/theme-settings.php:1035
 msgid "Thanks for Submitting Property!"
 msgstr ""
 
-#: framework/admin/theme-settings.php:935
+#: framework/admin/theme-settings.php:1038
 msgid "Submit Notice Email"
 msgstr ""
 
-#: framework/admin/theme-settings.php:936
+#: framework/admin/theme-settings.php:1039
 msgid ""
 "This email address will receive a message when any user submits a property."
 msgstr ""
 
-#: framework/admin/theme-settings.php:941
+#: framework/admin/theme-settings.php:1044
 msgid "My Properties Page URL"
 msgstr ""
 
-#: framework/admin/theme-settings.php:942
+#: framework/admin/theme-settings.php:1045
 msgid "Create a Page Using My Properties Template and Provide its URL here."
 msgstr ""
 
-#: framework/admin/theme-settings.php:947
+#: framework/admin/theme-settings.php:1050
 msgid "Do you want to enable Add to Favorites button on property detail page ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:953
+#: framework/admin/theme-settings.php:1056
 msgid "Favorite Properties Page URL"
 msgstr ""
 
-#: framework/admin/theme-settings.php:954
+#: framework/admin/theme-settings.php:1057
 msgid ""
 "Create a Page Using Favorite Properties Template and Provide its URL here."
 msgstr ""
 
-#: framework/admin/theme-settings.php:962
+#: framework/admin/theme-settings.php:1065
 msgid "Payments"
 msgstr ""
 
-#: framework/admin/theme-settings.php:966
+#: framework/admin/theme-settings.php:1069
 msgid "Do you want to enable PayPal payments for submitted property ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:972
+#: framework/admin/theme-settings.php:1075
 msgid "PayPal merchant account ID or Email ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:977
+#: framework/admin/theme-settings.php:1080
 msgid "Do you want to enable PayPal Sandbox for Testing ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:983
+#: framework/admin/theme-settings.php:1086
 msgid "Do you want to disable SSL secure connection for post back ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:989
+#: framework/admin/theme-settings.php:1092
 msgid "Email address to receive verified IPN Reports ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:990
+#: framework/admin/theme-settings.php:1093
 msgid ""
 "IPN(Instant Payment Notification) report will contain details about payment "
 "transaction."
 msgstr ""
 
-#: framework/admin/theme-settings.php:995
+#: framework/admin/theme-settings.php:1098
 msgid "Email address to receive invalid IPN Reports ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1000
+#: framework/admin/theme-settings.php:1103
 msgid "Payment amount per property ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1001
+#: framework/admin/theme-settings.php:1104
 msgid ""
 "Provide the amount that you want to charge for one property. Example: 20.00"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1006
+#: framework/admin/theme-settings.php:1109
 msgid "Currency Code ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1007
+#: framework/admin/theme-settings.php:1110
 msgid "Provide the currency code that you want to use. Example: USD"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1012
+#: framework/admin/theme-settings.php:1115
 msgid "Automatically publish the submitted property on payment ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1021
+#: framework/admin/theme-settings.php:1124
 msgid "Styling"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1025
+#: framework/admin/theme-settings.php:1128
 msgid "Body Background"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1030
+#: framework/admin/theme-settings.php:1133
 msgid "Do you want to disable responsive styles ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1036
+#: framework/admin/theme-settings.php:1139
 msgid "Quick CSS"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1037
+#: framework/admin/theme-settings.php:1140
 msgid ""
 "Just want to do some quick CSS changes? Enter them here, they will be "
 "applied to the theme. If you need to change major portions of the theme "
@@ -1208,540 +1354,547 @@ msgid ""
 "theme, then please use child-custom.css file in child theme."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1045
+#: framework/admin/theme-settings.php:1148
 msgid "Header - Styles"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1049
+#: framework/admin/theme-settings.php:1152
 msgid "Header Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1050
+#: framework/admin/theme-settings.php:1153
 msgid "Choose a background color for Header. Base theme color is #252A2B."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1055
+#: framework/admin/theme-settings.php:1158
 msgid "Logo Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1056
+#: framework/admin/theme-settings.php:1159
 msgid "Choose a color for logo text. Base theme color is #ffffff."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1061
+#: framework/admin/theme-settings.php:1164
 msgid "Logo Text Hover Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1062
+#: framework/admin/theme-settings.php:1165
 msgid "Choose a color for logo text hover. Base theme color is #4dc7ec."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1067
+#: framework/admin/theme-settings.php:1170
 msgid "Tagline Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1068
+#: framework/admin/theme-settings.php:1171
 msgid "Choose a color for tagline text. Base theme color is #8b9293."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1073
+#: framework/admin/theme-settings.php:1176
 msgid "Tagline Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1074
+#: framework/admin/theme-settings.php:1177
 msgid "Choose a background color for tagline. Base theme color is #343a3b."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1079
+#: framework/admin/theme-settings.php:1182
 msgid "Header Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1080
+#: framework/admin/theme-settings.php:1183
 msgid "Choose a a color for header text. Base theme color is #929A9B."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1085
+#: framework/admin/theme-settings.php:1188
 msgid "Header Links Hover Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1086
+#: framework/admin/theme-settings.php:1189
 msgid "Choose a color for header links. Base theme color is #b0b8b9."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1091
+#: framework/admin/theme-settings.php:1194
 msgid "Header Borders Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1092
+#: framework/admin/theme-settings.php:1195
 msgid "Choose a color for header borders. Base theme color is #343A3B."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1097
+#: framework/admin/theme-settings.php:1200
 msgid "Main Menu Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1098
+#: framework/admin/theme-settings.php:1201
 msgid "Choose a color for main menu text. Base theme color is #afb4b5."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1103
+#: framework/admin/theme-settings.php:1206
 msgid "Drop Down Menu Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1104
+#: framework/admin/theme-settings.php:1207
 msgid ""
 "Choose a background color for drop down menu. Base theme color is #ec894d."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1109
+#: framework/admin/theme-settings.php:1212
 msgid "Drop Down Menu Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1110
+#: framework/admin/theme-settings.php:1213
 msgid "Choose a color for drop down menu text. Base theme color is #ffffff."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1115
+#: framework/admin/theme-settings.php:1218
 msgid "Drop Down Menu Background Color on Mouse Over"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1116
+#: framework/admin/theme-settings.php:1219
 msgid ""
 "Choose a background color for drop down menu on mouse over. Base theme color "
 "is #dc7d44."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1121
+#: framework/admin/theme-settings.php:1224
 msgid "Header Phone Number Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1122
+#: framework/admin/theme-settings.php:1225
 msgid ""
 "Choose a background color for header phone number. Base theme color is "
 "#4dc7ec."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1127
+#: framework/admin/theme-settings.php:1230
 msgid "Header Phone Number Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1128
+#: framework/admin/theme-settings.php:1231
 msgid ""
 "Choose a color for header phone number text. Base theme color is #e7eff7."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1133
+#: framework/admin/theme-settings.php:1236
 msgid "Header Phone Icon Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1134
+#: framework/admin/theme-settings.php:1237
 msgid ""
 "Choose a background color for header phone icon. Base theme color is #37b3d9."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1139
+#: framework/admin/theme-settings.php:1242
 msgid "Header Banner Image"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1140
+#: framework/admin/theme-settings.php:1243
 msgid ""
 "Upload a banner image that has minimum height of 230px height and minimum "
 "width of 2000px."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1145
+#: framework/admin/theme-settings.php:1248
 msgid "Banner Title Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1146
+#: framework/admin/theme-settings.php:1249
 msgid "Choose a color for banner title. Base theme color is #394041."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1151
+#: framework/admin/theme-settings.php:1254
 msgid "Banner Title Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1152
+#: framework/admin/theme-settings.php:1255
 msgid ""
 "Choose a background color for banner title. Base theme color is #f5f4f3."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1157
+#: framework/admin/theme-settings.php:1260
 msgid "Banner Sub Title Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1158
+#: framework/admin/theme-settings.php:1261
 msgid "Choose a color for banner sub title. Base theme color is #ffffff."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1163
+#: framework/admin/theme-settings.php:1266
 msgid "Banner Sub Title Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1164
+#: framework/admin/theme-settings.php:1267
 msgid ""
 "Choose a background color for banner sub title. Base theme color is #37B3D9."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1172
+#: framework/admin/theme-settings.php:1275
 msgid "Home - Styles"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1176
+#: framework/admin/theme-settings.php:1279
 msgid "Slider Styles"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1181
+#: framework/admin/theme-settings.php:1284
 msgid "Slide Title Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1182
+#: framework/admin/theme-settings.php:1285
 msgid "Choose a color for slide title. Base theme color is #394041."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1187
+#: framework/admin/theme-settings.php:1290
 msgid "Slide Title Hover Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1188
+#: framework/admin/theme-settings.php:1291
 msgid "Choose a color for slide title hover. Base theme color is #df5400."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1193
+#: framework/admin/theme-settings.php:1296
 msgid "Slide Description Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1194
+#: framework/admin/theme-settings.php:1297
 msgid ""
 "Choose a color for description text in slide. Base theme color is #8b9293."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1199
+#: framework/admin/theme-settings.php:1302
 msgid "Slide Price Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1200
+#: framework/admin/theme-settings.php:1303
 msgid "Choose a color for price text in slide. Base theme color is #df5400."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1205
+#: framework/admin/theme-settings.php:1308
 msgid "Slide Know More Button Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1206
+#: framework/admin/theme-settings.php:1309
 msgid ""
 "Choose a color for know more button text in slide. Base theme color is "
 "#ffffff."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1211
+#: framework/admin/theme-settings.php:1314
 msgid "Slide Know More Button Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1212
+#: framework/admin/theme-settings.php:1315
 msgid ""
 "Choose a background color for know more button in slide. Base theme color is "
 "#37b3d9."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1217
+#: framework/admin/theme-settings.php:1320
 msgid "Slide Know More Button Hover Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1218
+#: framework/admin/theme-settings.php:1321
 msgid ""
 "Choose a background color for know more button hover in slide. Base theme "
 "color is #2aa6cc."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1226
+#: framework/admin/theme-settings.php:1329
 msgid "Property Item - Styles"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1230
+#: framework/admin/theme-settings.php:1333
 msgid "Property Item Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1231
+#: framework/admin/theme-settings.php:1334
 msgid ""
 "Choose a background color for property item. Base theme color is #ffffff."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1236
+#: framework/admin/theme-settings.php:1339
 msgid "Property Item Border Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1237
+#: framework/admin/theme-settings.php:1340
 msgid "Choose a color for property item border. Base theme color is #dedede."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1242
+#: framework/admin/theme-settings.php:1345
 msgid "Property Title Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1243
+#: framework/admin/theme-settings.php:1346
 msgid "Choose a color for property title. Base theme color is #394041."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1248
+#: framework/admin/theme-settings.php:1351
 msgid "Property Title Hover Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1249
+#: framework/admin/theme-settings.php:1352
 msgid "Choose a color for property title hover. Base theme color is #df5400."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1254
+#: framework/admin/theme-settings.php:1357
 msgid "Property Price Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1255
+#: framework/admin/theme-settings.php:1358
 msgid "Choose a color for property price text. Base theme color is #ffffff."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1260
+#: framework/admin/theme-settings.php:1363
 msgid "Property Price Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1261
+#: framework/admin/theme-settings.php:1364
 msgid ""
 "Choose a background color for property price. Base theme color is #4dc7ec."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1266
+#: framework/admin/theme-settings.php:1369
 msgid "Property Status Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1267
+#: framework/admin/theme-settings.php:1370
 msgid "Choose a color for property status text. Base theme color is #ffffff."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1272
+#: framework/admin/theme-settings.php:1375
 msgid "Property Status Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1273
+#: framework/admin/theme-settings.php:1376
 msgid ""
 "Choose a background color for property status. Base theme color is #ec894d."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1278
+#: framework/admin/theme-settings.php:1381
 msgid "Property Description Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1279
+#: framework/admin/theme-settings.php:1382
 msgid ""
 "Choose a color for property item description text. Base theme color is "
 "#8b9293."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1284
+#: framework/admin/theme-settings.php:1387
 msgid "More Details Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1285
+#: framework/admin/theme-settings.php:1388
 msgid "Choose a color for more details text. Base theme color is #394041."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1290
+#: framework/admin/theme-settings.php:1393
 msgid "More Details Text Hover Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1291
+#: framework/admin/theme-settings.php:1394
 msgid "Choose a color for more details text. Base theme color is #df5400."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1296
+#: framework/admin/theme-settings.php:1399
 msgid "Property Meta Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1297
+#: framework/admin/theme-settings.php:1400
 msgid "Choose a color for property meta. Base theme color is #394041."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1302
+#: framework/admin/theme-settings.php:1405
 msgid "Property Meta Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1303
+#: framework/admin/theme-settings.php:1406
 msgid ""
 "Choose a background color for property meta. Base theme color is #f5f5f5."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1311
+#: framework/admin/theme-settings.php:1414
 msgid "General - Styles"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1315
+#: framework/admin/theme-settings.php:1418
 msgid "Button Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1316
+#: framework/admin/theme-settings.php:1419
 msgid "Choose a color for button text. Base theme color is #ffffff."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1321
+#: framework/admin/theme-settings.php:1424
 msgid "Button Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1322
+#: framework/admin/theme-settings.php:1425
 msgid "Choose a background color for button. Base theme color is #ec894d."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1327
+#: framework/admin/theme-settings.php:1430
 msgid "Button Hover Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1328
+#: framework/admin/theme-settings.php:1431
 msgid "Choose a color for button hover text. Base theme color is #ffffff."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1333
+#: framework/admin/theme-settings.php:1436
 msgid "Button Hover Background Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1334
+#: framework/admin/theme-settings.php:1437
 msgid ""
 "Choose a background color for button hover. Base theme color is #e3712c."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1342
+#: framework/admin/theme-settings.php:1445
 msgid "Footer - Styles"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1346
+#: framework/admin/theme-settings.php:1449
 msgid "Footer Widget Title Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1347
+#: framework/admin/theme-settings.php:1450
 msgid "Choose a color for widget title. Base theme color is #394041."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1352
+#: framework/admin/theme-settings.php:1455
 msgid "Footer Text Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1353
+#: framework/admin/theme-settings.php:1456
 msgid "Choose a color for footer text. Base theme color is #8b9293."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1358
+#: framework/admin/theme-settings.php:1461
 msgid "Footer Link Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1359
+#: framework/admin/theme-settings.php:1462
 msgid "Choose a color for widget links. Base theme color is #75797A."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1364
+#: framework/admin/theme-settings.php:1467
 msgid "Footer Link Hover Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1365
+#: framework/admin/theme-settings.php:1468
 msgid "Choose a color for widget link hover. Base theme color is #dc7d44."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1370
+#: framework/admin/theme-settings.php:1473
 msgid "Footer Border Color"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1371
+#: framework/admin/theme-settings.php:1474
 msgid "Choose a color for footer border. Base theme color is #dedede."
 msgstr ""
 
-#: framework/admin/theme-settings.php:1376
+#: framework/admin/theme-settings.php:1479
 msgid "Do you want to disable footer background image ?"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1382
+#: framework/admin/theme-settings.php:1485
 msgid "Footer Background Image"
 msgstr ""
 
-#: framework/admin/theme-settings.php:1383
+#: framework/admin/theme-settings.php:1486
 msgid "Note: Default background image is 235px in height and 1770px in width."
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:20
-#: framework/functions/contact_form_handler.php:99
+#: framework/functions/contact_form_handler.php:22
+#: framework/functions/contact_form_handler.php:128
+#: framework/functions/currency-switcher.php:82
 msgid "Unverified Nonce!"
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:37
-#: framework/functions/contact_form_handler.php:116
-msgid "The reCAPTCHA was not entered correctly. Please try it again."
-msgstr ""
-
-#: framework/functions/contact_form_handler.php:45
-msgid "Target Email address is not properly configured!"
+#: framework/functions/contact_form_handler.php:43
+#: framework/functions/contact_form_handler.php:149
+msgid "The reCAPTCHA is not correct. Please try again."
 msgstr ""
 
 #: framework/functions/contact_form_handler.php:55
-#: framework/functions/contact_form_handler.php:137
+#: framework/functions/contact_form_handler.php:161
+msgid "Target Email address is not properly configured!"
+msgstr ""
+
+#: framework/functions/contact_form_handler.php:69
+#: framework/functions/contact_form_handler.php:184
 msgid "Provided Email address is invalid!"
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:58
-#: framework/functions/contact_form_handler.php:140
+#: framework/functions/contact_form_handler.php:74
+#: framework/functions/contact_form_handler.php:189
 msgid "New message sent by"
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:58
+#: framework/functions/contact_form_handler.php:74
 msgid "using contact form at"
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:60
-#: framework/functions/contact_form_handler.php:142
+#: framework/functions/contact_form_handler.php:76
+#: framework/functions/contact_form_handler.php:191
 msgid "You have received a message from: "
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:63
+#: framework/functions/contact_form_handler.php:79
 msgid "Phone Number : "
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:66
-#: framework/functions/contact_form_handler.php:152
+#: framework/functions/contact_form_handler.php:82
+#: framework/functions/contact_form_handler.php:201
 msgid "Their additional message is as follows."
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:68
-#: framework/functions/contact_form_handler.php:154
+#: framework/functions/contact_form_handler.php:84
+#: framework/functions/contact_form_handler.php:203
 msgid "You can contact "
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:68
-#: framework/functions/contact_form_handler.php:154
+#: framework/functions/contact_form_handler.php:84
+#: framework/functions/contact_form_handler.php:203
 msgid " via email, "
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:75
-#: framework/functions/contact_form_handler.php:178
+#: framework/functions/contact_form_handler.php:93
+#: framework/functions/contact_form_handler.php:229
 msgid "Message Sent Successfully!"
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:77
-#: framework/functions/contact_form_handler.php:180
-msgid "Server Error: WordPress mail method failed!"
+#: framework/functions/contact_form_handler.php:98
+#: framework/functions/contact_form_handler.php:234
+msgid "Server Error: WordPress mail function failed!"
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:81
-#: framework/functions/contact_form_handler.php:184
+#: framework/functions/contact_form_handler.php:106
+#: framework/functions/contact_form_handler.php:242
+#: framework/functions/currency-switcher.php:121
 msgid "Invalid Request !"
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:124
-msgid "Agent email address is not properly configured!"
-msgstr ""
-
-#: framework/functions/contact_form_handler.php:140
+#: framework/functions/contact_form_handler.php:189
 msgid "using agent contact form at"
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:145
+#: framework/functions/contact_form_handler.php:194
 msgid "Property Title : "
 msgstr ""
 
-#: framework/functions/contact_form_handler.php:149
+#: framework/functions/contact_form_handler.php:198
 msgid "Property URL : "
+msgstr ""
+
+#: framework/functions/currency-switcher.php:107
+msgid "Failed to updated cookie !"
+msgstr ""
+
+#: framework/functions/currency-switcher.php:114
+msgid "wp-currencies plugin is missing !"
 msgstr ""
 
 #: framework/functions/edit-profile-handler.php:134
@@ -1761,7 +1914,7 @@ msgid "Profile information is updated successfully!"
 msgstr ""
 
 #: framework/functions/edit-profile-handler.php:246
-#: template-submit-property.php:281
+#: template-submit-property.php:286
 msgid "Security check failed!"
 msgstr ""
 
@@ -1811,12 +1964,12 @@ msgid "said"
 msgstr ""
 
 #: framework/include/additional-details-metabox.php:100
-#: template-parts/property-edit.php:203 template-parts/property-submit.php:190
+#: template-parts/property-edit.php:213 template-parts/property-submit.php:200
 msgid "Title"
 msgstr ""
 
 #: framework/include/additional-details-metabox.php:101
-#: template-parts/property-edit.php:204 template-parts/property-submit.php:191
+#: template-parts/property-edit.php:214 template-parts/property-submit.php:201
 msgid "Value"
 msgstr ""
 
@@ -1825,7 +1978,7 @@ msgid "Agents"
 msgstr ""
 
 #: framework/include/agent-post-type.php:7
-#: framework/meta-box/config-meta-boxes.php:257
+#: framework/meta-box/config-meta-boxes.php:266
 #: property-details/property-agent-for-sidebar.php:47
 #: property-details/property-agent.php:45
 msgid "Agent"
@@ -1921,6 +2074,7 @@ msgid "No logo provided"
 msgstr ""
 
 #: framework/include/property-post-type.php:7
+#: framework/include/shortcodes/vc-map.php:43
 msgid "Properties"
 msgstr ""
 
@@ -1928,7 +2082,7 @@ msgstr ""
 msgid "Add New Property"
 msgstr ""
 
-#: framework/include/property-post-type.php:11 functions.php:1818
+#: framework/include/property-post-type.php:11 functions.php:1891
 msgid "Edit Property"
 msgstr ""
 
@@ -2188,8 +2342,8 @@ msgstr ""
 msgid "Thumbnail"
 msgstr ""
 
-#: framework/include/property-post-type.php:180
-#: template-parts/property-edit.php:172 template-parts/property-submit.php:173
+#: framework/include/property-post-type.php:180 template-contact.php:81
+#: template-parts/property-edit.php:182 template-parts/property-submit.php:183
 msgid "Address"
 msgstr ""
 
@@ -2205,12 +2359,13 @@ msgid "Type"
 msgstr ""
 
 #: framework/include/property-post-type.php:183
-#: template-parts/property-edit.php:58 template-parts/property-submit.php:77
+#: template-parts/property-edit.php:60 template-parts/property-submit.php:79
 #: tgm/class-tgm-plugin-activation.php:1380
 msgid "Status"
 msgstr ""
 
 #: framework/include/property-post-type.php:184
+#: framework/include/shortcodes/vc-map.php:89
 msgid "Price"
 msgstr ""
 
@@ -2234,33 +2389,33 @@ msgstr ""
 msgid "Payment Information"
 msgstr ""
 
-#: framework/include/property-post-type.php:298 functions.php:1796
+#: framework/include/property-post-type.php:298 functions.php:1869
 msgid "Not Available"
 msgstr ""
 
-#: framework/include/property-post-type.php:312 functions.php:1759
+#: framework/include/property-post-type.php:312 functions.php:1832
 msgid "Transaction ID"
 msgstr ""
 
-#: framework/include/property-post-type.php:316 functions.php:1760
+#: framework/include/property-post-type.php:316 functions.php:1833
 msgid "Payment Date"
 msgstr ""
 
-#: framework/include/property-post-type.php:320 functions.php:1761
+#: framework/include/property-post-type.php:320 functions.php:1834
 #: template-edit-profile.php:91
 msgid "First Name"
 msgstr ""
 
-#: framework/include/property-post-type.php:324 functions.php:1762
+#: framework/include/property-post-type.php:324 functions.php:1835
 #: template-edit-profile.php:96
 msgid "Last Name"
 msgstr ""
 
-#: framework/include/property-post-type.php:328 functions.php:1763
+#: framework/include/property-post-type.php:328 functions.php:1836
 msgid "Payer Email"
 msgstr ""
 
-#: framework/include/property-post-type.php:332 functions.php:1764
+#: framework/include/property-post-type.php:332 functions.php:1837
 msgid "Payment Status"
 msgstr ""
 
@@ -2270,6 +2425,128 @@ msgstr ""
 
 #: framework/include/property-post-type.php:340
 msgid "Payment Currency"
+msgstr ""
+
+#: framework/include/shortcodes/elements.php:265
+msgid "Result:"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:44
+msgid "List of Properties"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:46
+msgid "Theme"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:50
+msgid "Layout"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:60
+#: widgets/agent-featured-properties-widget.php:143
+#: widgets/agent-properties-widget.php:149
+#: widgets/featured-properties-widget.php:119
+msgid "Number of Properties"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:63 template-parts/gallery.php:28
+msgid "All"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:85
+msgid "Order By"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:88
+#: framework/include/slide-post-type.php:48
+msgid "Date"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:94
+msgid "Order"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:97
+msgid "Descending"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:98
+msgid "Ascending"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:103
+msgid "Locations"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:110
+msgid "Statuses"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:117
+msgid "Types"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:124
+msgid "Minimum Bedrooms"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:127
+#: framework/include/shortcodes/vc-map.php:145
+#: framework/include/shortcodes/vc-map.php:166
+#: framework/include/shortcodes/vc-map.php:184 functions.php:816
+#: functions.php:972 functions.php:974 functions.php:1006 functions.php:1008
+#: functions.php:1098 functions.php:1100 functions.php:1147 functions.php:1149
+#: functions.php:1197 functions.php:1199 functions.php:1249 functions.php:1251
+#: functions.php:1299 functions.php:1301 template-parts/search-form.php:13
+#: template-parts/search-form.php:22 template-parts/search-form.php:167
+#: template-parts/search-form.php:172
+msgid "Any"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:142
+msgid "Maximum Bedrooms"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:163
+msgid "Minimum Bathrooms"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:181
+msgid "Maximum Bathrooms"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:202
+msgid "Minimum Price"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:203
+#: framework/include/shortcodes/vc-map.php:211
+#: framework/include/shortcodes/vc-map.php:219
+#: framework/include/shortcodes/vc-map.php:227
+msgid "Only provide digits"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:210
+msgid "Maximum Price"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:218
+msgid "Minimum Area"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:226
+msgid "Maximum Area"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:234
+msgid "Display Only Featured Properties"
+msgstr ""
+
+#: framework/include/shortcodes/vc-map.php:237
+#: framework/meta-box/config-meta-boxes.php:282
+#: framework/meta-box/config-meta-boxes.php:315
+msgid "No"
 msgstr ""
 
 #: framework/include/slide-post-type.php:7
@@ -2316,10 +2593,6 @@ msgstr ""
 msgid "Slide Sub Text"
 msgstr ""
 
-#: framework/include/slide-post-type.php:48
-msgid "Date"
-msgstr ""
-
 #: framework/include/slide-post-type.php:65
 msgid "No Slider Image"
 msgstr ""
@@ -2344,153 +2617,132 @@ msgstr ""
 msgid "This URL will be applied on Slide Image."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:34
-#: framework/meta-box/config-meta-boxes.php:48
+#: framework/meta-box/config-meta-boxes.php:22
+#: framework/meta-box/config-meta-boxes.php:28
 msgid "Video Embed Code"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:49
+#: framework/meta-box/config-meta-boxes.php:29
 msgid ""
 "If you are not using self hosted videos then please provide the video embed "
 "code and remove the width and height attributes."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:64
+#: framework/meta-box/config-meta-boxes.php:42
+#: framework/meta-box/config-meta-boxes.php:78
 msgid "Gallery Images"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:78
+#: framework/meta-box/config-meta-boxes.php:48
 msgid "Upload Gallery Images"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:80
+#: framework/meta-box/config-meta-boxes.php:50
 msgid ""
 "Images should have minimum width of 830px and minimum height of 323px, "
 "Bigger size images will be cropped automatically."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:88
-#: framework/meta-box/config-meta-boxes.php:250 functions.php:1674
-#: functions.php:1676 functions.php:1717 functions.php:1719
-#: template-parts/property-edit.php:323 template-parts/property-submit.php:30
-#: template-parts/property-submit.php:55 template-parts/property-submit.php:80
-#: template-parts/property-submit.php:265
+#: framework/meta-box/config-meta-boxes.php:59 functions.php:1747
+#: functions.php:1749 functions.php:1790 functions.php:1792
+#: template-parts/property-edit.php:333 template-parts/property-submit.php:30
+#: template-parts/property-submit.php:55 template-parts/property-submit.php:82
+#: template-parts/property-submit.php:275
 msgid "None"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:102 single-property.php:18
-msgid "Property Details"
+#: framework/meta-box/config-meta-boxes.php:74
+msgid "Basic Information"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:116
-msgid "Gallery Type"
+#: framework/meta-box/config-meta-boxes.php:86
+msgid "Agent Information"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:90
+msgid "Misc"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:94
+msgid "Homepage Slider"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:98
+msgid "Top Banner"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:108
+msgid "Sale or Rent Price ( Only digits )"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:109
+msgid "Example Value: 435000"
 msgstr ""
 
 #: framework/meta-box/config-meta-boxes.php:117
-msgid ""
-"Select the type of gallery that you want to use for this property images"
+msgid "Price Postfix"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:122
-msgid "Gallery with thumbnails on right"
+#: framework/meta-box/config-meta-boxes.php:118
+msgid "Example Value: Per Month"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:123
-msgid "Gallery with thumbnails on bottom"
+#: framework/meta-box/config-meta-boxes.php:126
+msgid "Area Size ( Only digits )"
 msgstr ""
 
 #: framework/meta-box/config-meta-boxes.php:127
-msgid "Property Gallery Images"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:129
-msgid ""
-"Provide images for gallery on property detail page. Images should have "
-"minimum size of 770px by 386px for thumbnails on right and 830px by 460px "
-"for thumbnails on bottom. ( Bigger images will be cropped automatically )"
+msgid "Example Value: 2500"
 msgstr ""
 
 #: framework/meta-box/config-meta-boxes.php:135
-msgid "Property Price"
+msgid "Size Postfix"
 msgstr ""
 
 #: framework/meta-box/config-meta-boxes.php:136
-msgid ""
-"Provide Sale OR Rent Price. ( Plesae only provide digits ) Example Value: "
-"435000"
+msgid "Example Value: Sq Ft"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:142
-#: template-parts/property-edit.php:87 template-parts/property-submit.php:125
-msgid "Price Postfix Text"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:143
-msgid ""
-"Text provided here will appear after price. ( You can also leave it empty ) "
-"Example Value: Per Month"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:149
-msgid "Property Size"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:150
-msgid "Provide size ( Please only provide digits ) Example Value: 2500"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:156
-msgid "Size Postfix Text"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:157
-msgid ""
-"Text provided here will appear after size. ( You can also leave it empty ) "
-"Example Value: Sq Ft"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:163
-#: property-details/property-metas.php:17 template-parts/property-edit.php:67
-#: template-parts/property-submit.php:105
+#: framework/meta-box/config-meta-boxes.php:144
+#: property-details/property-metas.php:18 template-parts/property-edit.php:69
+#: template-parts/property-submit.php:107
 msgid "Bedrooms"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:164
-msgid "Provide number of bedrooms. Example Value: 4"
+#: framework/meta-box/config-meta-boxes.php:145
+msgid "Example Value: 4"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:170
-#: property-details/property-metas.php:23 template-parts/property-edit.php:72
-#: template-parts/property-submit.php:110
+#: framework/meta-box/config-meta-boxes.php:153
+#: property-details/property-metas.php:27 template-parts/property-edit.php:76
+#: template-parts/property-submit.php:114
 msgid "Bathrooms"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:171
-msgid "Provide number of bathrooms. Example Value: 2"
+#: framework/meta-box/config-meta-boxes.php:154
+msgid "Example Value: 2"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:177
-#: property-details/property-metas.php:29 template-parts/property-edit.php:77
-#: template-parts/property-submit.php:115
+#: framework/meta-box/config-meta-boxes.php:162
+#: property-details/property-metas.php:36 template-parts/property-edit.php:81
+#: template-parts/property-submit.php:119
 msgid "Garages"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:178
-msgid "Provide number of garages. Example Value: 1"
+#: framework/meta-box/config-meta-boxes.php:163
+msgid "Example Value: 1"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:185
-msgid ""
-"Text provided here will be used to search the property directly. ( You can "
-"also leave it empty )"
+#: framework/meta-box/config-meta-boxes.php:172
+msgid "It will help you search a property directly."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:191
+#: framework/meta-box/config-meta-boxes.php:189
 msgid "Property Address"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:192
-msgid "Provide property address."
+#: framework/meta-box/config-meta-boxes.php:190
+msgid "Leaving it empty will hide the google map on property detail page."
 msgstr ""
 
 #: framework/meta-box/config-meta-boxes.php:198
@@ -2503,230 +2755,240 @@ msgid ""
 "the address field above to search for your property."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:207
-#: template-parts/property-edit.php:107 template-parts/property-edit.php:108
-#: template-parts/property-submit.php:145
-#: template-parts/property-submit.php:146
+#: framework/meta-box/config-meta-boxes.php:210
+msgid "Gallery Type You Want to Use"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:215
+msgid "Gallery with thumbnails on right"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:216
+msgid "Gallery with thumbnails on bottom"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:222
+msgid "Property Gallery Images"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:224
+msgid ""
+"Images should have minimum size of 770px by 386px for thumbnails on right "
+"and 830px by 460px for thumbnails on bottom. Bigger size images will be "
+"cropped automatically."
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:235
+#: template-parts/property-edit.php:117 template-parts/property-edit.php:118
+#: template-parts/property-submit.php:155
+#: template-parts/property-submit.php:156
 msgid "Virtual Tour Video URL"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:208
+#: framework/meta-box/config-meta-boxes.php:236
 msgid ""
-"Provide virtual tour video URL. Theme supports YouTube, Vimeo, SWF File and "
-"MOV File"
+"Provide virtual tour video URL. YouTube, Vimeo, SWF File and MOV File are "
+"supported"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:212
+#: framework/meta-box/config-meta-boxes.php:242
 msgid "Virtual Tour Video Image"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:214
-msgid ""
-"Provide the image that will be displayed as place holder and when a user "
-"clicks over it the video will be opened in a lightbox. You must provide this "
-"image as otherwise the video will not be displayed on property details page. "
-"Image should have minimum width of 818px and minimum height 417px. Bigger "
-"size images will be cropped automatically."
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:219
-#: template-parts/property-edit.php:272
-msgid "Mark this Property as Featured"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:220
-msgid ""
-"Marking this property featured will display it in featured properties "
-"sections across the theme."
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:226
-msgid "Add in Homepage Slider"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:227
-msgid ""
-"Do you want to add this property in Homepage Slider ? If Yes, Then you also "
-"need to provide slider image below."
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:232
-msgid "Yes "
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:233
-msgid "No"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:237
-msgid "Slider Image"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:239
-msgid ""
-"Provide the image that will be displayed in Homepage Slider. The recommended "
-"image size is 2000px by 700px. You can use bigger or little smaller image "
-"but try to keep the same height to width ratio and use the exactly same size "
-"images for all properties that will be added in slider."
-msgstr ""
-
 #: framework/meta-box/config-meta-boxes.php:244
-#: template-parts/property-edit.php:320 template-parts/property-submit.php:262
+msgid ""
+"Provide an image that will be displayed as a place holder and when user will "
+"click over it the video will be opened in a lightbox. You must provide this "
+"image otherwise the video will not be displayed. Image should have minimum "
+"width of 818px and minimum height 417px. Bigger size images will be cropped "
+"automatically."
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:253
+#: template-parts/property-edit.php:330 template-parts/property-submit.php:272
 msgid "What to display in agent information box ?"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:245
-msgid ""
-"You need to select an agent from select box below, If you are choosing to "
-"display an agent's information"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:251
-msgid "Author profile information"
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:252
-msgid "Display agent's Information"
+#: framework/meta-box/config-meta-boxes.php:258
+msgid "Author information."
 msgstr ""
 
 #: framework/meta-box/config-meta-boxes.php:259
-msgid "Please select related Agent."
+msgid "Agent Information. ( Select the agent below )"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:265
+#: framework/meta-box/config-meta-boxes.php:260
+msgid "None. ( Hide information box )"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:276
+msgid "Mark this property as featured ?"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:281
+#: framework/meta-box/config-meta-boxes.php:314
+msgid "Yes "
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:289
 msgid "Attachments"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:266
+#: framework/meta-box/config-meta-boxes.php:290
 msgid ""
 "You can attach PDF files, Map images OR other documents to provide further "
 "details related to property."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:272
+#: framework/meta-box/config-meta-boxes.php:298
 msgid "Private Note"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:273
+#: framework/meta-box/config-meta-boxes.php:299
 msgid ""
 "In this textarea, You can write your private note about this property. This "
 "field will not be displayed anywhere else."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:287
-msgid "Featured Patners Meta"
+#: framework/meta-box/config-meta-boxes.php:308
+msgid "Do you want to add this property in Homepage Slider ?"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:301
-msgid "Partner Url"
+#: framework/meta-box/config-meta-boxes.php:309
+msgid "If Yes, Then you need to provide a slider image below."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:303
-msgid "Paste here Partner Website link"
+#: framework/meta-box/config-meta-boxes.php:321
+msgid "Slider Image"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:318
-msgid "Provide Related Information"
+#: framework/meta-box/config-meta-boxes.php:323
+msgid ""
+"The recommended image size is 2000px by 700px. You can use bigger or smaller "
+"image but try to keep the same height to width ratio and use the exactly "
+"same size images for all properties that will be added in slider."
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:332
+msgid "Top Banner Image"
 msgstr ""
 
 #: framework/meta-box/config-meta-boxes.php:334
 msgid ""
-"Provide Agent's Email Address. Agent related messages from contact form on "
+"Upload the banner image, If you want to change it for this property. "
+"Otherwise default banner image uploaded from theme options will be "
+"displayed. Image should have minimum width of 2000px and minimum height of "
+"230px."
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:348
+msgid "Featured Patners Meta"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:354
+msgid "Partner Url"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:356
+msgid "Paste here Partner Website link"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:366
+msgid "Provide Related Information"
+msgstr ""
+
+#: framework/meta-box/config-meta-boxes.php:374
+msgid ""
+"Provide Agent Email Address. Agent related messages from contact form on "
 "property details page, will be sent on this email address."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:338 functions.php:1893
+#: framework/meta-box/config-meta-boxes.php:378 functions.php:1966
 #: template-edit-profile.php:130
 msgid "Mobile Number"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:340
-msgid "Provide Agent's mobile number"
+#: framework/meta-box/config-meta-boxes.php:380
+msgid "Provide Agent mobile number"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:344 functions.php:1894
+#: framework/meta-box/config-meta-boxes.php:384 functions.php:1967
 #: template-edit-profile.php:135
 msgid "Office Number"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:346
-msgid "Provide Agent's office number"
+#: framework/meta-box/config-meta-boxes.php:386
+msgid "Provide Agent office number"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:352
-msgid "Provide Agent's fax number"
+#: framework/meta-box/config-meta-boxes.php:392
+msgid "Provide Agent fax number"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:356 template-edit-profile.php:145
+#: framework/meta-box/config-meta-boxes.php:396 template-edit-profile.php:145
 msgid "Facebook URL"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:358
-msgid "Provide Agent's Facebook URL"
+#: framework/meta-box/config-meta-boxes.php:398
+msgid "Provide Agent Facebook URL"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:362 template-edit-profile.php:150
+#: framework/meta-box/config-meta-boxes.php:402 template-edit-profile.php:150
 msgid "Twitter URL"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:364
-msgid "Provide Agent's Twitter URL"
+#: framework/meta-box/config-meta-boxes.php:404
+msgid "Provide Agent Twitter URL"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:368 template-edit-profile.php:155
+#: framework/meta-box/config-meta-boxes.php:408 template-edit-profile.php:155
 msgid "Google Plus URL"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:370
-msgid "Provide Agent's Google Plus URL"
+#: framework/meta-box/config-meta-boxes.php:410
+msgid "Provide Agent Google Plus URL"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:374 template-edit-profile.php:160
+#: framework/meta-box/config-meta-boxes.php:414 template-edit-profile.php:160
 msgid "LinkedIn URL"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:376
-msgid "Provide Agent's LinkedIn URL"
+#: framework/meta-box/config-meta-boxes.php:416
+msgid "Provide Agent LinkedIn URL"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:389
+#: framework/meta-box/config-meta-boxes.php:426
 msgid "Top Banner Area Settings"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:405
+#: framework/meta-box/config-meta-boxes.php:434
 msgid ""
 "Please provide the Banner Title, Otherwise the Page Title will be displayed "
 "in its place."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:411
+#: framework/meta-box/config-meta-boxes.php:440
 msgid "Please provide the Banner Sub Title."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:417
-#: framework/meta-box/config-meta-boxes.php:452
+#: framework/meta-box/config-meta-boxes.php:446
 msgid "Banner Image"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:419
-#: framework/meta-box/config-meta-boxes.php:454
+#: framework/meta-box/config-meta-boxes.php:448
 msgid ""
 "Please upload the Banner Image. Otherwise the default banner image from "
 "theme options will be displayed."
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:424
+#: framework/meta-box/config-meta-boxes.php:453
 msgid "Revolution Slider Alias"
 msgstr ""
 
-#: framework/meta-box/config-meta-boxes.php:426
+#: framework/meta-box/config-meta-boxes.php:455
 msgid ""
 "If you want to replace banner with revolution slider then provide its alias "
 "here."
-msgstr ""
-
-#: framework/meta-box/config-meta-boxes.php:438
-msgid "Top Banner"
 msgstr ""
 
 #: framework/meta-box/config-meta-boxes.php:464
@@ -2745,271 +3007,470 @@ msgstr ""
 msgid "Hide"
 msgstr ""
 
+#: framework/one-click-demo-install/importer/parsers.php:42
+#: framework/one-click-demo-install/importer/parsers.php:63
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/parsers.php:67
+#: framework/one-click-demo-install/importer/parsers.php:72
+#: framework/one-click-demo-install/importer/parsers.php:262
+#: framework/one-click-demo-install/importer/parsers.php:451
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:210
+msgid "Demo already imported"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:230
+msgid "Import Again"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:234
+msgid "Import Demo Data"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:437
+msgid "Theme options Import file could not be found. Please try again."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:495
+msgid "Widget Import file could not be found. Please try again."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:568
+msgid "Sidebar does not exist in theme (using Inactive)"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:590
+msgid "Site does not support widget"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:613
+msgid "Widget already exists"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:662
+msgid "Imported"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:665
+msgid "Imported to Inactive"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/radium-importer.php:672
+msgid "No Title"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:134
+#: framework/one-click-demo-install/importer/wordpress-importer.php:143
+#: framework/one-click-demo-install/importer/wordpress-importer.php:194
+#: framework/one-click-demo-install/importer/wordpress-importer.php:198
+#: framework/one-click-demo-install/importer/wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:135
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:178
+msgid "All done."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:178
+msgid "Have fun!"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:199
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:215
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:240
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:267
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:269
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:286
+#: header.php:96
+msgid "Submit"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:299
+msgid "Import author:"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:313
+msgid "as a new user:"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:324
+msgid "- Select -"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:374
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:423
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:461
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:505
+#: framework/one-click-demo-install/importer/wordpress-importer.php:631
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:527
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:548
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:603
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:749
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:756
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:819
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:832
+msgid "Invalid file type"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:876
+msgid "Remote server did not respond"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:882
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:889
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:894
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:900
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:999
+msgid "Import WordPress"
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:1006
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:1021
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: framework/one-click-demo-install/importer/wordpress-importer.php:1022
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
 #: functions.php:35
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:132
+#: functions.php:136
 msgid "Default Sidebar"
 msgstr ""
 
-#: functions.php:133
-msgid "default-sidebar"
-msgstr ""
-
-#: functions.php:134
+#: functions.php:138
 msgid "Widget area for default sidebar on news and post pages."
 msgstr ""
 
-#: functions.php:143
+#: functions.php:147
 msgid "Pages Sidebar"
 msgstr ""
 
-#: functions.php:144
-msgid "default-page-sidebar"
-msgstr ""
-
-#: functions.php:145
+#: functions.php:149
 msgid "Widget area for default page template sidebar."
 msgstr ""
 
-#: functions.php:154
+#: functions.php:158
 msgid "Contact Sidebar"
 msgstr ""
 
-#: functions.php:155
-msgid "contact-sidebar"
-msgstr ""
-
-#: functions.php:156
+#: functions.php:160
 msgid "Widget area for contact page sidebar."
 msgstr ""
 
-#: functions.php:165
+#: functions.php:169
 msgid "Property Sidebar"
 msgstr ""
 
-#: functions.php:166
-msgid "property-sidebar"
-msgstr ""
-
-#: functions.php:167
+#: functions.php:171
 msgid "Widget area for property detail page sidebar."
 msgstr ""
 
-#: functions.php:176
+#: functions.php:180
 msgid "Property Listing Sidebar"
 msgstr ""
 
-#: functions.php:177
-msgid "property-listing-sidebar"
-msgstr ""
-
-#: functions.php:178
+#: functions.php:182
 msgid "Widget area for property listing template sidebar."
 msgstr ""
 
-#: functions.php:187
+#: functions.php:191
 msgid "dsIDX Sidebar"
 msgstr ""
 
-#: functions.php:188
-msgid "dsidx-sidebar"
-msgstr ""
-
-#: functions.php:189
+#: functions.php:193
 msgid "Widget area for dsIDX related pages."
 msgstr ""
 
-#: functions.php:198
+#: functions.php:202
 msgid "Footer First Column"
 msgstr ""
 
-#: functions.php:199
-msgid "footer-first-column"
-msgstr ""
-
-#: functions.php:200
+#: functions.php:204
 msgid "Widget area for first column in footer."
 msgstr ""
 
-#: functions.php:209
+#: functions.php:213
 msgid "Footer Second Column"
 msgstr ""
 
-#: functions.php:210
-msgid "footer-second-column"
-msgstr ""
-
-#: functions.php:211
+#: functions.php:215
 msgid "Widget area for second column in footer."
 msgstr ""
 
-#: functions.php:220
+#: functions.php:224
 msgid "Footer Third Column"
 msgstr ""
 
-#: functions.php:221
-msgid "footer-third-column"
-msgstr ""
-
-#: functions.php:222
+#: functions.php:226
 msgid "Widget area for third column in footer."
 msgstr ""
 
-#: functions.php:231
+#: functions.php:235
 msgid "Footer Fourth Column"
 msgstr ""
 
-#: functions.php:232
-msgid "footer-fourth-column"
-msgstr ""
-
-#: functions.php:233
+#: functions.php:237
 msgid "Widget area for fourth column in footer."
 msgstr ""
 
-#: functions.php:243
+#: functions.php:247
 msgid "Agent Sidebar"
 msgstr ""
 
-#: functions.php:244
-msgid "agent-sidebar"
-msgstr ""
-
-#: functions.php:245
+#: functions.php:249
 msgid "Sidebar widget area for agent detail page."
 msgstr ""
 
-#: functions.php:254
+#: functions.php:258
 msgid "Home Search Area"
 msgstr ""
 
-#: functions.php:255
-msgid "home-search-area"
-msgstr ""
-
-#: functions.php:256
+#: functions.php:260
 msgid ""
 "Widget area for only IDX Search Widget. Using this area means you want to "
 "display IDX search form instead of default search form."
 msgstr ""
 
-#: functions.php:265
+#: functions.php:269
 msgid "Property Search Sidebar"
 msgstr ""
 
-#: functions.php:266
-msgid "property-search-sidebar"
-msgstr ""
-
-#: functions.php:267
+#: functions.php:271
 msgid "Widget area for property search template with sidebar."
 msgstr ""
 
-#: functions.php:279
+#: functions.php:283
 #, php-format
 msgid "Additional Sidebar %d"
 msgstr ""
 
-#: functions.php:280
+#: functions.php:284
 msgid "An extra sidebar to use with Visual Composer if needed."
 msgstr ""
 
-#: functions.php:371
+#: functions.php:375 functions.php:416
 msgid "First"
 msgstr ""
 
-#: functions.php:372
+#: functions.php:376 functions.php:417
 msgid "Previous"
 msgstr ""
 
-#: functions.php:380
+#: functions.php:384 functions.php:425
 msgid "Next"
 msgstr ""
 
-#: functions.php:381
+#: functions.php:385 functions.php:426
 msgid "Last"
 msgstr ""
 
-#: functions.php:695 functions.php:708
+#: functions.php:740 functions.php:753
 msgid "Valid file formats"
 msgstr ""
 
-#: functions.php:722
+#: functions.php:767
 msgid "Go to..."
 msgstr ""
 
-#: functions.php:771 functions.php:899 functions.php:901 functions.php:933
-#: functions.php:935 functions.php:1025 functions.php:1027 functions.php:1074
-#: functions.php:1076 functions.php:1124 functions.php:1126 functions.php:1176
-#: functions.php:1178 functions.php:1226 functions.php:1228
-#: template-parts/search-form.php:13 template-parts/search-form.php:22
-#: template-parts/search-form.php:167 template-parts/search-form.php:172
-msgid "Any"
-msgstr ""
-
-#: functions.php:796
+#: functions.php:841
 msgid "$"
 msgstr ""
 
-#: functions.php:1765
+#: functions.php:1838
 msgid "Amount"
 msgstr ""
 
-#: functions.php:1766
+#: functions.php:1839
 msgid "Currency"
 msgstr ""
 
-#: functions.php:1769
+#: functions.php:1842
 msgid "Action"
 msgstr ""
 
-#: functions.php:1846
+#: functions.php:1919
 msgid "No Completed Payment Found!"
 msgstr ""
 
-#: functions.php:1876 functions.php:1877
+#: functions.php:1949 functions.php:1950
 msgid "Property Payments"
 msgstr ""
 
-#: functions.php:1991 property-details/property-contents.php:76
+#: functions.php:2069 property-details/property-add-to-favorites.php:16
 msgid "Added to Favorites"
 msgstr ""
 
-#: functions.php:1993
+#: functions.php:2071
 msgid "Failed!"
 msgstr ""
 
-#: functions.php:1997
-msgid "Invalid Paramenters!"
+#: functions.php:2075
+msgid "Invalid Parameters!"
 msgstr ""
 
-#: header.php:60
+#: header.php:68
 msgid "Email us at"
 msgstr ""
 
-#: header.php:84
+#: header.php:92
 msgid "Favorites"
 msgstr ""
 
-#: header.php:88
-msgid "Submit"
-msgstr ""
-
-#: header.php:92
+#: header.php:100
 msgid "My Properties"
 msgstr ""
 
-#: header.php:96 header.php:98
+#: header.php:104 header.php:106
 msgid "Profile"
 msgstr ""
 
-#: header.php:101
+#: header.php:109
 msgid "Logout"
 msgstr ""
 
-#: header.php:107 header.php:111
+#: header.php:115 header.php:119
 msgid "Login / Register"
 msgstr ""
 
@@ -3017,108 +3478,97 @@ msgstr ""
 msgid "No Posts Found!"
 msgstr ""
 
+#: property-details/property-add-to-favorites.php:26
+#: property-details/property-add-to-favorites.php:30
+msgid "Add to Favorites"
+msgstr ""
+
 #: property-details/property-agent-for-sidebar.php:31
 #: property-details/property-agent.php:31
 msgid "Submitted by"
 msgstr ""
 
-#: property-details/property-agent-for-sidebar.php:80
-#: property-details/property-agent.php:76 single-agent.php:54
-#: template-agent-listing.php:78
-msgid "Office"
-msgstr ""
-
-#: property-details/property-agent-for-sidebar.php:83
-#: property-details/property-agent.php:79 single-agent.php:57
-#: template-agent-listing.php:81 template-contact.php:71
-msgid "Mobile"
-msgstr ""
-
-#: property-details/property-agent-for-sidebar.php:86
-#: property-details/property-agent.php:82 single-agent.php:60
-#: template-agent-listing.php:84 template-contact.php:74
-msgid "Fax"
-msgstr ""
-
-#: property-details/property-agent-for-sidebar.php:98
-#: property-details/property-agent.php:94 template-parts/carousel.php:59
+#: property-details/property-agent-for-sidebar.php:94
+#: property-details/property-agent-for-sidebar.php:97
+#: property-details/property-agent.php:94
+#: property-details/property-agent.php:102 template-parts/carousel.php:59
 #: template-parts/separate-slider.php:63 template-parts/slider.php:46
 msgid "Know More"
 msgstr ""
 
-#: property-details/property-agent-for-sidebar.php:111
-#: property-details/property-agent-for-sidebar.php:133
-#: property-details/property-agent.php:127 single-agent.php:73
-#: template-agent-listing.php:98 template-contact.php:126
+#: property-details/property-agent-for-sidebar.php:109
+#: property-details/property-agent-for-sidebar.php:131
+#: property-details/property-agent.php:135 template-contact.php:131
+#: template-parts/agent-contact-form.php:48
 msgid "Send Message"
 msgstr ""
 
-#: property-details/property-agent-for-sidebar.php:116
-#: property-details/property-agent.php:110 template-contact.php:99
+#: property-details/property-agent-for-sidebar.php:114
+#: property-details/property-agent.php:118 template-contact.php:104
+#: template-parts/agent-contact-form.php:20
 msgid "Name"
 msgstr ""
 
-#: property-details/property-agent-for-sidebar.php:116
-#: property-details/property-agent.php:110 template-contact.php:100
+#: property-details/property-agent-for-sidebar.php:114
+#: property-details/property-agent.php:118 template-contact.php:105
+#: template-parts/agent-contact-form.php:20
 msgid "* Please provide your name"
 msgstr ""
 
-#: property-details/property-agent-for-sidebar.php:118
-#: property-details/property-agent.php:112 template-contact.php:77
-#: template-contact.php:104 template-edit-profile.php:106
+#: property-details/property-agent-for-sidebar.php:116
+#: property-details/property-agent.php:120 template-contact.php:77
+#: template-contact.php:109 template-edit-profile.php:106
 #: template-login.php:80 template-login.php:104
-#: template-parts/modal-login.php:77
+#: template-parts/agent-contact-form.php:24 template-parts/modal-login.php:77
 msgid "Email"
 msgstr ""
 
-#: property-details/property-agent-for-sidebar.php:118
-#: property-details/property-agent.php:112
+#: property-details/property-agent-for-sidebar.php:116
+#: property-details/property-agent.php:120
+#: template-parts/agent-contact-form.php:24
 msgid "* Please provide valid email address"
 msgstr ""
 
-#: property-details/property-agent-for-sidebar.php:120
-#: property-details/property-agent.php:114 template-contact.php:114
+#: property-details/property-agent-for-sidebar.php:118
+#: property-details/property-agent.php:122 template-contact.php:119
+#: template-parts/agent-contact-form.php:30
 msgid "Message"
 msgstr ""
 
-#: property-details/property-agent-for-sidebar.php:120
-#: property-details/property-agent.php:114 template-contact.php:115
+#: property-details/property-agent-for-sidebar.php:118
+#: property-details/property-agent.php:122 template-contact.php:120
+#: template-parts/agent-contact-form.php:30
 msgid "* Please provide your message"
 msgstr ""
 
-#: property-details/property-children.php:70 template-favorites.php:84
+#: property-details/property-children.php:66 template-favorites.php:84
 #: template-parts/property-for-grid.php:21
-#: template-parts/property-for-home.php:37
-#: template-parts/property-for-listing.php:37
+#: template-parts/property-for-home.php:32
+#: template-parts/property-for-listing.php:33
 msgid "More Details "
 msgstr ""
 
-#: property-details/property-contents.php:86
-#: property-details/property-contents.php:90
-msgid "Add to Favorites"
-msgstr ""
-
-#: property-details/property-contents.php:97
+#: property-details/property-contents.php:55
 msgid "Print"
 msgstr ""
 
-#: property-details/property-map.php:70
+#: property-details/property-map.php:99
 msgid "Share this"
 msgstr ""
 
-#: property-details/property-map.php:73
+#: property-details/property-map.php:102
 msgid "Google"
 msgstr ""
 
-#: property-details/property-metas.php:17
+#: property-details/property-metas.php:18
 msgid "Bedroom"
 msgstr ""
 
-#: property-details/property-metas.php:23
+#: property-details/property-metas.php:27
 msgid "Bathroom"
 msgstr ""
 
-#: property-details/property-metas.php:29
+#: property-details/property-metas.php:36
 msgid "Garage"
 msgstr ""
 
@@ -3154,6 +3604,10 @@ msgstr ""
 msgid "Search Results"
 msgstr ""
 
+#: single-property.php:18
+msgid "Property Details"
+msgstr ""
+
 #: single.php:29 template-parts/article-for-listing.php:13
 msgid "Posted on"
 msgstr ""
@@ -3167,20 +3621,20 @@ msgstr ""
 msgid "in"
 msgstr ""
 
-#: template-agent-listing.php:91
+#: template-agent-listing.php:105 template-users-listing.php:138
 msgid "More Details"
 msgstr ""
 
-#: template-agent-listing.php:153 template-parts/grid-listing-container.php:62
-#: template-parts/listing-container.php:64
+#: template-agent-listing.php:160 template-parts/grid-listing-container.php:56
+#: template-parts/listing-container.php:58
 msgid "Sorry No Results Found"
 msgstr ""
 
-#: template-contact.php:65
+#: template-contact.php:62
 msgid "Phone"
 msgstr ""
 
-#: template-contact.php:105
+#: template-contact.php:110
 msgid "* Please provide a valid email address"
 msgstr ""
 
@@ -3223,7 +3677,7 @@ msgid "Save Changes"
 msgstr ""
 
 #: template-edit-profile.php:189 template-my-properties.php:165
-#: template-submit-property.php:313
+#: template-submit-property.php:318
 msgid "Login Required:"
 msgstr ""
 
@@ -3305,8 +3759,8 @@ msgid "You are already logged in!"
 msgstr ""
 
 #: template-my-properties.php:19 template-my-properties.php:21
-#: template-my-properties.php:23 template-submit-property.php:287
-#: template-submit-property.php:291
+#: template-my-properties.php:23 template-submit-property.php:292
+#: template-submit-property.php:296
 msgid "Success:"
 msgstr ""
 
@@ -3334,25 +3788,20 @@ msgstr ""
 msgid "Note:"
 msgstr ""
 
-#: template-my-properties.php:159 template-parts/home-properties.php:76
-#: template-search-sidebar.php:87 template-search.php:78
-msgid "No Properties Found!"
-msgstr ""
-
 #: template-my-properties.php:165
 msgid "Please, Login to view your properties!"
+msgstr ""
+
+#: template-parts/agent-contact-form.php:15
+msgid "Send a Message"
 msgstr ""
 
 #: template-parts/article-for-listing.php:19
 msgid "Read more"
 msgstr ""
 
-#: template-parts/common-taxonomy.php:70
+#: template-parts/common-taxonomy.php:66
 msgid "No Results Found"
-msgstr ""
-
-#: template-parts/gallery.php:28
-msgid "All"
 msgstr ""
 
 #: template-parts/gallery.php:34
@@ -3401,100 +3850,108 @@ msgstr ""
 msgid "Property Description"
 msgstr ""
 
-#: template-parts/property-edit.php:68 template-parts/property-edit.php:73
-#: template-parts/property-edit.php:78 template-parts/property-edit.php:83
-#: template-parts/property-edit.php:93 template-parts/property-submit.php:106
-#: template-parts/property-submit.php:111
-#: template-parts/property-submit.php:116
-#: template-parts/property-submit.php:121
-#: template-parts/property-submit.php:131
+#: template-parts/property-edit.php:70 template-parts/property-edit.php:77
+#: template-parts/property-edit.php:82 template-parts/property-edit.php:89
+#: template-parts/property-edit.php:101 template-parts/property-submit.php:108
+#: template-parts/property-submit.php:115
+#: template-parts/property-submit.php:120
+#: template-parts/property-submit.php:127
+#: template-parts/property-submit.php:139
 msgid "* Please provide the value in only digits!"
 msgstr ""
 
-#: template-parts/property-edit.php:82 template-parts/property-submit.php:120
+#: template-parts/property-edit.php:88 template-parts/property-submit.php:126
 msgid "Sale OR Rent Price"
 msgstr ""
 
-#: template-parts/property-edit.php:92 template-parts/property-submit.php:130
+#: template-parts/property-edit.php:93 template-parts/property-submit.php:131
+msgid "Price Postfix Text"
+msgstr ""
+
+#: template-parts/property-edit.php:100 template-parts/property-submit.php:138
 msgid "Area"
 msgstr ""
 
-#: template-parts/property-edit.php:97 template-parts/property-submit.php:135
+#: template-parts/property-edit.php:105 template-parts/property-submit.php:143
 msgid "Area Postfix Text"
 msgstr ""
 
-#: template-parts/property-edit.php:138 template-parts/property-submit.php:154
+#: template-parts/property-edit.php:148 template-parts/property-submit.php:164
 msgid "Drag and drop images here"
 msgstr ""
 
-#: template-parts/property-edit.php:139 template-parts/property-submit.php:155
+#: template-parts/property-edit.php:149 template-parts/property-submit.php:165
 msgid "or"
 msgstr ""
 
-#: template-parts/property-edit.php:141 template-parts/property-submit.php:157
+#: template-parts/property-edit.php:151 template-parts/property-submit.php:167
 msgid "Select Images"
 msgstr ""
 
-#: template-parts/property-edit.php:145 template-parts/property-submit.php:161
+#: template-parts/property-edit.php:155 template-parts/property-submit.php:171
 msgid ""
 "* An image should have minimum width of 770px and minimum height of 386px."
 msgstr ""
 
-#: template-parts/property-edit.php:146 template-parts/property-submit.php:162
+#: template-parts/property-edit.php:156 template-parts/property-submit.php:172
 msgid ""
 "* You can mark an image as featured by clicking the star icon, Otherwise "
 "first image will be considered featured image."
 msgstr ""
 
-#: template-parts/property-edit.php:173 template-parts/property-submit.php:174
+#: template-parts/property-edit.php:183 template-parts/property-submit.php:184
 msgid "* Please provide a property address!"
 msgstr ""
 
-#: template-parts/property-edit.php:175 template-parts/property-submit.php:176
+#: template-parts/property-edit.php:185 template-parts/property-submit.php:186
 msgid "Find Address"
 msgstr ""
 
-#: template-parts/property-edit.php:323 template-parts/property-submit.php:265
+#: template-parts/property-edit.php:282
+msgid "Mark this Property as Featured"
+msgstr ""
+
+#: template-parts/property-edit.php:333 template-parts/property-submit.php:275
 msgid "( Agent information box will not be displayed )"
 msgstr ""
 
-#: template-parts/property-edit.php:327 template-parts/property-submit.php:269
+#: template-parts/property-edit.php:337 template-parts/property-submit.php:279
 msgid "My profile information"
 msgstr ""
 
-#: template-parts/property-edit.php:327 template-parts/property-submit.php:269
+#: template-parts/property-edit.php:337 template-parts/property-submit.php:279
 msgid "( You can add your profile information here )"
 msgstr ""
 
-#: template-parts/property-edit.php:331 template-parts/property-submit.php:273
+#: template-parts/property-edit.php:341 template-parts/property-submit.php:283
 msgid "Display an agent's information"
 msgstr ""
 
-#: template-parts/property-edit.php:348
+#: template-parts/property-edit.php:358
 msgid "Update Property"
 msgstr ""
 
-#: template-parts/property-edit.php:361
+#: template-parts/property-edit.php:371
 msgid "Requested property does not belong to logged in user !"
 msgstr ""
 
-#: template-parts/property-edit.php:367
+#: template-parts/property-edit.php:377
 msgid "Requested post is not a valid property post !"
 msgstr ""
 
-#: template-parts/property-submit.php:136
+#: template-parts/property-submit.php:144
 msgid "Sq Ft"
 msgstr ""
 
-#: template-parts/property-submit.php:228
+#: template-parts/property-submit.php:238
 msgid "Mark this property as featured property"
 msgstr ""
 
-#: template-parts/property-submit.php:285
+#: template-parts/property-submit.php:295
 msgid "Message to the Reviewer"
 msgstr ""
 
-#: template-parts/property-submit.php:295
+#: template-parts/property-submit.php:305
 msgid "Submit Property"
 msgstr ""
 
@@ -3550,47 +4007,51 @@ msgstr ""
 msgid "Sort By"
 msgstr ""
 
-#: template-parts/sort-controls.php:5
+#: template-parts/sort-controls.php:12
 msgid "Default Order"
 msgstr ""
 
-#: template-parts/sort-controls.php:6
+#: template-parts/sort-controls.php:13
 msgid "Price Low to High"
 msgstr ""
 
-#: template-parts/sort-controls.php:7
+#: template-parts/sort-controls.php:14
 msgid "Price High to Low"
 msgstr ""
 
-#: template-parts/sort-controls.php:8
+#: template-parts/sort-controls.php:15
 msgid "Date Old to New"
 msgstr ""
 
-#: template-parts/sort-controls.php:9
+#: template-parts/sort-controls.php:16
 msgid "Date New to Old"
 msgstr ""
 
-#: template-submit-property.php:281
+#: template-submit-property.php:286
 msgid "Error:"
 msgstr ""
 
-#: template-submit-property.php:291
+#: template-submit-property.php:296
 msgid "Property updated successfully!"
 msgstr ""
 
-#: template-submit-property.php:313
+#: template-submit-property.php:318
 msgid "Please login to submit property!"
 msgstr ""
 
-#: tgm/class-tgm-plugin-activation.php:161 tgm/plugins-list.php:42
+#: template-users-listing.php:187
+msgid "No Users Found!"
+msgstr ""
+
+#: tgm/class-tgm-plugin-activation.php:161 tgm/plugins-list.php:54
 msgid "Install Required Plugins"
 msgstr ""
 
-#: tgm/class-tgm-plugin-activation.php:162 tgm/plugins-list.php:43
+#: tgm/class-tgm-plugin-activation.php:162 tgm/plugins-list.php:55
 msgid "Install Plugins"
 msgstr ""
 
-#: tgm/class-tgm-plugin-activation.php:163 tgm/plugins-list.php:44
+#: tgm/class-tgm-plugin-activation.php:163 tgm/plugins-list.php:56
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
@@ -3599,21 +4060,21 @@ msgstr ""
 msgid "Something went wrong."
 msgstr ""
 
-#: tgm/class-tgm-plugin-activation.php:165 tgm/plugins-list.php:46
+#: tgm/class-tgm-plugin-activation.php:165 tgm/plugins-list.php:58
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:166 tgm/plugins-list.php:47
+#: tgm/class-tgm-plugin-activation.php:166 tgm/plugins-list.php:59
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:167 tgm/plugins-list.php:48
+#: tgm/class-tgm-plugin-activation.php:167 tgm/plugins-list.php:60
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -3626,21 +4087,21 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:168 tgm/plugins-list.php:49
+#: tgm/class-tgm-plugin-activation.php:168 tgm/plugins-list.php:61
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:169 tgm/plugins-list.php:50
+#: tgm/class-tgm-plugin-activation.php:169 tgm/plugins-list.php:62
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:170 tgm/plugins-list.php:51
+#: tgm/class-tgm-plugin-activation.php:170 tgm/plugins-list.php:63
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s "
@@ -3653,7 +4114,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:171 tgm/plugins-list.php:52
+#: tgm/class-tgm-plugin-activation.php:171 tgm/plugins-list.php:64
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -3664,7 +4125,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:172 tgm/plugins-list.php:53
+#: tgm/class-tgm-plugin-activation.php:172 tgm/plugins-list.php:65
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -3677,19 +4138,19 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:173 tgm/plugins-list.php:54
+#: tgm/class-tgm-plugin-activation.php:173 tgm/plugins-list.php:66
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:174 tgm/plugins-list.php:55
+#: tgm/class-tgm-plugin-activation.php:174 tgm/plugins-list.php:67
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: tgm/class-tgm-plugin-activation.php:175 tgm/plugins-list.php:56
+#: tgm/class-tgm-plugin-activation.php:175 tgm/plugins-list.php:68
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
@@ -3698,7 +4159,7 @@ msgid "Return to the dashboard"
 msgstr ""
 
 #: tgm/class-tgm-plugin-activation.php:177
-#: tgm/class-tgm-plugin-activation.php:1945 tgm/plugins-list.php:57
+#: tgm/class-tgm-plugin-activation.php:1945 tgm/plugins-list.php:69
 msgid "Plugin activated successfully."
 msgstr ""
 
@@ -3865,11 +4326,11 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: tgm/plugins-list.php:45
+#: tgm/plugins-list.php:57
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: tgm/plugins-list.php:58
+#: tgm/plugins-list.php:70
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
@@ -3887,7 +4348,7 @@ msgid "Find Your Home"
 msgstr ""
 
 #: widgets/advance-search-widget.php:44
-#: widgets/agent-featured-properties-widget.php:128
+#: widgets/agent-featured-properties-widget.php:132
 #: widgets/agent-properties-widget.php:132
 #: widgets/featured-properties-widget.php:115
 #: widgets/property-types-widget.php:39
@@ -3895,45 +4356,39 @@ msgid "Widget Title"
 msgstr ""
 
 #: widgets/agent-featured-properties-widget.php:6
-msgid "Important: This widget is only for the agent detail page."
+msgid "Important: This widget is only for the Agent Sidebar."
 msgstr ""
 
 #: widgets/agent-featured-properties-widget.php:7
 msgid "RealHomes - Agent Featured Properties"
 msgstr ""
 
-#: widgets/agent-featured-properties-widget.php:85
+#: widgets/agent-featured-properties-widget.php:89
 #: widgets/agent-properties-widget.php:85
 #: widgets/featured-properties-widget.php:75
 msgid "Read More"
 msgstr ""
 
-#: widgets/agent-featured-properties-widget.php:104
+#: widgets/agent-featured-properties-widget.php:108
 msgid "No Featured Property Found Under Agent "
 msgstr ""
 
-#: widgets/agent-featured-properties-widget.php:132
+#: widgets/agent-featured-properties-widget.php:136
 #: widgets/agent-properties-widget.php:142
 #: widgets/featured-properties-widget.php:123
 msgid "Sort By:"
 msgstr ""
 
-#: widgets/agent-featured-properties-widget.php:134
+#: widgets/agent-featured-properties-widget.php:138
 #: widgets/agent-properties-widget.php:144
 #: widgets/featured-properties-widget.php:125
 msgid "Most Recent"
 msgstr ""
 
-#: widgets/agent-featured-properties-widget.php:135
+#: widgets/agent-featured-properties-widget.php:139
 #: widgets/agent-properties-widget.php:145
 #: widgets/featured-properties-widget.php:126
 msgid "Random"
-msgstr ""
-
-#: widgets/agent-featured-properties-widget.php:139
-#: widgets/agent-properties-widget.php:149
-#: widgets/featured-properties-widget.php:119
-msgid "Number of Properties"
 msgstr ""
 
 #: widgets/agent-properties-widget.php:6

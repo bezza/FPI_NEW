@@ -1,127 +1,26 @@
-@media screen and (max-width: 979px) and (min-width: 220px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  #header-top {
-    margin-bottom: 15px;
-  }
-
-  #logo {
-    float: none;
-    margin-bottom: 10px;
-  }
-
-  .menu-and-contact-wrap {
-    position: static;
-  }
-
-  .contact-number {
-    float: none;
-    background: none;
-    text-align: center;
-    margin: 0 auto 15px;
-    min-height: 20px;
-    line-height: 18px;
-  }
-  .contact-number:hover .fa-phone {
-    background: none;
-  }
-  .contact-number .fa-phone {
-    background: none;
-    margin-right: 10px;
-    padding: 0;
-  }
-  .contact-number .outer-strip {
-    display: none;
-  }
-
-  .main-menu {
-    float: none;
-    margin: 0 0 15px;
-    padding: 10px;
-    background-color: #343a3b;
-  }
-  .main-menu ul {
-    display: none;
-  }
-  .main-menu .responsive-nav {
-    display: block;
-    border: 1px solid #343a3b;
-    border-radius: 0;
-  }
-  .main-menu .responsive-nav:focus {
-    outline: none;
-  }
-
-  .desc-wrap {
-    width: 724px;
-  }
-
-  .slide-description {
-    padding: 20px 16px;
-    top: 165px;
-    width: auto;
-  }
-  .slide-description h3 {
-    margin: 0;
-    line-height: 34px;
-  }
-  .slide-description .know-more,
-  .slide-description p {
-    display: none;
-  }
-
-  .advance-search .search-heading {
-    position: static;
-  }
-
-  #footer-bottom p {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  #footer-bottom .designed-by {
-    text-align: center;
-  }
-
-  .sidebar .widget {
-    background: #fff;
-    margin-bottom: 35px;
-  }
-  .sidebar .widget.icl_languages_selector {
-    background: transparent;
-  }
-
-  .lisitng-grid-layout .main {
-    margin: 0 0 35px;
-  }
-
-  .lisitng-grid-layout .title-heading {
-    position: static;
-  }
-
-  .listing-layout .property-by .title-heading {
-    float: none;
-  }
-
-  .property-item .property-meta span {
-    font-size: 12px;
-  }
-}
+/* Custom Responsive: Large desktop and up
+--------------------------------------------------------------------------*/
 @media (min-width: 1200px) {
+  /*  Social Nav */
   #header .social_networks li a {
     width: 49px;
   }
 
-  #header .user-nav a {
-    padding: 0 10px 0 7px;
+  /*  User Nav */
+  .user-nav a:after {
+    margin: 0 10px;
   }
 
+  .user-nav a:last-child:after {
+    margin: 0 10px 0 0;
+  }
+
+  /*  Logo */
   #logo {
     max-width: 100%;
   }
 
+  /*  Main Nav */
   .main-menu ul li a {
     padding: 14px 17px;
     font-size: 15px;
@@ -138,11 +37,13 @@
     left: 234px;
   }
 
+  /* Contact Number */
   .contact-number {
     font-size: 21px;
     line-height: 46px;
   }
 
+  /* Slide Description */
   .desc-wrap {
     width: 1170px;
   }
@@ -152,6 +53,7 @@
     left: 0;
   }
 
+  /* Advance Search */
   .advance-search .as-form-wrap {
     padding: 25px 31px 0;
   }
@@ -170,10 +72,12 @@
     width: 223px;
   }
 
+  /* Slider Loader */
   #home-flexslider .flexslider.loading {
     min-height: 400px;
   }
 
+  /* Property Item */
   .narrative {
     padding: 0 45px;
   }
@@ -213,12 +117,8 @@
     margin: 0 -19px 0;
     padding: 0 19px;
   }
-  .property-item .property-meta span {
-    font-size: 13px;
-    padding-right: 12px;
-    margin-right: 12px;
-  }
 
+  /* Carousel For Featured Properties */
   .es-carousel-wrapper {
     padding: 0 49px;
   }
@@ -228,6 +128,7 @@
     margin-right: 30px !important;
   }
 
+  /* Brand Partners carousel */
   .brands-carousel .jcarousel-container-horizontal {
     padding-left: 50px;
     padding-right: 50px;
@@ -236,6 +137,8 @@
     width: 178px;
   }
 
+  /* Widgets
+  -------------------------------------------------------------- */
   #footer > .row > .span3 {
     width: 270px;
   }
@@ -249,6 +152,7 @@
     padding-left: 19px;
   }
 
+  /* Search Widget */
   .widget #searchform {
     width: 240px;
   }
@@ -256,10 +160,12 @@
     width: 202px;
   }
 
+  /* Social Network Widget */
   .widget.social_network .social_networks li a {
     width: 49px;
   }
 
+  /* Advance Search Widget */
   .widget.advance-search .title {
     padding: 0 0 0 20px;
   }
@@ -283,6 +189,7 @@
     padding: 8px 36px;
   }
 
+  /* Calculator Widget */
   .widget.calculator .title {
     background-position: 231px 9px;
     padding-left: 19px;
@@ -291,9 +198,6 @@
     width: 221px;
     padding-left: 10px;
     margin-bottom: 18px;
-  }
-  .widget.calculator .selectwrap input {
-    /*width: 197px;*/
   }
   .widget.calculator .mini input {
     width: 66px;
@@ -313,6 +217,7 @@
     padding: 6px 11px;
   }
 
+  /* Featured Properties Widget */
   ul.featured-properties {
     padding: 0 15px;
   }
@@ -325,6 +230,7 @@
     padding-bottom: 25px;
   }
 
+  /* Page Head */
   .page-head h2 span {
     padding: 7px 58px 7px 28px;
   }
@@ -332,13 +238,12 @@
     padding: 17px 30px 17px 28px;
   }
 
+  /* Agent Listing Page */
   .list-container {
     padding: 28px 25px;
   }
 
-  .listing-layout .about-agent .detail {
-    width: 602px;
-  }
+  /* Listing */
   .listing-layout .property-item .price {
     margin-right: -20px;
   }
@@ -346,16 +251,11 @@
     width: 516px;
   }
 
-  /*------------------------------------------------------*/
-  /* Property Listing View
-  /*------------------------------------------------------*/
-  .view-type {
-    position: absolute;
-    right: -1px;
-    top: -36px;
-    border: 1px solid #dedede;
+  .span12 .listing-layout .property-item .detail {
+    width: 816px;
   }
 
+  /* Property Grid View Page */
   .property-grid .list-container {
     margin-left: -40px;
   }
@@ -364,6 +264,7 @@
     width: 246px;
   }
 
+  /* Comments */
   #comments .commentlist {
     padding: 2px 46px 5px 14px;
   }
@@ -396,6 +297,7 @@
     width: 58%;
   }
 
+  /* About Us Page */
   .services-list {
     margin: 0 0 0 -70px;
   }
@@ -408,9 +310,11 @@
     width: 350px;
   }
 
+  /* Detail Page */
   #property-detail-flexslider {
     height: 385px;
   }
+  #property-detail-flexslider .flex-direction-nav,
   #property-detail-flexslider .flex-viewport {
     width: 768px;
     height: 385px;
@@ -446,6 +350,7 @@
     width: 293px;
   }
 
+  /* Gallery Template */
   #filter-by {
     margin: 0;
     position: absolute;
@@ -501,9 +406,7 @@
     width: 28%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Similar Properties on Property Detail Page
-  /*-----------------------------------------------------------------------------------*/
+  /* Similar Properties on Property Detail Page */
   .detail .list-container {
     padding: 10px 24px 24px;
   }
@@ -514,9 +417,7 @@
     margin-left: 40px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Submit Property Template
-  /*-----------------------------------------------------------------------------------*/
+  /* Submit Property Template */
   .submit-form input[type="email"],
   .submit-form input[type="password"],
   .submit-form input[type="text"],
@@ -573,9 +474,7 @@
     width: 58%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	My Properties
-  /*-----------------------------------------------------------------------------------*/
+  /* My Properties */
   .my-property .cell {
     padding: 22px;
   }
@@ -598,16 +497,12 @@
     width: 170px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	property detail slider variation 2
-  /*-----------------------------------------------------------------------------------*/
+  /* Property detail slider variation 2 */
   #property-carousel-two {
     padding: 0 51px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /* Properties sort controls
-  /*-----------------------------------------------------------------------------------*/
+  /* Properties sort controls */
   .search-header {
     padding: 42px 30px;
   }
@@ -617,16 +512,12 @@
     padding-right: 15px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /* Property Attachments
-  /*-----------------------------------------------------------------------------------*/
+  /* Property Attachments */
   #overview .attachments-list li {
     width: 32%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /* DSIDX Search Widget on Homepage
-  /*-----------------------------------------------------------------------------------*/
+  /* dsIDXpress Search Widget on Homepage */
   #home-idx-search .dsidx-search-widget input[type=text] {
     width: 150px !important;
   }
@@ -634,14 +525,177 @@
     width: 125px !important;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+/* Common Styles = Tablet to Small Devices
+-------------------------------------------------------------- */
+@media (max-width: 979px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #header-top {
+    margin-bottom: 15px;
+    text-align: center;
+  }
   #header-top #lang_sel {
-    display: block;
+    display: inline-block;
     float: none;
     clear: both;
     width: 150px;
-    margin: 10px auto;
+    margin: 10px 5px;
   }
+  #header-top #lang_sel li {
+    float: none;
+  }
+
+  #currency-switcher-form {
+    float: none;
+    margin: 10px 5px;
+    vertical-align: middle;
+  }
+
+  /* Contact Email */
+  #contact-email {
+    display: inline-block;
+    padding: 0;
+    margin: 10px 5px;
+    float: none;
+    vertical-align: middle;
+  }
+
+  #logo {
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  #header .tag-line {
+    text-align: center;
+  }
+
+  /* Menu and Contact Wrap */
+  .menu-and-contact-wrap {
+    position: static;
+  }
+
+  /* Contact Number */
+  .contact-number {
+    float: none;
+    background: none;
+    text-align: center;
+    margin: 0 auto 15px;
+    min-height: 20px;
+    line-height: 18px;
+  }
+  .contact-number:hover .fa-phone {
+    background: none;
+  }
+  .contact-number .fa-phone {
+    background: none;
+    margin-right: 10px;
+    padding: 0;
+  }
+  .contact-number .outer-strip {
+    display: none;
+  }
+
+  /* Main Nav */
+  .main-menu {
+    float: none;
+    margin: 0 0 15px;
+    padding: 10px;
+    background-color: #343a3b;
+  }
+  .main-menu ul {
+    display: none;
+  }
+  .main-menu .responsive-nav {
+    display: block;
+    border: 1px solid #343a3b;
+    border-radius: 0;
+  }
+  .main-menu .responsive-nav:focus {
+    outline: none;
+  }
+
+  /* Slide Description */
+  .desc-wrap {
+    width: 724px;
+  }
+
+  .slide-description {
+    padding: 20px 16px;
+    top: 165px;
+    width: auto;
+  }
+  .slide-description h3 {
+    margin: 0;
+    line-height: 34px;
+  }
+  .slide-description .know-more,
+  .slide-description p {
+    display: none;
+  }
+
+  /* Advance Search */
+  .advance-search .search-heading {
+    position: static;
+  }
+
+  /* Footer */
+  #footer-bottom p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #footer-bottom .designed-by {
+    text-align: center;
+  }
+
+  /* Sidebar */
+  .sidebar .widget {
+    background: #fff;
+    margin-bottom: 35px;
+  }
+  .sidebar .widget.icl_languages_selector {
+    background: transparent;
+  }
+
+  /* Listing Grid Layout */
+  .listing-grid-layout .main {
+    margin: 0 0 35px;
+  }
+
+  .listing-grid-layout .title-heading {
+    position: static;
+  }
+
+  .listing-layout .property-by .title-heading {
+    float: none;
+  }
+
+  .property-item .property-meta span {
+    font-size: 12px;
+  }
+
+  /* listing view types */
+  .view-type {
+    position: relative;
+    top: auto;
+    right: auto;
+    border: none;
+    border-bottom: 1px solid #dedede;
+  }
+  .view-type a {
+    display: block;
+    float: right;
+  }
+  .view-type a.grid, .view-type a.list {
+    border-right: none;
+    border-left: 1px solid #dedede;
+  }
+}
+/* Responsive: Tablet to desktop
+------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
   #header-top #lang_sel_click {
     display: block;
     float: none;
@@ -666,14 +720,7 @@
     height: auto;
   }
 
-  #contact-email {
-    padding: 15px 0 0;
-    margin: 0 0 15px;
-    float: none;
-    clear: both;
-    text-align: center;
-  }
-
+  /* Social Networks */
   .header-wrapper .social_networks {
     border-top: 1px solid #343a3b;
     float: none;
@@ -692,17 +739,18 @@
     text-align: center;
   }
 
+  /* Google Listing Map */
   #listing-map {
     height: 450px;
   }
 
-  /* User Nav
-  --------------------------------------------------------------------------*/
+  /* User Nav */
   .user-nav {
     float: none;
     text-align: center;
   }
 
+  /* Select Box & Advance Search Controls */
   .small input[type="text"],
   .large input[type="text"] {
     width: 136px;
@@ -716,10 +764,12 @@
     width: 100%;
   }
 
+  /* Slider Loader */
   #home-flexslider .flexslider.loading {
     min-height: 250px;
   }
 
+  /* Property Item */
   .narrative {
     padding: 0 50px;
   }
@@ -755,11 +805,13 @@
     padding: 0 20px;
   }
 
+  /* Carousel For Featured Properties */
   .es-carousel-wrapper ul li {
     width: 187px !important;
     margin-right: 30px !important;
   }
 
+  /* Brand Partners carousel */
   .brands-carousel .jcarousel-container-horizontal {
     padding-left: 41px;
     padding-right: 41px;
@@ -768,15 +820,18 @@
     width: 160px;
   }
 
+  /* Footer */
   #footer > .row > .span3 {
     width: 342px;
   }
 
+  /* Layout */
   .contents .main-wrap,
   .contents .sidebar-wrap {
     width: 724px;
   }
 
+  /* widgets */
   .widget.quick-links ul li {
     float: left;
     width: 46%;
@@ -827,6 +882,7 @@
     margin: 0 5px 4px 0;
   }
 
+  /* Search Widget */
   .widget #searchform {
     width: 682px;
   }
@@ -834,6 +890,7 @@
     width: 644px;
   }
 
+  /* Calculator Widget */
   .widget.calculator .option-bar {
     margin: 0 20px;
   }
@@ -845,6 +902,7 @@
     margin: 0 24px 0 0;
   }
 
+  /* Featured Properties Widget */
   ul.featured-properties {
     overflow: hidden;
     padding: 0 83px;
@@ -864,16 +922,13 @@
     margin-left: 0;
   }
 
-  /*------------------------------------------------------*/
   /* Agent Listing Detail Page
-  /*------------------------------------------------------*/
+  ------------------------------------------------------*/
+  #property-detail-flexslider .flex-direction-nav,
   #property-detail-flexslider .flex-viewport {
     width: 631px;
   }
 
-  .listing-layout .about-agent .detail {
-    width: 72.5%;
-  }
   .listing-layout .property-item .price {
     margin-right: -21px;
   }
@@ -881,6 +936,11 @@
     width: 374px;
   }
 
+  .span12 .listing-layout .property-item .detail {
+    width: 370px;
+  }
+
+  /* Property Grid View Page */
   .property-grid .list-container {
     margin-left: -20px;
   }
@@ -889,13 +949,19 @@
     width: 212px;
   }
   .property-grid .property-item figure {
-    width: 214px;
+    width: 212px;
   }
 
+  .span12 .property-grid.inspiry-shortcode .list-container {
+    padding-left: 0;
+  }
+
+  /* Contact Page */
   #map_canvas {
     height: 370px;
   }
 
+  /* About Us Page */
   .services-list li {
     width: 316px;
   }
@@ -904,6 +970,7 @@
     width: 280px;
   }
 
+  /* Detail Page */
   #overview .contacts-list {
     width: 61.5%;
   }
@@ -912,6 +979,7 @@
     width: 96.8%;
   }
 
+  /* Gallery Template */
   .gallery-2-columns,
   .gallery-3-columns,
   .gallery-4-columns {
@@ -944,9 +1012,7 @@
     width: 42%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Similar Properties on Property Detail Page
-  /*-----------------------------------------------------------------------------------*/
+  /* Similar Properties on Property Detail Page */
   .detail .listing-layout {
     margin-bottom: 35px;
   }
@@ -961,9 +1027,8 @@
     width: 214px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Submit Property Template
-  /*-----------------------------------------------------------------------------------*/
+  /* Submit Property Template
+  -------------------------------------------------------------------------*/
   .submit-form input[type="email"],
   .submit-form input[type="password"],
   .submit-form input[type="text"],
@@ -1024,9 +1089,8 @@
     font-size: 20px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
   /*	Login & Register
-  /*-----------------------------------------------------------------------------------*/
+  -------------------------------------------------------------------------*/
   .login-register .inner-wrapper {
     padding: 40px 50px 25px;
   }
@@ -1035,9 +1099,8 @@
     width: 85%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
   /*	My Properties
-  /*-----------------------------------------------------------------------------------*/
+  -------------------------------------------------------------------------*/
   .my-property .cell {
     padding: 20px 10px;
   }
@@ -1072,23 +1135,20 @@
     line-height: 39px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	property detail slider variation 2
-  /*-----------------------------------------------------------------------------------*/
+  /* Property detail slider variation 2
+  -------------------------------------------------------------------------*/
   #property-carousel-two {
     padding: 0 38px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
   /* Properties sort controls
-  /*-----------------------------------------------------------------------------------*/
+  -------------------------------------------------------------------------*/
   .search-header {
     padding: 42px 49px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /* DSIDX Search Widget on Homepage
-  /*-----------------------------------------------------------------------------------*/
+  /* dsIDXpress Search Widget on Homepage
+  -------------------------------------------------------------------------*/
   #home-idx-search h3.home-widget-label {
     position: relative;
     top: 0;
@@ -1101,7 +1161,7 @@
   }
 
   /*  User Profile Related Styles
--------------------------------------------------------------------------*/
+  -------------------------------------------------------------------------*/
   .user-profile-img-wrapper #user-profile-img {
     float: none;
     margin: 0 15px 15px 0;
@@ -1116,15 +1176,27 @@
   #inspiry-edit-user #description {
     min-height: 228px;
   }
-}
-@media (max-width: 767px) {
-  #header-top #lang_sel {
-    display: block;
-    float: none;
-    clear: both;
-    width: 150px;
-    margin: 10px auto;
+
+  /* Mortgage Calculator Widget
+  -------------------------------------------------------------------------*/
+  .lidd_mc_form {
+    padding: 0 4% 10px 4%;
   }
+  .lidd_mc_form input[type="number"],
+  .lidd_mc_form input[type="text"] {
+    width: 98%;
+  }
+
+  #lidd_mc_details {
+    padding: 0 4% 0 4%;
+  }
+  #lidd_mc_details #lidd_mc_inspector {
+    right: 4%;
+  }
+}
+/* Responsive: Landscape phone to desktop/tablet
+------------------------------------------------------*/
+@media (max-width: 767px) {
   #header-top #lang_sel_click {
     display: block;
     float: none;
@@ -1149,14 +1221,7 @@
     height: auto;
   }
 
-  #contact-email {
-    padding: 15px 0 0;
-    margin: 0 0 15px;
-    float: none;
-    text-align: center;
-    clear: both;
-  }
-
+  /* Social Networks */
   .social_networks {
     border-top: 1px solid #343a3b;
     float: none;
@@ -1174,24 +1239,23 @@
     text-align: center;
   }
 
-  /* User Nav
---------------------------------------------------------------------------*/
+  /* User Nav */
   .user-nav {
     float: none;
     text-align: center;
   }
 
-  /*------------------------------------------------------*/
-  /* Page Head
-  /*------------------------------------------------------*/
+  /* Page Head */
   .page-head {
     padding-top: 20px;
   }
 
+  /* Google Listing Map */
   #listing-map {
     height: 400px;
   }
 
+  /* Slide Description */
   .slide-description {
     display: none;
   }
@@ -1200,6 +1264,7 @@
     min-height: 150px;
   }
 
+  /* Columns Style */
   .columns {
     margin: 0;
   }
@@ -1221,6 +1286,7 @@
     width: auto;
   }
 
+  /* Blog Page */
   .format-video .play-btn {
     background-size: 50% auto;
   }
@@ -1229,6 +1295,7 @@
     width: 500px;
   }
 
+  /* Advance Search */
   .advance-search .as-form-wrap {
     margin: auto;
     padding-left: 0;
@@ -1258,6 +1325,7 @@
     width: 91.4%;
   }
 
+  /* Property Items */
   .narrative {
     padding: 0 30px;
   }
@@ -1282,6 +1350,7 @@
     overflow: visible;
   }
 
+  /* Carousel */
   .es-carousel-wrapper ul li {
     width: 184px !important;
     margin-right: 30px !important;
@@ -1295,11 +1364,13 @@
     width: 180px;
   }
 
+  /* Widgets */
   .widget.quick-links ul li {
     float: left;
     width: 46%;
   }
 
+  /* Search Widget */
   .widget #searchform {
     width: 458px;
   }
@@ -1307,11 +1378,13 @@
     width: 420px;
   }
 
+  /* Social Network Widget */
   .widget.social_network .social_networks {
     border-top: none;
     text-align: left;
   }
 
+  /* Advance Search  Widget */
   .widget.calculator .option-bar,
   .widget.advance-search .option-bar {
     float: none;
@@ -1333,6 +1406,7 @@
     float: left;
   }
 
+  /* Calculator Widget */
   .widget.calculator .title {
     background: #fff;
   }
@@ -1351,6 +1425,7 @@
     margin-top: 0;
   }
 
+  /* Featured Properties Widget */
   ul.featured-properties {
     overflow: hidden;
     padding: 0;
@@ -1366,11 +1441,10 @@
     height: auto;
   }
 
-  .listing-layout .about-agent figure {
-    margin-right: 15px;
-  }
-  .listing-layout .about-agent .detail {
-    width: 59.9%;
+  /* Agent Single Page */
+  .listing-layout .about-agent.agent-single .agent-pic {
+    display: block;
+    margin: 0 auto 10px;
   }
 
   .about-agent .social_networks {
@@ -1378,6 +1452,7 @@
     float: right;
   }
 
+  /*  Listing Page */
   .listing-layout .property-item .detail {
     width: 215px;
   }
@@ -1385,6 +1460,14 @@
     display: block;
   }
 
+  .span12 .listing-layout .property-item figure {
+    width: 200px;
+  }
+  .span12 .listing-layout .property-item .detail {
+    width: 215px;
+  }
+
+  /* Property Grid View Page */
   .property-grid .list-container {
     margin-left: -20px;
   }
@@ -1393,6 +1476,15 @@
     width: 217px;
   }
 
+  .span12 .property-grid.inspiry-shortcode .list-container {
+    padding-left: 0;
+  }
+
+  .span12 .property-grid.inspiry-shortcode .property-item figure {
+    width: auto;
+  }
+
+  /* Comments */
   #comments .comment .avatar {
     margin: 0 15px 15px 0;
     width: 60px;
@@ -1415,6 +1507,17 @@
     padding: 30px 0;
   }
 
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form input[type="number"],
+  #contact-form #comment,
+  #respond input[type="text"],
+  #respond input[type="email"],
+  #respond input[type="number"],
+  #respond #comment {
+    width: 95%;
+  }
+
   #respond input[type="text"] {
     width: 60%;
   }
@@ -1423,10 +1526,12 @@
     width: 80%;
   }
 
+  /* Contact Page */
   #map_canvas {
     height: 300px;
   }
 
+  /* About Us Page */
   .services-list {
     margin: 0;
   }
@@ -1443,18 +1548,21 @@
     margin-left: 25px;
   }
 
+  /* Detail Page */
   #property-detail-flexslider {
-    height: 249px;
+    height: 250px;
   }
+  #property-detail-flexslider .flex-direction-nav,
   #property-detail-flexslider .flex-viewport {
-    width: 424px;
-    height: 249px;
+    width: 498px;
+    height: 250px;
   }
   #property-detail-flexslider .flex-control-thumbs li {
     margin-bottom: 5px;
     height: 37px;
   }
   #property-detail-flexslider .jcarousel-container-vertical {
+    display: none !important;
     width: 60px;
   }
   #property-detail-flexslider .jcarousel-clip-vertical {
@@ -1501,7 +1609,6 @@
   #overview .property-item .property-meta .printer-icon {
     float: none;
     border: none;
-    padding-left: 41px;
   }
   #overview .property-item .features .title {
     margin: 0;
@@ -1548,12 +1655,19 @@
   }
   #overview .contacts-list {
     width: 48.2%;
+    margin-right: 22px;
   }
   #overview .contact-form textarea,
   #overview .contact-form input[type="text"] {
     width: 95.6%;
   }
 
+  /* Contact Page */
+  .contact-details address {
+    margin-bottom: 0;
+  }
+
+  /* Gallery Template */
   .gallery-2-columns,
   .gallery-3-columns,
   .gallery-4-columns {
@@ -1606,9 +1720,7 @@
     width: 42%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Similar Properties on Property Detail Page
-  /*-----------------------------------------------------------------------------------*/
+  /* Similar Properties on Property Detail Page */
   .detail .listing-layout {
     margin-bottom: 35px;
   }
@@ -1624,9 +1736,7 @@
     min-height: 330px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Submit Property Template
-  /*-----------------------------------------------------------------------------------*/
+  /* Submit Property Template */
   .submit-form input[type="email"],
   .submit-form input[type="password"],
   .submit-form input[type="text"],
@@ -1684,9 +1794,7 @@
     font-size: 22px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Login & Register
-  /*-----------------------------------------------------------------------------------*/
+  /* Login & Register */
   .login-register .inner-wrapper {
     padding: 40px 50px 25px;
   }
@@ -1698,9 +1806,7 @@
     width: 85%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	My Properties
-  /*-----------------------------------------------------------------------------------*/
+  /* My Properties */
   .my-property {
     padding: 20px 0;
   }
@@ -1750,9 +1856,7 @@
     border-bottom: none;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	property detail slider variation 2
-  /*-----------------------------------------------------------------------------------*/
+  /* property detail slider variation 2 */
   #property-slider-two-wrapper {
     background-color: transparent;
   }
@@ -1765,9 +1869,7 @@
     padding: 0 50px;
   }
 
-  /*------------------------------------------------------*/
-  /* Home Recent Blog Posts
-  /*------------------------------------------------------*/
+  /* Home Recent Blog Posts */
   .home-recent-posts article {
     padding-bottom: 20px;
     border-bottom: 1px solid #dedede;
@@ -1779,17 +1881,13 @@
     padding-bottom: 0;
   }
 
-  /*------------------------------------------------------*/
-  /* Login Modal Fixes
-  /*------------------------------------------------------*/
+  /* Login Modal Fixes */
   .forms-modal {
     width: auto;
     margin: auto;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /* Property Attachments
-  /*-----------------------------------------------------------------------------------*/
+  /* Property Attachments */
   #overview .attachments-wrap {
     padding: 16px 17px;
   }
@@ -1800,9 +1898,7 @@
     padding-right: 10px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /* DSIDX Search Widget on Homepage
-  /*-----------------------------------------------------------------------------------*/
+  /* dsIDXpress Search Widget on Homepage */
   #home-idx-search h3.home-widget-label {
     position: relative;
     top: 0;
@@ -1836,8 +1932,7 @@
     padding: 10px 15px;
   }
 
-  /*  User Profile Related Styles
--------------------------------------------------------------------------*/
+  /*  User Profile Related Styles */
   .user-profile-img-wrapper #user-profile-img {
     float: none;
     margin: 0 15px 15px 0;
@@ -1848,18 +1943,25 @@
   .user-profile-img-wrapper .real-btn {
     margin-right: 8px;
   }
+
+  /* Mortgage Calculator Widget */
+  .lidd_mc_form input[type="number"],
+  .lidd_mc_form input[type="text"] {
+    width: 95%;
+  }
+
+  /* News or Blog page */
+  .format-icon {
+    display: none;
+  }
 }
 @media (max-width: 499px) {
-  /*------------------------------------------------------*/
-  /* Remove Slider Navigation for Smaller Screen.
-  /*------------------------------------------------------*/
+  /* Remove Slider Navigation for Smaller Screen. */
   .flex-direction-nav {
     display: none;
   }
 
-  /*------------------------------------------------------*/
-  /* Page Head
-  /*------------------------------------------------------*/
+  /* Page Head */
   .page-head {
     padding-top: 15px;
   }
@@ -1868,14 +1970,17 @@
     width: 440px;
   }
 
+  /* Google Listing Map */
   #listing-map {
     height: 350px;
   }
 
+  /* Advance Search */
   .advance-search .as-form-wrap {
     width: 378px;
   }
 
+  /* Property Items */
   .property-items .span6 {
     width: 396px;
   }
@@ -1910,11 +2015,16 @@
     margin: 0 0 10px;
   }
 
+  /* Featured Properties Carousel */
+  .es-carousel-wrapper {
+    margin-bottom: 0;
+  }
   .es-carousel-wrapper ul li {
     width: 154px !important;
     margin-right: 30px !important;
   }
 
+  /* Partners carousel */
   .brands-carousel .jcarousel-container-horizontal {
     padding-left: 41px;
     padding-right: 41px;
@@ -1929,6 +2039,7 @@
     width: 440px;
   }
 
+  /* Search Widget */
   .widget #searchform {
     width: 398px;
   }
@@ -1936,25 +2047,23 @@
     width: 360px;
   }
 
+  /* Calculator Widget */
   .widget.calculator input[type="text"] {
     width: 386px;
-  }
-  .widget.calculator .mini .selectwrap input,
-  .widget.calculator .mini input,
-  .widget.calculator #extra {
-    /*width: 360px;*/
   }
   .widget.calculator #payment {
     width: 382px;
   }
 
+  /* Featured Properties Widget */
   ul.featured-properties li {
     width: 180px;
     margin-left: 27px;
   }
 
-  .listing-layout .about-agent .detail {
-    width: 52.9%;
+  /* Agent Listing Detail Page */
+  .listing-layout .about-agent.agent-single .agent-pic {
+    margin-bottom: 10px;
   }
   .listing-layout .follow-agent {
     margin-top: 10px;
@@ -1971,6 +2080,7 @@
   .listing-layout .property-item .property-meta {
     margin: 0 -10px 0;
     padding: 0 10px;
+    width: auto;
   }
   .listing-layout .property-item .property-meta span {
     border-right: none;
@@ -1983,6 +2093,18 @@
     border-bottom: none;
   }
 
+  .span12 .listing-layout .property-item figure {
+    width: auto;
+  }
+  .span12 .listing-layout .property-item .detail {
+    width: auto;
+  }
+
+  .more-details {
+    margin-bottom: 15px;
+  }
+
+  /* Property Grid View Page */
   .property-grid .property-item {
     width: 187px;
   }
@@ -1990,6 +2112,7 @@
     width: 187px;
   }
 
+  /* Blog Page */
   .format-icon {
     display: none;
   }
@@ -1999,6 +2122,7 @@
     width: 25px;
   }
 
+  /* Comments */
   #comments .comment .avatar {
     margin: 10px 10px 10px 0;
     width: 80px;
@@ -2025,6 +2149,7 @@
     display: none;
   }
 
+  /* Contact Page */
   #contact-form input[type="text"], #contact-form #comment {
     width: 97%;
   }
@@ -2057,22 +2182,29 @@
     width: 378px;
   }
 
+  /* Detail Page */
   #property-detail-flexslider {
-    height: 219px;
+    width: 438px;
+    height: 220px;
   }
+  #property-detail-flexslider .flex-direction-nav {
+    display: block;
+  }
+  #property-detail-flexslider .flex-direction-nav,
   #property-detail-flexslider .flex-viewport {
-    height: 219px;
-    width: 374px;
+    width: 438px;
+    height: 220px;
   }
   #property-detail-flexslider .flex-control-thumbs li {
     margin-bottom: 5px;
     height: 31px;
   }
-  #property-detail-flexslider .jcarousel-clip-vertical {
-    height: 180px;
-  }
   #property-detail-flexslider .jcarousel-container-vertical {
     width: 50px;
+    display: none !important;
+  }
+  #property-detail-flexslider .jcarousel-clip-vertical {
+    height: 180px;
   }
   #property-detail-flexslider .jcarousel-next,
   #property-detail-flexslider .jcarousel-prev {
@@ -2087,9 +2219,7 @@
     width: 94.4%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	dsIDX Styles
-  /*-----------------------------------------------------------------------------------*/
+  /* dsIDX Styles */
   #dsidx-listings .dsidx-secondary-data div {
     width: auto;
     float: none;
@@ -2102,9 +2232,26 @@
     padding-left: 10px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Making reCAPTCHA Responsive
-  /*-----------------------------------------------------------------------------------*/
+  #dsidx ul.dsidx-tabs,
+  body.dsidx ul.dsidx-tabs {
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  #dsidx ul.dsidx-tabs li.dsidx-tab,
+  body.dsidx ul.dsidx-tabs li.dsidx-tab {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  #dsidx-listings .dsidx-listing-container .dsidx-secondary-data div {
+    width: auto;
+  }
+
+  /* Making reCAPTCHA Responsive */
   #recaptcha_area .recaptchatable #recaptcha_image {
     margin: 0 !important;
     width: 230px !important;
@@ -2130,9 +2277,7 @@
     background: none !important;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Similar Properties on Property Detail Page
-  /*-----------------------------------------------------------------------------------*/
+  /* Similar Properties on Property Detail Page */
   .detail .list-container {
     padding: 10px 20px;
   }
@@ -2145,9 +2290,7 @@
     min-height: 330px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Submit Property Template
-  /*-----------------------------------------------------------------------------------*/
+  /* Submit Property Template */
   .submit-form .selectwrap input[type="text"] {
     width: 90%;
   }
@@ -2172,17 +2315,13 @@
     height: 128px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Login & Register
-  /*-----------------------------------------------------------------------------------*/
+  /* Login & Register */
   .login-register input[type="text"],
   .login-register input[type="password"] {
     width: 95%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	property detail slider variation 2
-  /*-----------------------------------------------------------------------------------*/
+  /* property detail slider variation 2 */
   #property-slider-two {
     min-height: 200px;
   }
@@ -2193,11 +2332,15 @@
   #property-carousel-two .flex-direction-nav {
     display: block;
   }
+
+  /* Mortgage Calculator Widget */
+  .lidd_mc_form input[type="number"],
+  .lidd_mc_form input[type="text"] {
+    width: 95%;
+  }
 }
 @media (max-width: 439px) {
-  /*------------------------------------------------------*/
-  /* Page Head
-  /*------------------------------------------------------*/
+  /* Page Head */
   .page-head {
     padding-top: 5px;
   }
@@ -2210,6 +2353,7 @@
     width: 280px;
   }
 
+  /* Advance Search */
   .advance-search .search-heading {
     padding-right: 15px;
   }
@@ -2229,6 +2373,7 @@
     width: 84%;
   }
 
+  /* Property Items */
   .property-items {
     border-bottom: 1px solid #dedede;
   }
@@ -2252,15 +2397,19 @@
     border-top: 1px solid #dedede;
   }
 
-  .featured-properties-carousel,
-  .brands-carousel {
-    display: none;
+  /* Featured Properties Carousel */
+  /* Partners Carousel */
+  .brands-carousel .jcarousel-container-horizontal {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
+  /* Widgets */
   .widget.quick-links ul li {
     width: 100%;
   }
 
+  /* Search Widget */
   .widget #searchform {
     width: 238px;
   }
@@ -2268,6 +2417,7 @@
     width: 200px;
   }
 
+  /* Advance Search Widget */
   .widget.calculator .small input[type="text"],
   .widget.calculator .large input[type="text"],
   .widget.advance-search .small input[type="text"],
@@ -2285,18 +2435,15 @@
     float: none;
   }
 
+  /* Calculator Widget */
   .widget.calculator input[type="text"] {
     width: 226px;
-  }
-  .widget.calculator .mini .selectwrap input,
-  .widget.calculator .mini input,
-  .widget.calculator #extra {
-    /*width: 200px;*/
   }
   .widget.calculator #payment {
     width: 222px;
   }
 
+  /* Featured Properties Widget */
   ul.featured-properties {
     width: 237px;
     margin: auto;
@@ -2307,25 +2454,17 @@
     margin-left: 0px;
   }
 
+  /* Agent Listing Detail Page */
   .listing-layout .about-agent {
     border: none;
     padding: 0;
     margin-bottom: 40px;
     border-bottom: 1px solid #DEDEDE;
   }
-  .listing-layout .about-agent figure {
-    width: 100%;
-    margin: 0 0 10px;
-  }
-  .listing-layout .about-agent figure img {
-    width: 99.6%;
-  }
-  .listing-layout .about-agent .detail {
-    width: 100%;
-  }
   .listing-layout .about-agent .social_networks {
-    float: left;
+    float: none;
     margin-left: 4px;
+    text-align: center;
   }
   .listing-layout .about-agent .social_networks li a {
     width: 46.8px;
@@ -2336,7 +2475,7 @@
   }
   .listing-layout .follow-agent {
     border-top: none;
-    margin: 30px 0 0;
+    margin: 10px 0 0;
   }
   .listing-layout .property-by .title-heading {
     line-height: 40px;
@@ -2360,6 +2499,7 @@
     padding: 8px 10px;
   }
 
+  /* Property Grid View Page */
   .property-grid .list-container {
     width: 236px;
     margin: 0 auto;
@@ -2376,6 +2516,7 @@
     margin: 0 auto 18px;
   }
 
+  /* Blog */
   blockquote {
     margin: 0 0 30px;
   }
@@ -2391,6 +2532,7 @@
     border-right: 0;
   }
 
+  /* Comments */
   .comment-detail-wrap {
     width: 100%;
   }
@@ -2400,6 +2542,7 @@
     width: 94%;
   }
 
+  /* Contact Page */
   .contact-page .inner-wrapper {
     padding: 20px;
   }
@@ -2420,6 +2563,7 @@
     padding: 0 5px;
   }
 
+  /* Gallery Template */
   #gallery-container {
     padding: 15px;
   }
@@ -2443,16 +2587,20 @@
     width: 100%;
   }
 
+  /* Detail Page */
   #property-detail-flexslider {
-    height: 136px;
+    width: 278px;
+    height: 139px;
   }
+  #property-detail-flexslider .flex-direction-nav,
   #property-detail-flexslider .flex-viewport {
-    height: 136px;
-    width: 224px;
+    width: 278px;
+    height: 139px;
   }
   #property-detail-flexslider .jcarousel-container-vertical {
     width: 40px;
     padding-bottom: 0;
+    display: none !important;
   }
   #property-detail-flexslider .jcarousel-clip-vertical {
     height: 108px;
@@ -2494,9 +2642,7 @@
     width: 91.9%;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Similar Properties on Property Detail Page
-  /*-----------------------------------------------------------------------------------*/
+  /* Similar Properties on Property Detail Page */
   .detail .list-container h3 {
     margin: 0 0 2px 0px;
   }
@@ -2506,9 +2652,8 @@
     min-height: 330px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Submit Property Template
-  /*-----------------------------------------------------------------------------------*/
+  /* Submit Property Template
+  -----------------------------------------------------------------------------------*/
   .submit-form input[type="email"],
   .submit-form input[type="password"],
   .submit-form input[type="text"],
@@ -2583,16 +2728,12 @@
     top: auto;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Login & Register
-  /*-----------------------------------------------------------------------------------*/
+  /* Login & Register */
   .login-register .inner-wrapper {
     padding: 20px 25px 20px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	property detail slider variation 2
-  /*-----------------------------------------------------------------------------------*/
+  /* Property detail slider variation 2 */
   #property-slider-two {
     min-height: 0;
   }
@@ -2604,8 +2745,7 @@
     display: none;
   }
 
-  /*  Properties sort controls
-  -------------------------------------------------------------------------*/
+  /* Properties sort controls */
   .sort-controls {
     text-align: center;
   }
@@ -2639,10 +2779,12 @@
     width: auto;
   }
 
+  /* Advance Search */
   .advance-search .as-form-wrap {
     width: 200px;
   }
 
+  /* Search Widget */
   .widget {
     border-left: none;
     border-right: none;
@@ -2654,24 +2796,22 @@
     width: 162px;
   }
 
+  /* Advance Search Widget */
   .widget.calculator .as-form-wrap,
   .widget.advance-search .as-form-wrap {
     padding: 17px 12px;
     width: auto;
   }
 
+  /* Calculator Widget */
   .widget.calculator input[type="text"] {
     width: 185px;
-  }
-  .widget.calculator .mini .selectwrap input,
-  .widget.calculator .mini input,
-  .widget.calculator #extra {
-    /*width: 159px;*/
   }
   .widget.calculator #payment {
     width: 181px;
   }
 
+  /* Featured Properties Widget */
   .featured-properties ul {
     width: 180px;
     margin: auto;
@@ -2681,10 +2821,7 @@
     margin: 0 0 20px;
   }
 
-  .view-type {
-    position: static;
-  }
-
+  /* Property Grid View Page */
   .list-container {
     padding: 25px 11px;
   }
@@ -2694,9 +2831,7 @@
     padding: 25px 11px;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Contact Page Styles
-  /*-----------------------------------------------------------------------------------*/
+  /* Contact Page Styles */
   .contact-page .contact-form {
     width: 180px;
     margin: auto;
@@ -2706,13 +2841,28 @@
     padding: 0;
   }
 
-  /*-----------------------------------------------------------------------------------*/
-  /*	Similar Properties on Property Detail Page
-  /*-----------------------------------------------------------------------------------*/
+  /* Similar Properties on Property Detail Page */
   .detail .list-container h3 {
     margin: 0 0 2px 0px;
   }
   .detail .property-grid .property-item {
     min-height: 310px;
+  }
+
+  /* Detail Page */
+  #property-detail-flexslider {
+    width: 240px;
+    height: 120px;
+  }
+  #property-detail-flexslider .flex-direction-nav {
+    display: block;
+  }
+  #property-detail-flexslider .flex-direction-nav,
+  #property-detail-flexslider .flex-viewport {
+    width: 240px;
+    height: 120px;
+  }
+  #property-detail-flexslider .jcarousel-container-vertical {
+    display: none !important;
   }
 }
