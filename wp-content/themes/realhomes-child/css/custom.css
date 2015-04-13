@@ -3,7 +3,7 @@
 border:none;
 padding:0px;
 margin-top: 0px;
-padding-top: 15px;
+padding-top: 0px;
 border-top: 1px solid #DFDFDF;
 border-radius: 0px;
 }
@@ -88,6 +88,8 @@ background:transparent;
 background:none;
 border:none;
 margin-left: 18px;
+padding-bottom: 5px;
+padding-top: 6px;
 }
 .property-details .ui-tabs-panel{
 border:1px solid #dedede;
@@ -608,7 +610,7 @@ div#priceslider {
 
 .sticky-sidebar{
 	position: static;
-	top: 0%;
+	
 	z-index:10;
 }
 .row{position:relative;}
@@ -637,6 +639,48 @@ span.selectwrap .selectbox-wrapper + .selectbox {
   display: none;
 }
 .mobile-cntct-form{display:none;}
+.mobile-enq {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  left: 0px;
+  display: none;
+  text-align: center;
+  box-shadow: 0px -2px 3px rgba(0,0,0,0.1);
+}
+.modal{
+  z-index: 20000;
+}
+#property-detail-flexslider .flex-direction-nav .flex-next{
+  right: 44px;
+}
+.modal-backdrop{
+  z-index:10000;
+}
+.enquiry-form input[type="text"], .enquiry-form input[type="email"], textarea {
+    width: 94%;
+}
+.form_content {
+    font-size: 11px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.form_content a{
+	color:#ec894d
+}
+.enquiry-form label.error{
+	display:none !important;
+}
+.mobile-heading{ display:none; }
+#footer-wrapper {
+  background: none;
+  padding-bottom: 0px;
+}
+.advance-search{
+  margin-top: 75px;
+}
 /*---------------------Media queries---------------------------*/
 @media (max-width:1024px){
 	.as-form-wrap .small .selectwrap input {
@@ -674,7 +718,24 @@ span.selectwrap .selectbox-wrapper + .selectbox {
 	.as-form-wrap .small .selectwrap input {
 		width: 110px;
 	}
-	
+	#floor-plan #property-slider-two{
+		  height: auto;
+	}
+	.bx-wrapper .bx-controls-direction a{
+		z-index:1;
+	}
+	.con-developer-btn{
+	display:none;
+	}
+	.mobile-enq,.mobile-enq .con-developer-btn{
+		display:inline-block;
+	}
+	.mobile-enq .con-developer-btn{
+		margin:5px 0px;
+	}
+	#property-detail-flexslider .flex-direction-nav .flex-next {
+	    right: 43px;
+	}
 }
 
 @media (max-width:640px){
@@ -724,6 +785,22 @@ span.selectwrap .selectbox-wrapper + .selectbox {
 	#tabs-4 .location-grid .transport-seperator{
 		display:none;
 	}
+	#property-detail-flexslider .flex-direction-nav .flex-next {
+		right: 0px;
+	}
+	.form-right{
+		display:none;
+	}
+	.form-left select{
+		width: 100%;
+	}
+	.enquiry-form input[type="text"], .enquiry-form input[type="email"], textarea {
+		width: 94%;
+	}
+	.mobile-heading{ display:block; }
+	.form-left select {
+		width: 96.5%;
+	}
 }
 
 @media (max-width:435px){
@@ -745,5 +822,8 @@ span.selectwrap .selectbox-wrapper + .selectbox {
 	}
 	#tabs-4 .location-grid .near-transport .transport-details .dis {
 		width: 70%;
+	}
+	.form-left select {
+		width: 99%;
 	}
 }

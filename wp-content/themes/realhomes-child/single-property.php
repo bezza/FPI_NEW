@@ -10,12 +10,13 @@ get_header();
             $banner_image_path = get_default_banner();
         }
         ?>
-        <div class="page-head" style="background-repeat: no-repeat;background-position: center top;background-image: none; background-size: cover; margin-bottom:10px; padding-top:10px;">
+        <div class="page-head" style="background-repeat: no-repeat;background-position: center top;background-image: none; background-size: cover; margin-bottom:10px; padding-top:10px;min-height:0px;">
             <?php if(!('true' == get_option('theme_banner_titles'))): ?>
             <div class="container">
                 <div class="wrap clearfix">
-                    <h1 class="page-title"><span><?php _e('Property Details', 'framework'); ?></span></h1>
-                    <p><?php
+                    <!-- <h1 class="page-title"><span><?php _e('Property Details', 'framework'); ?></span></h1> -->
+                    <h1 class="page-title"><span>
+					<?php
                         the_title();
 
                         if( !function_exists('display_parent_locations') ){
@@ -37,7 +38,31 @@ get_header();
                                 break;
                             }
                         }
-                        ?></p>
+                        ?>
+					</span></h1>	
+					<!-- <p><?php/*
+                        the_title();
+
+                        if( !function_exists('display_parent_locations') ){
+                            function display_parent_locations($ct_trm){
+                                if( !empty($ct_trm->parent) ){
+                                    $parent_location = get_term( $ct_trm->parent, 'property-city' );
+                                    echo ' - '. $parent_location->name;
+                                    display_parent_locations($parent_location); // recursive call
+                                }
+                            }
+                        }
+
+                        /* Property City *//*
+                        $city_terms = get_the_terms( $post->ID,"property-city" );
+                        if(!empty($city_terms)){
+                            foreach($city_terms as $ct_trm){
+                                echo ' - '. $ct_trm->name;
+                                display_parent_locations($ct_trm);
+                                break;
+                            }
+                        }
+                        */?></p> -->
                 </div>
             </div>
             <?php endif; ?>
@@ -404,7 +429,7 @@ get_header();
                     ?>
                     <div class="span3 sidebar-wrap">
 						<!-- Sidebar -->
-                        <aside class="sidebar">
+                        <aside class="sidebar desktop-popup">
                             <?php get_template_part('property-details/property-agent-for-sidebar'); ?>
                             <?php
                             if ( ! dynamic_sidebar( 'property-sidebar' ) ) :
@@ -423,5 +448,5 @@ get_header();
 				
             </div><!-- End contents row -->
         </div><!-- End Content -->
-
+	<?php get_template_part('property-details/modal-box'); ?>
 <?php get_footer(); ?>

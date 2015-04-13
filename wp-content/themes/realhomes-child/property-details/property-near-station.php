@@ -197,7 +197,7 @@ foreach($con->stations as $con2){
 		<div class="clearfix"></div>
 	</div>		
 
-
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,geometry"></script>
 <script>
 	
 var p1 = new google.maps.LatLng(51.466844, -0.452952);

@@ -8,10 +8,10 @@ if( !empty($theme_search_fields) ):
 
     if ( in_array ( 'keyword-search', $theme_search_fields ) ) {
         ?>
-        <!--<div class="option-bar large">
+        <div class="option-bar large">
             <label for="keyword-txt"><?php _e('Keyword', 'framework'); ?></label>
             <input type="text" name="keyword" id="keyword-txt" value="<?php echo isset ( $_GET['keyword'] ) ? $_GET['keyword'] : ''; ?>" placeholder="<?php _e('Any', 'framework'); ?>" />
-        </div>-->
+        </div>
         <?php
     }
 
@@ -31,7 +31,7 @@ if( !empty($theme_search_fields) ):
         if( ! ( $location_select_count > 0 && $location_select_count < 5) ){
             $location_select_count = 1;
         }
-
+		
         /* global variable that contains location select boxes names */
         global $location_select_names;
 
@@ -65,7 +65,7 @@ if( !empty($theme_search_fields) ):
         }
 
         /* important action hook - related JS works based on it */
-        do_action( 'after_location_fields' );
+        do_action( 'child_after_location_fields' );
     }
 
     if ( in_array ( 'status', $theme_search_fields ) ) {

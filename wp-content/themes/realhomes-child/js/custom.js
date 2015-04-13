@@ -3,16 +3,56 @@
     "use strict";
 
     $(document).ready(function() {
-	
+		/*----------------------------------------------------------------------------------*/
+        /* Contact Form AJAX validation and submission
+        /* Validation Plugin : http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+        /* Form Ajax Plugin : http://www.malsup.com/jquery/form/
+        /*---------------------------------------------------------------------------------- */
+        if(jQuery().validate && jQuery().ajaxSubmit)
+        {
+            // Agent Message Form Handling
+            var agent_form_options = {
+                target: '#message-sent',
+                beforeSubmit: function(){
+                    $('#contact-loader').fadeIn('fast');
+                    $('#message-sent').fadeOut('fast');
+                },
+                success: function(data){
+					$('#contact-loader').fadeOut('fast');
+                    $('#message-sent').fadeIn('fast');
+					$('.enquiry-grid').html('');
+					$('.modal-title').text('Thank you');
+					$('.enquiry-grid').html(data);
+					
+					$('#mce-EMAIL').val($('#ret-email').val());
+					$('#mce-FNAME').val($('#ret-name').val());
+					
+					//alert(data);
+                }
+            };
+			
+			
+
+            $('#agent_contact_form').validate({
+                errorLabelContainer: $("div.error-container"),
+                submitHandler: function(form) {
+                    $(form).ajaxSubmit(agent_form_options);
+                }
+            });
+
+        }
+		
 		$('#con-agent-btn').click(function(){
 			var name = $('#name').val();
 			var email = $('#email').val();
 			var phone = $('#phone').val();
-				if(name == '' && email == '' && phone == '')
+			var message = $('#message').val();
+				if(name == '' && email == '' && phone == '' && message == '')
 				{
 					$('#name').after('<span class=\"val-error\">* Please provide your name</span>');
 					$('#email').after('<span class=\"val-error\">* Please provide valid email address</span>');
 					$('#phone').after('<span class=\"val-error\">* Please provide a valid phone number</span>');
+					$('#message').after('<span class=\"val-error\">* Please provide your message</span>');
 				}
 		});
 		
@@ -168,11 +208,26 @@
 		if(jQuery('.container .sidebar').find('.sticky-sidebar')){
 			var stickyTop = jQuery('.sidebar .sticky-sidebar').offset().top;
 			jQuery(window).on( 'scroll', function(){
-				if (jQuery(window).scrollTop() >= stickyTop) {
-					jQuery('.sticky-sidebar').css({position: "fixed", width: "19%"});
+				var top_position = jQuery('.page-carousel').offset().top-600;
+				console.log(top_position);
+				//console.log(jQuery('html,body').scrollTop());
+				if (jQuery(window).scrollTop() > 139) {
+						if(jQuery(window).scrollTop() > top_position){
+						jQuery('.sticky-sidebar').removeAttr('style');
+						jQuery('.sticky-sidebar').css({position: "absolute", width: "274px",bottom:"0px",  margin: "0px"});
+						}
+						else{
+						jQuery('.sticky-sidebar').removeAttr('style');
+						jQuery('.sticky-sidebar').css({position: "fixed", width: "274px",top:"17%"});
+						}
 				} else {
 					jQuery('.sticky-sidebar').css({position: "static", width: "100%"});
 				}
+				/* if (jQuery(window).scrollTop() >= stickyTop) {
+					jQuery('.sticky-sidebar').css({position: "fixed", width: "20%"});
+				} else {
+					jQuery('.sticky-sidebar').css({position: "static", width: "100%"});
+				} */
 			});
 		}
 	}
@@ -182,7 +237,7 @@
 				var stickyTop = jQuery('.sidebar .sticky-sidebar').offset().top;
 				jQuery(window).on( 'scroll', function(){
 					if (jQuery(window).scrollTop() >= stickyTop) {
-						jQuery('.sticky-sidebar').css({position: "fixed", width: "19%"});
+						jQuery('.sticky-sidebar').css({position: "fixed", width: "274px"});
 					} else {
 						jQuery('.sticky-sidebar').css({position: "static", width: "100%"});
 					}
@@ -281,6 +336,7 @@ jQuery(document).ready(function($){
 		if(window_height < 768){
 			jQuery('.tab').bxSlider({
 				pager:false,
+				infiniteLoop:false,
 			});
 		}
 	})
@@ -289,6 +345,7 @@ jQuery(document).ready(function($){
 		if(window_height < 768){
 			jQuery('.tab').bxSlider({
 				pager:false,
+				infiniteLoop:false,
 			});
 		}
 		else

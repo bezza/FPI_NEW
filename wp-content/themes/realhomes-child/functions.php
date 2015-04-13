@@ -126,6 +126,7 @@ require_once( get_stylesheet_directory().'/widgets/' . 'property-travel-widget.p
 require_once( get_stylesheet_directory().'/widgets/' . 'property-market-info-widget.php');
 require_once( get_stylesheet_directory().'/framework/functions/contact_form_handler.php');
 require_once( get_stylesheet_directory().'/framework/functions/property_filter.php');
+require_once( get_stylesheet_directory().'/framework/functions/property-submit-handler.php');
 /*-----------------------------------------------------------------------------------*/
 //	Register Widgets
 /*-----------------------------------------------------------------------------------*/
@@ -206,7 +207,7 @@ function build_child_taxonomies(){
 /*-----------------------------------------------------------------------------------*/
 if(!function_exists('child_real_homes_search')){
     function child_real_homes_search($search_args){
-
+		
         /* taxonomy query and meta query arrays */
         $tax_query = array();
         $meta_query = array();
@@ -416,7 +417,7 @@ if(!function_exists('child_real_homes_search')){
         }
 		
 		/* property feature taxonomy query */
-        if ( isset( $_GET['zone'] ) && $_GET['zone'] != '' && $_GEt['location'] == 'london') {
+        if ( isset( $_GET['zone'] ) && $_GET['zone'] != '' && $_GET['location'] == 'london') {
 			$tax_query[] = array(
                 'taxonomy' => 'london-zone',
                 'field' => 'slug',
@@ -455,4 +456,97 @@ if(!function_exists('child_real_homes_search')){
         return $search_args;
     }
 }
-add_filter('real_homes_search_parameters','child_real_homes_search');
+add_filter('child_real_homes_search_parameters','child_real_homes_search');
+
+/*-----------------------------------------------------------------------------------*/
+/*	Properties sorting
+/*-----------------------------------------------------------------------------------*/
+if( !function_exists( 'child_sort_properties' ) ){
+    /**
+     * @param $property_query_args
+     * @return mixed
+     */
+    function child_sort_properties($property_query_args){
+        if (isset($_GET['sortby'])) {
+            $orderby = $_GET['sortby'];
+            if ($orderby == 'price-asc') {
+                $property_query_args['orderby'] = 'meta_value_num';
+                $property_query_args['meta_key'] = 'REAL_HOMES_property_price';
+                $property_query_args['order'] = 'ASC';
+            } else if ($orderby == 'price-desc') {
+                $property_query_args['orderby'] = 'meta_value_num';
+                $property_query_args['meta_key'] = 'REAL_HOMES_property_price';
+                $property_query_args['order'] = 'DESC';
+            } else if ($orderby == 'date-asc') {
+                $property_query_args['orderby'] = 'date';
+                $property_query_args['order'] = 'ASC';
+            } else if ($orderby == 'date-desc') {
+                $property_query_args['orderby'] = 'date';
+                $property_query_args['order'] = 'DESC';
+            } else if ($orderby == 'yield-asc') {
+                $property_query_args['orderby'] = 'meta_value_num';
+                $property_query_args['meta_key'] = 'REAL_HOMES_property_yield';
+                $property_query_args['order'] = 'ASC';
+            } else if ($orderby == 'yield-desc') {
+                $property_query_args['orderby'] = 'meta_value_num';
+                $property_query_args['meta_key'] = 'REAL_HOMES_property_yield';
+                $property_query_args['order'] = 'DESC';
+            }
+        }
+        return $property_query_args;
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Load Location Related Script
+/*-----------------------------------------------------------------------------------*/
+if(!function_exists('child_load_location_script')){
+    function child_load_location_script(){
+
+        if ( ! is_admin() ) {
+
+            /* all property city terms */
+            $all_locations = get_terms('property-city',array(
+                'hide_empty' => false,
+                'orderby' => 'count',
+                'order' => 'desc',
+            ));
+
+            /* select boxes names */
+            global $location_select_names;
+
+            /* number of select boxes based on theme option */
+            $location_select_count = intval( get_option( 'theme_location_select_number' ) );
+            if( ! ( $location_select_count > 0 && $location_select_count < 5) ){
+                $location_select_count = 1;
+            }
+
+            /* location parameters in request, if any */
+            $locations_in_params = array();
+            foreach ( $location_select_names as $location_name ) {
+                if( isset( $_GET[ $location_name ] ) ) {
+                    $locations_in_params[ $location_name ] = $_GET[ $location_name ];
+                }
+				else
+				{
+					$locations_in_params[ $location_name ] = 'london';
+				}
+            }
+
+            /* combine all data into one */
+            $location_data_array = array(
+                'any' => __('Any','framework'),
+                'all_locations' => $all_locations,
+                'select_names' => $location_select_names,
+                'select_count' => $location_select_count,
+                'locations_in_params' => $locations_in_params,
+            );
+
+            /* provide location data array before custom script */
+            wp_localize_script( 'custom', 'locationData', $location_data_array );
+
+        }
+    }
+}
+remove_action('after_location_fields', 'load_location_script');
+add_action('child_after_location_fields', 'child_load_location_script');
