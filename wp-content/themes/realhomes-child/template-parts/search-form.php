@@ -100,7 +100,8 @@ if( !empty($theme_search_fields) ):
             <label for="select-bedrooms"><?php _e('Min Beds', 'framework'); ?></label>
             <span class="selectwrap">
                 <select name="bedrooms" id="select-bedrooms" class="search-select">
-                    <?php numbers_list('bedrooms'); ?>
+                    <?php numbers_list_bed('bedrooms'); ?>
+						
                 </select>
             </span>
         </div>
@@ -230,6 +231,26 @@ if( !empty($theme_search_fields) ):
 					</select>
 				</span>
 			</div>
+			<div class="option-bar yield">
+				<label for="yield"><?php _e('Min Area', 'framework'); ?></label>
+				<span class="selectwrap">
+					<select name="min-area" id="min-area"  class="search-select">
+						<option value="0">Min</option>
+						<option value="500">500 sqft (46 sqm)</option>
+						<option value="750">750 sqft (70 sqm)</option>
+						<option value="1000">1,000 sqft (93 sqm)</option>
+						<option value="1200">1,200 sqft (112 sqm)</option>
+						<option value="1500">1,500 sqft (139 sqm)</option>
+						<option value="2000">2,000 sqft (186 sqm)</option>
+						<option value="2500">2,500 sqft (232 sqm)</option>
+						<option value="3000">3,000 sqft (279 sqm)</option>
+						<option value="4000">4,000 sqft (372 sqm)</option>
+						<option value="5000">5,000 sqft (465 sqm)</option>
+						<option value="7500">7,500 sqft (697 sqm)</option>
+						<option value="10000">10,000 sqft (929 sqm)</option>
+					</select>
+				</span>
+			</div>
 			<div class="option-bar features">
 				<label for="features"><?php _e('Property Features', 'framework'); ?></label>
 			<?php	
@@ -247,6 +268,10 @@ if( !empty($theme_search_fields) ):
             }
             ?>
             </div>
+			
+			
+			
+			
             </div>
             <?php
         }
