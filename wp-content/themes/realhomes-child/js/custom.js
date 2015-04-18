@@ -46,13 +46,13 @@
 			var name = $('#name').val();
 			var email = $('#email').val();
 			var phone = $('#phone').val();
-			var message = $('#message').val();
-				if(name == '' && email == '' && phone == '' && message == '')
+		
+				if(name == '' && email == '' && phone == '' )
 				{
 					$('#name').after('<span class=\"val-error\">* Please provide your name</span>');
 					$('#email').after('<span class=\"val-error\">* Please provide valid email address</span>');
 					$('#phone').after('<span class=\"val-error\">* Please provide a valid phone number</span>');
-					$('#message').after('<span class=\"val-error\">* Please provide your message</span>');
+					
 				}
 		});
 		
@@ -63,12 +63,13 @@
 			var name = $('#ret-name').val(); 
 			var phone = $('#ret-phone').val();
 			var country = $('#ret-country').val();
+			var message = $('#return_message').text();
 			var return_property_id = $('#return_property_id').val();
 			var return_property_title = $('#return_property_title').val();	
 			var return_property_permalink = $('#return_property_permalink').val();
 			var return_property_price = $('#return_property_price').val();
 			var return_img_url = $('#return_img_url').val();
-			var check_1 = '',check_2 = '',check_3 = '';
+			var check_1 = '',check_2 = '',check_3 = '',check_4 = '',check_5 = '',check_6 = '',check_7 = '';
 			var return_con_method = $('#return_con_method').val();
 			if($("#check-1").is(':checked')){
 				check_1 = $('#check-1').val();
@@ -78,7 +79,21 @@
 						}
 			if($("#check-3").is(':checked')){
 				check_3 = $('#check-3').val();
-			}			
+			}
+			if($("#check-4").is(':checked')){
+				check_4 = $('#check-4').val();
+			}
+			if($("#check-5").is(':checked')){
+							check_5 = $('#check-5').val();
+						}
+			if($("#check-6").is(':checked')){
+				check_6 = $('#check-6').val();
+			}
+			if($("#check-7").is(':checked')){
+				check_7 = $('#check-7').val();
+			}
+
+			
 			$('#mce-EMAIL').val(email);
 			$('#mce-FNAME').val(name);			
 						
@@ -87,7 +102,27 @@
 				  url: admin_ajax,
 				  type: 'POST',
 				  
-				  data: {action: 'advice_form',fname: name,email: email,phone: phone,country:country,return_property_id:return_property_id,return_property_title:return_property_title,return_property_permalink:return_property_permalink,return_property_price:return_property_price,return_img_url:return_img_url,return_con_method:return_con_method,check_1:check_1,check_2:check_2,check_3:check_3},
+				  data: {
+					action: 'advice_form',
+					fname: name,
+					email: email,
+					phone: phone,
+					country:country,
+					message:message,
+					return_property_id:return_property_id,
+					return_property_title:return_property_title,
+					return_property_permalink:return_property_permalink,
+					return_property_price:return_property_price,
+					return_img_url:return_img_url,
+					return_con_method:return_con_method,
+					check_1:check_1,
+					check_2:check_2,
+					check_3:check_3,
+					check_4:check_4,
+					check_5:check_5,
+					check_6:check_6,
+					check_7:check_7
+				 },
 				  success: function(data) {
 					//called when successful
 						$('#sub-btn').after('<p class=\"message-reply\">'+data+'</p>');
@@ -99,11 +134,11 @@
 								type: 'POST',
 								data: {action: 'mailchimp_subscribe',fname: name,email: email},
 								success: function(data) {
-									$('.close').trigger('click');
+									//$('.close').trigger('click');
 								},
 							});
 						}	
-						
+						$('.close').trigger('click');
 				  },
 				  error: function(e) {
 					//called when there is an error
@@ -201,6 +236,31 @@
 		
 		});
 		
+		/*-------------------FOR SIDE MOBILE MENU------------------------------ */
+		$('.close-menu').click(function(){
+			$('.fixed-mobile-menu').animate({"left":"-100%"},500);
+		});
+		$('.menu-icon').click(function(){
+			$('.fixed-mobile-menu').animate({"left":"0px"},500);			
+		});
+		
+		/* jQuery(window).on('resize',function(){ */
+			if(jQuery( window ).width() < 980){
+			var lastScrollTop = 0;
+			jQuery(window).scroll(function(event){
+				
+			   var st = jQuery(this).scrollTop();
+			   if (st > lastScrollTop){
+				   jQuery('.header-wrapper').animate({"top":"-100%"},50);
+			   } else {
+				  jQuery('.header-wrapper').animate({"top":"0px"},50);
+			   }
+			   lastScrollTop = st;
+			});
+			}
+		/* }); */
+		
+		
 
     });
 	
@@ -209,7 +269,7 @@
 			var stickyTop = jQuery('.sidebar .sticky-sidebar').offset().top;
 			jQuery(window).on( 'scroll', function(){
 				var top_position = jQuery('.page-carousel').offset().top-600;
-				console.log(top_position);
+				//console.log(top_position);
 				//console.log(jQuery('html,body').scrollTop());
 				if (jQuery(window).scrollTop() > 139) {
 						if(jQuery(window).scrollTop() > top_position){
@@ -330,30 +390,33 @@ function select_property_type(id)
 
 jQuery(document).ready(function($){
     $( "#tabs" ).tabs();
-	
-	jQuery( window).load(function(){
-		var window_height = jQuery(window).width();
-		if(window_height < 768){
-			jQuery('.tab').bxSlider({
-				pager:false,
-				infiniteLoop:false,
-			});
-		}
-	})
+	var slider;
+	var window_width = jQuery(window).width();
+	if(window_width < 768){
+		slider = jQuery('.tab').bxSlider({
+			pager:false,
+			infiniteLoop:false,
+		});
+		jQuery('.tab').addClass('bx-loaded');
+	}
 	jQuery( window ).resize(function() {
-		var window_height = jQuery(window).width();
-		if(window_height < 768){
-			jQuery('.tab').bxSlider({
-				pager:false,
-				infiniteLoop:false,
-			});
+		var window_width = jQuery(window).width();
+		if(window_width < 768){
+			if(!jQuery('.tab').hasClass('bx-loaded')){
+				slider = jQuery('.tab').bxSlider({
+					pager:false,
+					infiniteLoop:false,
+				});
+				jQuery('.tab').addClass('bx-loaded');
+			}
 		}
 		else
 		{
-			jQuery( "#tabs" ).tabs();
+			if(jQuery('.tab').hasClass('bx-loaded')){
+				window.location = window.location;
+			}
 		}
 	});
-	
 	/* Validate Submit Property Form */
     if( jQuery().validate ){
         $('#submit-property-form').validate({
