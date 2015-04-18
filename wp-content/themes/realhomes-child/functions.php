@@ -66,60 +66,196 @@ function REAL_HOMES_register_child_meta_boxes()
         return;
 
     global $meta_boxes;
+	$prefix = 'REAL_HOMES_';
+
+
+	$meta_boxes = array();
+
+	// Property Details Meta Box
+	$meta_boxes[] = array(
+		// Meta box id, UNIQUE per meta box. Optional since 4.1.5
+		'id' => 'property_details',
+
+		// Meta box title - Will appear at the drag and drop handle bar. Required.
+		'title' => __('Property Details','framework'),
+
+		// Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
+		'pages' => array( 'property' ),
+
+		// Where the meta box appear: normal (default), advanced, side. Optional.
+		'context' => 'normal',
+
+		// Order of meta box: high (default), low. Optional.
+		'priority' => 'high',
+
+		// List of meta fields
+		'fields' => array(
+		   
+			array(
+				'name'             => __('Floor Plan','framework'),
+				'id'               => "{$prefix}floor_plan",
+				'desc' => __('Provide images for floor plan on property detail page. Images should have minimum size of 770px by 386px for thumbnails on right and 830px by 460px for thumbnails on bottom. ( Bigger images will be cropped automatically )','framework'),
+				'type'             => 'image_advanced',
+				'max_file_uploads' => 48
+			),
+			array(
+				'id'        => "{$prefix}video_id",
+				'name'      => __('Youtube video id','framework'),
+				'desc'      => __('Provide youtube video id only','framework'),
+				'type'      => 'text',
+				'std'       => ""
+			),
+			array(
+				'id'        => "{$prefix}property_yield",
+				'name'      => __('Property Yield','framework'),
+				'desc'      => __('Provide Property Yield. ( Plesae only provide digits ) Example Value: 5%','framework'),
+				'type'      => 'text',
+				'std'       => ""
+			)
+		)
+	);
+	// Agent Meta Box
+	
+	$meta_boxes[] = array(
+
+		'id' => 'agent-meta-box',
+
+		'title' => __('Provide Related Information', 'framework'),
+
+		'pages' => array('agent'),
+
+		'context' => 'normal',
+
+		'priority' => 'high',
+
+		'fields' => array(
+
+			array(
+
+				'name' => __('Email Address', 'framework'),
+
+				'id' => "{$prefix}agent_email",
+
+				'desc' => __("Provide Agent Email Address. Agent related messages from contact form on property details page, will be sent on this email address.", "framework"),
+
+				'type' => 'text'
+
+			),
+			array(
+
+				'name' => __('2nd Email Address', 'framework'),
+
+				'id' => "{$prefix}agent_email2",
+
+				'desc' => __("Provide Agent Email Address. Agent related messages from contact form on property details page, will be sent on this email address.", "framework"),
+
+				'type' => 'text'
+
+			),
+			array(
+
+				'name' => __('3rd Email Address', 'framework'),
+
+				'id' => "{$prefix}agent_email3",
+
+				'desc' => __("Provide Agent Email Address. Agent related messages from contact form on property details page, will be sent on this email address.", "framework"),
+
+				'type' => 'text'
+
+			),
+			array(
+
+				'name' => __('Mobile Number', 'framework'),
+
+				'id' => "{$prefix}mobile_number",
+
+				'desc' => __("Provide Agent mobile number", "framework"),
+
+				'type' => 'text'
+
+			),
+
+			array(
+
+				'name' => __('Office Number', 'framework'),
+
+				'id' => "{$prefix}office_number",
+
+				'desc' => __("Provide Agent office number", "framework"),
+
+				'type' => 'text'
+
+			),
+
+			array(
+
+				'name' => __('Fax Number', 'framework'),
+
+				'id' => "{$prefix}fax_number",
+
+				'desc' => __("Provide Agent fax number", "framework"),
+
+				'type' => 'text'
+
+			),
+
+			array(
+
+				'name' => __('Facebook URL', 'framework'),
+
+				'id' => "{$prefix}facebook_url",
+
+				'desc' => __("Provide Agent Facebook URL", "framework"),
+
+				'type' => 'text'
+
+			),
+
+			array(
+
+				'name' => __('Twitter URL', 'framework'),
+
+				'id' => "{$prefix}twitter_url",
+
+				'desc' => __("Provide Agent Twitter URL", "framework"),
+
+				'type' => 'text'
+
+			),
+
+			array(
+
+				'name' => __('Google Plus URL', 'framework'),
+
+				'id' => "{$prefix}google_plus_url",
+
+				'desc' => __("Provide Agent Google Plus URL", "framework"),
+
+				'type' => 'text'
+
+			),
+
+			array(
+
+				'name' => __('LinkedIn URL', 'framework'),
+
+				'id' => "{$prefix}linked_in_url",
+
+				'desc' => __("Provide Agent LinkedIn URL", "framework"),
+
+				'type' => 'text'
+
+			)
+
+		)
+
+	);
     $meta_boxes = apply_filters('framework_theme_meta',$meta_boxes);
     foreach ( $meta_boxes as $meta_box ){
         new RW_Meta_Box( $meta_box );
     }
 }
-$prefix = 'REAL_HOMES_';
 
-global $meta_boxes;
-
-$meta_boxes = array();
-
-// Property Details Meta Box
-$meta_boxes[] = array(
-    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
-    'id' => 'property_details',
-
-    // Meta box title - Will appear at the drag and drop handle bar. Required.
-    'title' => __('Property Details','framework'),
-
-    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
-    'pages' => array( 'property' ),
-
-    // Where the meta box appear: normal (default), advanced, side. Optional.
-    'context' => 'normal',
-
-    // Order of meta box: high (default), low. Optional.
-    'priority' => 'high',
-
-    // List of meta fields
-    'fields' => array(
-       
-		array(
-            'name'             => __('Floor Plan','framework'),
-            'id'               => "{$prefix}floor_plan",
-            'desc' => __('Provide images for floor plan on property detail page. Images should have minimum size of 770px by 386px for thumbnails on right and 830px by 460px for thumbnails on bottom. ( Bigger images will be cropped automatically )','framework'),
-            'type'             => 'image_advanced',
-            'max_file_uploads' => 48
-        ),
-		array(
-            'id'        => "{$prefix}video_id",
-            'name'      => __('Youtube video id','framework'),
-            'desc'      => __('Provide youtube video id only','framework'),
-            'type'      => 'text',
-            'std'       => ""
-        ),
-		array(
-            'id'        => "{$prefix}property_yield",
-            'name'      => __('Property Yield','framework'),
-            'desc'      => __('Provide Property Yield. ( Plesae only provide digits ) Example Value: 5%','framework'),
-            'type'      => 'text',
-            'std'       => ""
-        )
-    )
-);
 
 
 require_once( get_stylesheet_directory().'/widgets/' . 'property-travel-widget.php');
@@ -550,3 +686,62 @@ if(!function_exists('child_load_location_script')){
 }
 remove_action('after_location_fields', 'load_location_script');
 add_action('child_after_location_fields', 'child_load_location_script');
+
+/*----------------Bedrooms option in search form------------------------*/
+
+if(!function_exists('numbers_list')){
+
+    function numbers_list_bed($numbers_list_for){
+
+        $numbers_array = array(1,2,3,4,5,6,7,8,9,10);
+
+        $searched_value = '';
+
+
+
+        if($numbers_list_for == 'bedrooms'){
+
+            if(isset($_GET['bedrooms'])){
+
+                $searched_value = $_GET['bedrooms'];
+
+            }
+
+        }
+
+        if(!empty($numbers_array)){
+
+            foreach($numbers_array as $number){
+
+                if($searched_value == $number){
+
+                    echo '<option value="'.$number.'" selected="selected">'.$number.'</option>';
+
+                }else {
+
+                    echo '<option value="'.$number.'">'.$number.'</option>';
+
+                }
+
+            }
+
+        }
+
+
+
+        if($searched_value == 'any' || empty($searched_value)) {
+
+            echo '<option value="any" selected="selected">'.__( 'Studio', 'framework').'</option>';
+
+        } else {
+
+            echo '<option value="any">'.__( 'Studio', 'framework').'</option>';
+
+        }
+
+    }
+
+}
+
+
+

@@ -1,6 +1,6 @@
 <?php
 get_header();
- 
+
         // Banner Image
         $banner_image_path = "";
         $banner_image_id = get_post_meta( $post->ID, 'REAL_HOMES_page_banner_image', true );
@@ -11,7 +11,7 @@ get_header();
         }
         ?>
         <div class="page-head" style="background-repeat: no-repeat;background-position: center top;background-image: none; background-size: cover; margin-bottom:10px; padding-top:10px;min-height:0px;">
-            <?php if(!('true' == get_option('theme_banner_titles'))): ?>
+            <?php //if(!('true' == get_option('theme_banner_titles'))): ?>
             <div class="container">
                 <div class="wrap clearfix">
                     <!-- <h1 class="page-title"><span><?php _e('Property Details', 'framework'); ?></span></h1> -->
@@ -65,7 +65,7 @@ get_header();
                         */?></p> -->
                 </div>
             </div>
-            <?php endif; ?>
+            <?php //endif; ?>
         </div><!-- End Page Head -->
 		
 		
@@ -88,7 +88,11 @@ get_header();
 											
 										  <ul class="tab">
 											<li><a href="#tabs-0" class="photos">Photos</a></li>
+											<?php $size = 'property-detail-slider-image-two';
+											$properties_images = rwmb_meta( 'REAL_HOMES_floor_plan', 'type=plupload_image&size='.$size, $post->ID );
+											if(!empty($properties_images)):?>
 											<li><a href="#tabs-1" class="floor">Floor Plans</a></li>
+											<?php endif; ?>
 											<?php 
 											$key_1_value = get_post_meta( $post->ID, 'REAL_HOMES_video_id', true );
 											if($key_1_value != ''):
@@ -121,6 +125,7 @@ get_header();
 									</div>
 								  
 								  </div>
+									<?php if(!empty($properties_images)):?>
 								  <div id="tabs-1">
 									<div id="floor-plan">
 										<?php 
@@ -128,6 +133,7 @@ get_header();
 										?>
 									</div>	
 								  </div>
+								  <?php endif; ?>
 								  <?php 
 								  if($key_1_value != ''):
 								  ?>
@@ -379,7 +385,7 @@ get_header();
                                  /*
                                  * 4. Property Map
                                  */
-                                 //get_template_part('property-details/property-map');
+                                 get_template_part('property-details/property-map');
 
                                  /*
                                  * 5. Property Attachments

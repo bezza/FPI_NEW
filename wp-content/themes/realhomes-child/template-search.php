@@ -5,7 +5,7 @@
 get_header();
 
 
-/* Theme Home Page Module */
+/* Theme Home Page Module *//*
 $theme_search_module = get_option('theme_search_module');
 
 switch($theme_search_module){
@@ -17,7 +17,7 @@ switch($theme_search_module){
         get_template_part('banners/default_page_banner');
         break;
 }
-echo $paged;
+*/
 ?>
 
     <!-- Content -->
