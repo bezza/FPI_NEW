@@ -69,7 +69,7 @@ if( !function_exists( 'send_message' ) ){
 
             $header = 'Content-type: text/html; charset=utf-8' . "\r\n";
             $header = apply_filters("inspiry_contact_mail_header", $header);
-            $header .= 'From: ' . $from_name . " <" . $from_email . "> \r\n";
+            $header .= 'From: ' . $from_name . " <donotreply@firstpropinvest.com> \r\n";
 
             if (wp_mail($to_email, $email_subject, $email_body, $header)) {
                 _e("Message Sent Successfully!", 'framework');
@@ -85,6 +85,8 @@ if( !function_exists( 'send_message' ) ){
 
     }
 }
+
+$city_code_new = "";
 
 add_action( 'wp_ajax_nopriv_send_message_to_agent', 'send_message_to_agent' );
 add_action( 'wp_ajax_send_message_to_agent', 'send_message_to_agent' );
@@ -120,6 +122,7 @@ if( !function_exists( 'send_message_to_agent' ) ){
             /* Sanitize and Validate Target email address that is coming from agent form */
             //$to_email = sanitize_email( $_POST['target'] );
             $to_email = sanitize_email( 'berian.reed@gmail.com' );
+            
             $to_email = is_email($to_email);
             if (!$to_email) {
                 die (__('Agent email address is not properly configured!', 'framework'));
@@ -129,7 +132,10 @@ if( !function_exists( 'send_message_to_agent' ) ){
             /* Sanitize and Validate contact form input data */
             $from_name = sanitize_text_field($_POST['name']);
             $from_country = sanitize_text_field($_POST['country']);
-            $from_phone = sanitize_text_field($_POST['phone']);
+			$city_code =  (explode("+",$from_country));
+			$city_code = "(+".$city_code[1];
+			$city_code_new = $city_code;
+            $from_phone = $city_code." ".sanitize_text_field($_POST['phone']);
             $message = stripslashes( $_POST['message'] );
             $property_title = sanitize_text_field( $_POST['property_title'] );
             $property_permalink = esc_url( $_POST['property_permalink'] );
@@ -1070,7 +1076,7 @@ a:hover{color:#30495c !important}.wrapper .logo div{color:#41637e}.wrapper .logo
       </tbody></table>
       <table class=\"header centered\" style=\"border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 602px;\">
         <tbody><tr><td class=\"border\" style=\"padding: 0;vertical-align: top;font-size: 1px;line-height: 1px;background-color: #e9e9e9;width: 1px;\">&nbsp;</td></tr>
-        <tr><td class=\"logo\" style=\"padding: 32px 0;vertical-align: top;mso-line-height-rule: at-least\"><div class=\"logo-center\" style=\"font-size: 26px;font-weight: 700;letter-spacing: -0.02em;line-height: 32px;color: #41637e;font-family: sans-serif;text-align: center\" align=\"center\" id=\"emb-email-header\"><a style=\"text-decoration: none;transition: all .2s;color: #41637e\" href=\"http://www.firstpropinvest.com\"><img style=\"border: 0;-ms-interpolation-mode: bicubic;display: block;Margin-left: auto;Margin-right: auto;max-width: 240px;\" src='".get_template_directory_uri()."/images/FPIlogojpeg.jpg' alt=\"FPI\" width=\"160\" height=\"160\" /></a></div></td></tr>
+        <tr><td class=\"logo\" style=\"padding: 32px 0;vertical-align: top;mso-line-height-rule: at-least\"><div class=\"logo-center\" style=\"font-size: 26px;font-weight: 700;letter-spacing: -0.02em;line-height: 32px;color: #41637e;font-family: sans-serif;text-align: center\" align=\"center\" id=\"emb-email-header\"><a style=\"text-decoration: none;transition: all .2s;color: #41637e\" href=\"http://www.firstpropinvest.com\"><img style=\"border: 0;-ms-interpolation-mode: bicubic;display: block;Margin-left: auto;Margin-right: auto;max-width: 240px;\" src='".get_stylesheet_directory_uri()."/images/FPIlogojpeg.jpg' alt=\"FPI\" width=\"160\" height=\"160\" /></a></div></td></tr>
       </tbody></table>
       
           <table class=\"border\" style=\"border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 1px;background-color: #e9e9e9;Margin-left: auto;Margin-right: auto\" width=\"602\">
@@ -1096,7 +1102,8 @@ Name: ".$from_name."<br />
 Email: ".$from_email."<br />
 Number:&nbsp; ".$from_phone."<br />
 Country: ".$country."<br />
-Preferred Contact Method: ".$contact_method."
+Preferred Contact Method: ".$contact_method."<br />
+Message: ".$message."
 </p><p style=\"Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 16px;line-height: 25px;Margin-bottom: 25px\">".$property_permalink."</p><p style=\"Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 16px;line-height: 25px;Margin-bottom: 25px\">Please consider the time difference when contacting investors based overseas.</p><p style=\"Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 16px;line-height: 25px;Margin-bottom: 25px\">Good luck with the lead!</p><p style=\"Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 16px;line-height: 25px;Margin-bottom: 24px\"><br />
 FirstPropInvest.com team.</p>
           
@@ -1223,7 +1230,7 @@ FirstPropInvest.com team.</p>
   ";
             $header = 'Content-type: text/html; charset=utf-8' . "\r\n";
             $header = apply_filters("inspiry_agent_mail_header", $header);
-            $header .= 'From: ' . $from_name . " <" . $from_email . "> \r\n";
+            $header .= 'From: ' . $from_name . " <donotreply@firstpropinvest.com> \r\n";
 
             /* Send copy of message to admin if configured */
             $theme_send_message_copy = get_option('theme_send_message_copy');
@@ -1263,29 +1270,41 @@ FirstPropInvest.com team.</p>
                
 			   echo "
 				<div class=\"form-left ful-width-btn\">
-					<span class=\"property-address1\">Thank you, a representative from ".$_POST['author_name']." will be in touch within 24 hrs.</span>
+					<span class=\"property-address1\">Thank you, a representative from ".$_POST['author_name']." will be in touch within 24 hrs.</span><br />
 					<p class=\"sub-form-heading\">In the meantime before you go</p>
 					<form id=\"mail_chimp_form\" action=\"\" method=\"\">
 						<label>
 							
 							<span class=\"label-input\"><input type=\"checkbox\" name=\"mail_chimp\" value=\"true\" checked=\"checked\" /> </span>
-							<span class=\"label-text\">Sign up to our mailing list Receive the latest properties direct to your inbox</span>
+							<span class=\"label-text\">Sign up to our mailing list to receive the latest properties direct to your inbox</span>
 						</label>
+						
 					</form>
-					<p class=\"sub-form-heading\">We can also help with the following service tick as appropriate</p>
+					<p class=\"sub-form-heading\">Please tick the below if you require assistance with the following services from our panel of experts</p>
 					<form action=\"".site_url()."/wp-admin/admin-ajax.php\" method=\"post\" id=\"advice-form\">
 					<input type=\"hidden\" name=\"return_name\" value=".$from_name." id=\"ret-name\" />
 					<input type=\"hidden\" name=\"return_email\" value=".$from_email." id=\"ret-email\"  />
 					<input type=\"hidden\" name=\"return_phone\" value=".$from_phone." id=\"ret-phone\"  />
 					<input type=\"hidden\" name=\"return_country\" value=".$country." id=\"ret-country\" />
-					<input type=\"hidden\" name=\"return_con_method\" value".$contact_method." id=\"return_con_method\" />
+					<input type=\"hidden\" name=\"return_con_method\" value=".$contact_method." id=\"return_con_method\" />
 					<input type=\"hidden\" name=\"return_property_id\" value=".$_POST['property_id']." id=\"return_property_id\" />
 					<input type=\"hidden\" name=\"return_property_title\" value=".$_POST['property_title']." id=\"return_property_title\" />
 					<input type=\"hidden\" name=\"return_property_permalink\" value=".$_POST['property_permalink']." id=\"return_property_permalink\" />
 					<input type=\"hidden\" name=\"return_property_price\" value=".$_POST['property_price']." id=\"return_property_price\" />
 					<input type=\"hidden\" name=\"return_img_url\" value=".$_POST['img_url']." id=\"return_img_url\" />
 					
+					<div style=\"display:none;\" id=\"return_message\" >".$_POST['message']."</div>
+					
 					<input type=\"hidden\" name=\"to_email\" value=\"berian.reed@gmail.com\" />
+					<label>
+							<span class=\"label-input\"><input type=\"checkbox\" name=\"check-4\" id=\"check-4\" value=\"All\" /> </span>&nbsp;&nbsp;<span class=\"label-text\">All</span>
+					</label>
+					<label>
+							<span class=\"label-input\"><input type=\"checkbox\" name=\"check-5\" id=\"check-5\" value=\"Property management/lettings/re-sales\" /> </span>&nbsp;&nbsp;<span class=\"label-text\">Property management/lettings/re-sales</span>
+					</label>
+					<label>
+							<span class=\"label-input\"><input type=\"checkbox\" name=\"check-6\" id=\"check-6\" value=\"Due diligence packs\" /> </span>&nbsp;&nbsp;<span class=\"label-text\">Due diligence packs</span>
+					</label>
 					<label>
 							<span class=\"label-input\"><input type=\"checkbox\" name=\"check-1\" id=\"check-1\" value=\"Mortgage advice\" /> </span>&nbsp;&nbsp;<span class=\"label-text\">Mortgage advice</span>
 					</label>
@@ -1294,6 +1313,9 @@ FirstPropInvest.com team.</p>
 					</label>
 					<label>
 							<span class=\"label-input\"><input type=\"checkbox\" name=\"check-3\" id=\"check-3\"  value=\"Legal advice\" /> </span>&nbsp;&nbsp;<span class=\"label-text\">Legal advice</span>
+					</label>
+					<label>
+							<span class=\"label-input\"><input type=\"checkbox\" name=\"check-7\" id=\"check-7\" value=\"FX services\" /> </span>&nbsp;&nbsp;<span class=\"label-text\">FX services</span>
 					</label>
 					<div class=\"gap-seperator\"></div>
 
@@ -1330,7 +1352,13 @@ if( !function_exists( 'advice_form' ) ){
 		$check_1 = $_POST['check_1'];
 		$check_2 = $_POST['check_2'];
 		$check_3 = $_POST['check_3'];
-		//$to_email = 'varunsrivastava89@gmail.com';
+		$check_4 = $_POST['check_4'];
+		$check_5 = $_POST['check_5'];
+		$check_6 = $_POST['check_6'];
+		$check_7 = $_POST['check_7'];
+		$message = stripslashes( $_POST['message'] );
+		$country =  $_POST['country'] ;
+		
 		$to_email = 'berian.reed@gmail.com';
 		
 		$email_body .= "
@@ -2272,13 +2300,34 @@ a:hover{color:#30495c !important}.wrapper .logo div{color:#41637e}.wrapper .logo
             <h1 style=\"Margin-top: 0;color: #565656;font-weight: 700;font-size: 36px;Margin-bottom: 18px;font-family: sans-serif;line-height: 42px\">You have received a new request for a 3rd party service</h1><p style=\"Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 16px;line-height: 25px;Margin-bottom: 25px\"><br />
 Name: ".$name."<br />
 Email: ".$email."<br />
-Number:&nbsp; ".$phone."<br />
-Country: ".$_POST['return_country']."<br />
+Number:&nbsp; ".$city_code_new."<br />
+Country: ".$country."<br />
+Message: ".$message."<br />
 Preferred Contact Method: ".$_POST['return_con_method']."<br />";
-if($_POST['check_1'] != '' || $_POST['check_2'] != '' || $_POST['check_3'] != ''){
-$email_body .= "Services requested: <br />-".$_POST['check_1']."<br />-
-".$_POST['check_2']."<br />-
-".$_POST['check_3']."<br />";
+if($_POST['check_1'] != '' || $_POST['check_2'] != '' || $_POST['check_3'] != '' || $_POST['check_4'] != '' || $_POST['check_5'] != '' || $_POST['check_6'] != '' || $_POST['check_7'] != ''){
+$email_body .= "Services requested: <br />";
+if($_POST['check_4'] != ''){
+$email_body .= "-".$_POST['check_4']."<br />";
+}
+if($_POST['check_5'] != ''){
+$email_body .= "-".$_POST['check_5']."<br />";
+}
+if($_POST['check_6'] != ''){
+$email_body .= "-".$_POST['check_6']."<br />";
+}
+
+if($_POST['check_1'] != ''){
+$email_body .= "-".$_POST['check_1']."<br />";
+}
+if($_POST['check_2'] != ''){
+$email_body .= "-".$_POST['check_2']."<br />";
+}
+if($_POST['check_3'] != ''){
+$email_body .= "-".$_POST['check_3']."<br />";
+}
+if($_POST['check_7'] != ''){
+$email_body .= "-".$_POST['check_7']."<br />";
+}
 }
 $email_body .= "</p>
           
@@ -2365,7 +2414,7 @@ $email_body .= "</p>
 		
 		$header = 'Content-type: text/html; charset=utf-8' . "\r\n";
         $header = apply_filters("inspiry_agent_mail_header", $header);
-        $header .= 'From: ' . $name . " <" . $email . "> \r\n";
+        $header .= 'From: ' . $name . " <donotreply@firstpropinvest.com> \r\n";
 		$email_subject = __('3rd Party Service Request ', 'framework');
 		if($_POST['check_1'] != '' || $_POST['check_2'] != '' || $_POST['check_3'] != ''){
 		  if ( wp_mail( $to_email, $email_subject, $email_body, $header ) ) {
