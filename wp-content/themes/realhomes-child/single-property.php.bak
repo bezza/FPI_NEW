@@ -1,6 +1,6 @@
 <?php
 get_header();
- 
+
         // Banner Image
         $banner_image_path = "";
         $banner_image_id = get_post_meta( $post->ID, 'REAL_HOMES_page_banner_image', true );
