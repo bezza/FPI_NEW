@@ -100,11 +100,11 @@ if( $agent_display_option != "none" ){
 						
 							<!--<a class="real-btn" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php _e('Know More','framework'); ?></a>-->
 							<button type="button" class="btn btn-primary btn-lg con-developer-btn real-btn" data-toggle="modal" data-target="#myModal">
-							  Enquire about this property
+							  Enquire now
 							</button>
 							<div class="mobile-enq">
 								<button type="button" class="btn btn-primary btn-lg con-developer-btn real-btn" data-toggle="modal" data-target="#myModal">
-							  Enquire about this property
+							  Enquire now
 							</button>
 							</div>
 							<?php
@@ -114,12 +114,12 @@ if( $agent_display_option != "none" ){
 								<!-- Button for mobile version -->
 						<div class="mobile-enq">
 								<button type="button" class="btn btn-primary btn-lg con-developer-btn real-btn" data-toggle="modal" data-target="#myModal">
-							  Enquire about this property
+							  Enquire now
 							</button>
 						</div>
 							<!-- Button trigger modal -->
 						<button type="button" class="btn btn-primary btn-lg con-developer-btn real-btn" data-toggle="modal" data-target="#myModal">
-						  Enquire about this property
+						  Enquire now
 						</button>
 							<br/><br/><!--<a class="real-btn" href="<?php echo get_permalink( $agent_id ); ?>"><?php _e('Know More','framework'); ?></a>--><?php
                         }

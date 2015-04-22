@@ -7,6 +7,7 @@ padding-top: 0px;
 border-top: 1px solid #DFDFDF;
 border-radius: 0px;
 }
+.header-wrapper{ margin-bottom:15px; }
 .property-details ul li{
 border-radius:none;
 }
@@ -753,6 +754,108 @@ span.selectwrap .selectbox-wrapper + .selectbox {
   font-size: 22px;
   padding: 15px 30px;
 } 
+.page-head{
+	display:none;
+}
+.contents{
+	margin-top:45px;
+}
+.single .page-head
+{
+	display:block;
+}
+.single .contents{
+	margin-top:0px;
+}
+#TellAFriend_alertmessage{
+	display:none !important;
+}
+div#TellAFriend_BoxLabel_Page input[type="text"],div#TellAFriend_BoxLabel_Page textarea {
+  width: 96%;
+  display: block;
+}
+#TellAFriend_BoxContainer{
+	left:50% !important;
+	top:50% !important;
+	margin-top:-190px !important;
+	margin-left:-195px !important;
+	position: fixed;
+	z-index:99999;
+	border-radius:0px;
+	border:0px;
+	height: 405px;
+}
+#TellAFriend_BoxClose{
+	width:20px;
+	height:20px;
+	padding: 0px;
+	margin: 0px;
+}
+#TellAFriend_BoxLabel_Page{
+	font-size: 14px;
+	font-weight: 300;
+	line-height:inherit;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+#TellAFriend_BoxLabel_Page input[type="button"]{
+	font-size: 15px;
+	background: #ec894d ;
+	color: #fff;
+	padding: 10px 16px 10px 16px;
+	border-radius: 0px;
+	border: none;
+	text-shadow: none;
+	background-size: 8% !important;
+	line-height: 15px;
+}
+#TellAFriend_BoxClose a{
+	background:url(../images/close.png)no-repeat center;
+	display:inline-block;
+	width:20px;
+	height:20px;	
+	font-size:0px !important;
+}
+#TellAFriend_BoxContainerHeader{
+	border-radius:0px;
+	padding: 10px;
+}
+#TellAFriend_BoxTitle{
+	font-size: 22px;
+  font-weight: 300;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+}
+#TellAFriend_BoxContainerFooter{
+	z-index:999;
+}
+.tell-friend a {
+	position:relative;
+	display:inline-block;
+	width: 110px;
+	height: 15px;
+}
+.tell-friend > a:before {
+  content: "\f003";
+  position: absolute;
+  right: 0px;
+  font-family: FontAwesome;
+  font-size: 18px;
+  left: 19px;
+  color: #999;
+}
+.property-item figure {    margin-bottom: 10px;}
+.propertytypr { height:20px; margin-bottom:5px;}
+.tell-friend > a:after{
+	content:"Tell a friend";
+	position:absolute;
+	right:0px;
+	color:#7E8283;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	
+}
+.tell-friend img{
+	display:none;
+}
   /*---------------------Media queries---------------------------*/
 @media (max-width:1024px){
 	.as-form-wrap .small .selectwrap input {
@@ -775,6 +878,7 @@ span.selectwrap .selectbox-wrapper + .selectbox {
 	  width: 100%;
 	  top: 0px;
 	  z-index: 100;
+	  
 	}
 	.single-property .page-head h1.page-title {margin-top:45px;}
 	.detail {

@@ -111,6 +111,13 @@ function REAL_HOMES_register_child_meta_boxes()
 				'desc'      => __('Provide Property Yield. ( Plesae only provide digits ) Example Value: 5%','framework'),
 				'type'      => 'text',
 				'std'       => ""
+			),
+			array(
+				'id'        => "{$prefix}development_strapline",
+				'name'      => __('Development Strapline','framework'),
+				'desc'      => __('Development Strapline. ','framework'),
+				'type'      => 'text',
+				'std'       => ""
 			)
 		)
 	);
@@ -693,7 +700,7 @@ if(!function_exists('numbers_list')){
 
     function numbers_list_bed($numbers_list_for){
 
-        $numbers_array = array(1,2,3,4,5,6,7,8,9,10);
+        $numbers_array = array('Studio',1,2,3,4,5,6,7,8,9,10);
 
         $searched_value = '';
 
@@ -717,6 +724,10 @@ if(!function_exists('numbers_list')){
 
                     echo '<option value="'.$number.'" selected="selected">'.$number.'</option>';
 
+                }else if($number=='Studio') {
+
+                    echo '<option value="0">'.$number.'</option>';
+
                 }else {
 
                     echo '<option value="'.$number.'">'.$number.'</option>';
@@ -731,11 +742,11 @@ if(!function_exists('numbers_list')){
 
         if($searched_value == 'any' || empty($searched_value)) {
 
-            echo '<option value="any" selected="selected">'.__( 'Studio', 'framework').'</option>';
+           // echo '<option value="any" selected="selected">'.__( 'Studio', 'framework').'</option>';
 
         } else {
 
-            echo '<option value="any">'.__( 'Studio', 'framework').'</option>';
+            //echo '<option value="any">'.__( 'Studio', 'framework').'</option>';
 
         }
 

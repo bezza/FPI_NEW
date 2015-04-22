@@ -97,6 +97,7 @@ global $post;
                 ?>
                 <div class="share-networks clearfix">
                     <span class="share-label"><?php _e('Share this', 'framework'); ?></span>
+					<span class="tell-friend"><?php echo do_shortcode('[tell-a-friend id="1" title="Tell a friend"]'); ?></span>
                     <span><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook fa-lg"></i><?php _e('Facebook','framework'); ?></a></span>
                     <span><a target="_blank" href="https://twitter.com/share?url=<?php the_permalink(); ?>" ><i class="fa fa-twitter fa-lg"></i><?php _e('Twitter','framework'); ?></a></span>
                     <span><a target="_blank" href="https://plus.google.com/share?url={<?php the_permalink(); ?>}" onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes')"><i class="fa fa-google-plus fa-lg"></i><?php _e('Google','framework'); ?></a></span>
