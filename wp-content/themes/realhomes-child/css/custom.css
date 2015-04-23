@@ -844,7 +844,7 @@ div#TellAFriend_BoxLabel_Page input[type="text"],div#TellAFriend_BoxLabel_Page t
   color: #999;
 }
 .property-item figure {    margin-bottom: 10px;}
-.propertytypr { height:45px; margin-bottom:5px;}
+.propertytypr { min-height:45px; margin-bottom:5px;}
 .tell-friend > a:after{
 	content:"Tell a friend";
 	position:absolute;
