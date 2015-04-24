@@ -23,7 +23,7 @@ get_header();
                             function display_parent_locations($ct_trm){
                                 if( !empty($ct_trm->parent) ){
                                     $parent_location = get_term( $ct_trm->parent, 'property-city' );
-                                    echo ' - '. $parent_location->name;
+                                    //echo ' - '. $parent_location->name;
                                     display_parent_locations($parent_location); // recursive call
                                 }
                             }
@@ -33,7 +33,7 @@ get_header();
                         $city_terms = get_the_terms( $post->ID,"property-city" );
                         if(!empty($city_terms)){
                             foreach($city_terms as $ct_trm){
-                                echo ' - '. $ct_trm->name;
+                                //echo ' - '. $ct_trm->name;
                                 display_parent_locations($ct_trm);
                                 break;
                             }
