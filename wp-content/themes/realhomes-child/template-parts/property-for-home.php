@@ -96,7 +96,7 @@
 
         </div>
 <div style="clear:both"></div>
-<div class="propertytypr">
+<div class="property-meta stipline"> 
 <?
 $type_terms = get_the_terms( $post->ID,"property-type" );
  if(!empty( $type_terms )){
@@ -106,7 +106,7 @@ $type_terms = get_the_terms( $post->ID,"property-type" );
 
                     }
  }
-if($property_type=='2'){ if(get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true)!=''){ echo 'Development Strapline : '.get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true);  }}
+if($property_type=='2'){ if(get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true)!=''){ echo '<span><i class="fa fa-info-circle fa-2x"></i></span><span>Development Strapline : '.get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true).'</span>';  }}
 ?>
 
 </div>
