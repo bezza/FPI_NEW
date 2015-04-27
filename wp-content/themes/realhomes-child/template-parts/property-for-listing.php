@@ -1,5 +1,41 @@
 <div class="property-item-wrapper">
+<style>
+.stipline span:nth-child(2) {
+    display: inline-block !important;
+    font-size: 12px;
+    line-height: 13px;
+    vertical-align: middle !important;
+    width: 86%;
+	border:0px !important;
+	height: 21px; padding-top: 17px; padding-bottom: 10px; padding-left: 5px; 
+	
+}
+@media (max-width:480px){
+	.listing-layout .property-item .property-meta span {
+    border-right: 1px solid #dedede ;
+    border-right: medium none;
+    margin-right: 0;
+    padding-right: 0;
+    width: 13%;
+}
+.stipline span:nth-child(1) {  border-right: 1px solid #dedede !important;}
+	.stipline span:nth-child(2) {
+    display: inline-block !important;
+    font-size: 11px;
+    line-height: 13px;
+    padding-top: 11px;
+    vertical-align: middle !important;
+    width: 80% !important;
+	height: 21px; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; 
+	}
+	
 
+	#logo a {
+	  margin-top: 10px;
+	  margin-left: 40px;
+	}
+}
+</style>
 
     <article class="property-item clearfix">
 
@@ -101,6 +137,7 @@
 
 
 <div style="clear:both"></div>
+
 <div class="property-meta stipline">
 <?
 $type_terms = get_the_terms( $post->ID,"property-type" );
@@ -111,7 +148,7 @@ $type_terms = get_the_terms( $post->ID,"property-type" );
 
                     }
  }
-if($property_type=='2'){ if(get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true)!=''){ echo '<span><i class="fa fa-info-circle fa-2x"></i></span><span>Development Strapline : '.get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true).'</span>';  }}
+if($property_type=='2'){ if(get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true)!=''){ echo '<span><i class="fa fa-info-circle fa-2x"></i></span><span>'.get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true).'</span>';  }}
 ?>
 
 </div>

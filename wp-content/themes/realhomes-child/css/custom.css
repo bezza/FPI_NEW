@@ -8,13 +8,7 @@ border-top: 1px solid #DFDFDF;
 border-radius: 0px;
 }
 .intro { position:absolute !important; bottom:0px;} 
-.stipline span:nth-child(2) {
-    display: inline-block !important;
-    font-size: 11px;
-    line-height: 13px;
-    vertical-align: middle !important;
-    width: 85%;
-}
+
 .header-wrapper{ margin-bottom:15px; }
 .property-details ul li{
 border-radius:none;
@@ -1050,13 +1044,9 @@ div#TellAFriend_BoxLabel_Page input[type="text"],div#TellAFriend_BoxLabel_Page t
 		top: 53%;
 	}
 }
-@media (max-width:480px){
-	#logo a {
-	  margin-top: 10px;
-	  margin-left: 40px;
-	}
-}
+
 @media (max-width:435px){
+	
 	#logo a span{font-size:20px;}
 	.price-con .dropdown{
 	margin-top: 15px;
@@ -1090,4 +1080,31 @@ div#TellAFriend_BoxLabel_Page input[type="text"],div#TellAFriend_BoxLabel_Page t
 		font-size:18px;
 		margin-right:0px;
 	}
+}
+@media (max-width:480px){
+	.stipline span:nth-child(2) {
+    display: inline-block !important;
+    font-size: 11px;
+    line-height: 13px;
+    padding-top: 11px;
+    vertical-align: middle !important;
+    width: 80% !important;
+	}
+	.property-items .property-meta span {
+    border-right: 1px solid #dedede;
+    margin-right: 8px;
+    padding-right: 8px;
+	width:9%;
+}
+	#logo a {
+	  margin-top: 10px;
+	  margin-left: 40px;
+	}
+}.stipline span:nth-child(2) {
+    display: inline-block !important;
+    font-size: 12px;
+    line-height: 13px;
+    vertical-align: middle !important;
+    width: 86%;
+	padding-top:17px;
 }

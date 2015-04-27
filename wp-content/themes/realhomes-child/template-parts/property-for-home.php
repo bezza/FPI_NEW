@@ -106,7 +106,7 @@ $type_terms = get_the_terms( $post->ID,"property-type" );
 
                     }
  }
-if($property_type=='2'){ if(get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true)!=''){ echo '<span><i class="fa fa-info-circle fa-2x"></i></span><span>Development Strapline : '.get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true).'</span>';  }}
+if($property_type=='2'){ if(get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true)!=''){ echo '<span><i class="fa fa-info-circle fa-2x"></i></span><span>'.get_post_meta($post->ID, 'REAL_HOMES_development_strapline', true).'</span>';  }}
 ?>
 
 </div>
